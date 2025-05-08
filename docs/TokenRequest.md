@@ -1,0 +1,9 @@
+# SecureApi.TokenRequest
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**token** | **String** |  | 
+
+
