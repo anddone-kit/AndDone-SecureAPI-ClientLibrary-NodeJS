@@ -14,6 +14,7 @@
 import ApiClient from '../ApiClient';
 import SecureTransactionDetailDTOTenderInfo from './SecureTransactionDetailDTOTenderInfo';
 import TransactionPaymentResponseBillingContact from './TransactionPaymentResponseBillingContact';
+import TransactionPaymentResponseRefundOrigin from './TransactionPaymentResponseRefundOrigin';
 import TransactionPaymentResponseTransactionResult from './TransactionPaymentResponseTransactionResult';
 
 /**
@@ -63,7 +64,7 @@ class SecureTransactionDetailDTO {
                 obj['transactionOrigin'] = ApiClient.convertToType(data['transactionOrigin'], 'String');
             }
             if (data.hasOwnProperty('refundOrigin')) {
-                obj['refundOrigin'] = ApiClient.convertToType(data['refundOrigin'], 'Number');
+                obj['refundOrigin'] = TransactionPaymentResponseRefundOrigin.constructFromObject(data['refundOrigin']);
             }
             if (data.hasOwnProperty('billingContact')) {
                 obj['billingContact'] = TransactionPaymentResponseBillingContact.constructFromObject(data['billingContact']);
@@ -210,6 +211,10 @@ class SecureTransactionDetailDTO {
         // ensure the json data is a string
         if (data['transactionOrigin'] && !(typeof data['transactionOrigin'] === 'string' || data['transactionOrigin'] instanceof String)) {
             throw new Error("Expected the field `transactionOrigin` to be a primitive type in the JSON string but got " + data['transactionOrigin']);
+        }
+        // validate the optional field `refundOrigin`
+        if (data['refundOrigin']) { // data not null
+          TransactionPaymentResponseRefundOrigin.validateJSON(data['refundOrigin']);
         }
         // validate the optional field `billingContact`
         if (data['billingContact']) { // data not null
@@ -361,7 +366,7 @@ SecureTransactionDetailDTO.prototype['transactionCode'] = undefined;
 SecureTransactionDetailDTO.prototype['transactionOrigin'] = undefined;
 
 /**
- * @member {Number} refundOrigin
+ * @member {module:model/TransactionPaymentResponseRefundOrigin} refundOrigin
  */
 SecureTransactionDetailDTO.prototype['refundOrigin'] = undefined;
 

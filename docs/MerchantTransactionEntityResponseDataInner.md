@@ -57,7 +57,7 @@ Name | Type | Description | Notes
 **adjustmentDisplayName** | **String** |  | [optional] 
 **adjustmentDescriptorMessage** | **String** |  | [optional] 
 **paymentAdjustmentType** | **String** |  | [optional] 
-**commissionType** | **String** |  | [optional] 
+**commissionType** | [**TransactionPaymentResponseAchTenderInfoCommissionType**](TransactionPaymentResponseAchTenderInfoCommissionType.md) |  | [optional] 
 **commissionValue** | **Number** |  | [optional] 
 **commissionFixedValue** | **Number** |  | [optional] 
 **accountToken** | **String** |  | [optional] 
@@ -302,17 +302,6 @@ Name | Type | Description | Notes
 * `ConvenienceFee` (value: `"ConvenienceFee"`)
 
 * `CashDiscount` (value: `"CashDiscount"`)
-
-
-
-
-
-## Enum: CommissionTypeEnum
-
-
-* `Fixed` (value: `"Fixed"`)
-
-* `Percentage` (value: `"Percentage"`)
 
 
 

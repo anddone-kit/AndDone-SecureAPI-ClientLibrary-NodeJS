@@ -50,7 +50,7 @@ class PFLiteSecureQuoteRequestProgram {
             obj = obj || new PFLiteSecureQuoteRequestProgram();
 
             if (data.hasOwnProperty('programId')) {
-                obj['programId'] = ApiClient.convertToType(data['programId'], 'String');
+                obj['programId'] = ApiClient.convertToType(data['programId'], 'Number');
             }
             if (data.hasOwnProperty('loanType')) {
                 obj['loanType'] = ApiClient.convertToType(data['loanType'], 'String');
@@ -72,10 +72,6 @@ class PFLiteSecureQuoteRequestProgram {
             }
         }
         // ensure the json data is a string
-        if (data['programId'] && !(typeof data['programId'] === 'string' || data['programId'] instanceof String)) {
-            throw new Error("Expected the field `programId` to be a primitive type in the JSON string but got " + data['programId']);
-        }
-        // ensure the json data is a string
         if (data['loanType'] && !(typeof data['loanType'] === 'string' || data['loanType'] instanceof String)) {
             throw new Error("Expected the field `loanType` to be a primitive type in the JSON string but got " + data['loanType']);
         }
@@ -89,7 +85,7 @@ class PFLiteSecureQuoteRequestProgram {
 PFLiteSecureQuoteRequestProgram.RequiredProperties = ["loanType"];
 
 /**
- * @member {String} programId
+ * @member {Number} programId
  */
 PFLiteSecureQuoteRequestProgram.prototype['programId'] = undefined;
 

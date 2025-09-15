@@ -48,7 +48,7 @@ class SecureTokenLinkResponseIntent {
             obj = obj || new SecureTokenLinkResponseIntent();
 
             if (data.hasOwnProperty('paymentTypes')) {
-                obj['paymentTypes'] = ApiClient.convertToType(data['paymentTypes'], 'String');
+                obj['paymentTypes'] = ApiClient.convertToType(data['paymentTypes'], ['String']);
             }
         }
         return obj;
@@ -60,9 +60,9 @@ class SecureTokenLinkResponseIntent {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>SecureTokenLinkResponseIntent</code>.
      */
     static validateJSON(data) {
-        // ensure the json data is a string
-        if (data['paymentTypes'] && !(typeof data['paymentTypes'] === 'string' || data['paymentTypes'] instanceof String)) {
-            throw new Error("Expected the field `paymentTypes` to be a primitive type in the JSON string but got " + data['paymentTypes']);
+        // ensure the json data is an array
+        if (!Array.isArray(data['paymentTypes'])) {
+            throw new Error("Expected the field `paymentTypes` to be an array in the JSON data but got " + data['paymentTypes']);
         }
 
         return true;
@@ -74,7 +74,7 @@ class SecureTokenLinkResponseIntent {
 
 
 /**
- * @member {module:model/SecureTokenLinkResponseIntent.PaymentTypesEnum} paymentTypes
+ * @member {Array.<module:model/SecureTokenLinkResponseIntent.PaymentTypesEnum>} paymentTypes
  */
 SecureTokenLinkResponseIntent.prototype['paymentTypes'] = undefined;
 

@@ -15,6 +15,7 @@ import ApiClient from '../ApiClient';
 import TransactionPaymentResponseAchTenderInfo from './TransactionPaymentResponseAchTenderInfo';
 import TransactionPaymentResponseBillingContact from './TransactionPaymentResponseBillingContact';
 import TransactionPaymentResponseCcTenderInfo from './TransactionPaymentResponseCcTenderInfo';
+import TransactionPaymentResponseRefundOrigin from './TransactionPaymentResponseRefundOrigin';
 import TransactionPaymentResponseRefundTransactions from './TransactionPaymentResponseRefundTransactions';
 import TransactionPaymentResponseTransactionEntitySplitResponsesInner from './TransactionPaymentResponseTransactionEntitySplitResponsesInner';
 import TransactionPaymentResponseTransactionResult from './TransactionPaymentResponseTransactionResult';
@@ -84,7 +85,7 @@ class TransactionPaymentResponse {
                 obj['transactionOrigin'] = ApiClient.convertToType(data['transactionOrigin'], 'String');
             }
             if (data.hasOwnProperty('refundOrigin')) {
-                obj['refundOrigin'] = ApiClient.convertToType(data['refundOrigin'], 'Number');
+                obj['refundOrigin'] = TransactionPaymentResponseRefundOrigin.constructFromObject(data['refundOrigin']);
             }
             if (data.hasOwnProperty('achTenderInfo')) {
                 obj['achTenderInfo'] = TransactionPaymentResponseAchTenderInfo.constructFromObject(data['achTenderInfo']);
@@ -210,6 +211,10 @@ class TransactionPaymentResponse {
         // ensure the json data is a string
         if (data['transactionOrigin'] && !(typeof data['transactionOrigin'] === 'string' || data['transactionOrigin'] instanceof String)) {
             throw new Error("Expected the field `transactionOrigin` to be a primitive type in the JSON string but got " + data['transactionOrigin']);
+        }
+        // validate the optional field `refundOrigin`
+        if (data['refundOrigin']) { // data not null
+          TransactionPaymentResponseRefundOrigin.validateJSON(data['refundOrigin']);
         }
         // validate the optional field `achTenderInfo`
         if (data['achTenderInfo']) { // data not null
@@ -369,7 +374,7 @@ TransactionPaymentResponse.prototype['processorName'] = undefined;
 TransactionPaymentResponse.prototype['transactionOrigin'] = undefined;
 
 /**
- * @member {Number} refundOrigin
+ * @member {module:model/TransactionPaymentResponseRefundOrigin} refundOrigin
  */
 TransactionPaymentResponse.prototype['refundOrigin'] = undefined;
 

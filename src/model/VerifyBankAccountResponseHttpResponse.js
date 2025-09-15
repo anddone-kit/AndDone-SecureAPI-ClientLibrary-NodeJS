@@ -57,7 +57,7 @@ class VerifyBankAccountResponseHttpResponse {
                 obj['errorCode'] = ApiClient.convertToType(data['errorCode'], 'String');
             }
             if (data.hasOwnProperty('statusCode')) {
-                obj['statusCode'] = ApiClient.convertToType(data['statusCode'], 'String');
+                obj['statusCode'] = ApiClient.convertToType(data['statusCode'], 'Number');
             }
         }
         return obj;
@@ -76,10 +76,6 @@ class VerifyBankAccountResponseHttpResponse {
         // ensure the json data is a string
         if (data['errorCode'] && !(typeof data['errorCode'] === 'string' || data['errorCode'] instanceof String)) {
             throw new Error("Expected the field `errorCode` to be a primitive type in the JSON string but got " + data['errorCode']);
-        }
-        // ensure the json data is a string
-        if (data['statusCode'] && !(typeof data['statusCode'] === 'string' || data['statusCode'] instanceof String)) {
-            throw new Error("Expected the field `statusCode` to be a primitive type in the JSON string but got " + data['statusCode']);
         }
 
         return true;
@@ -106,7 +102,7 @@ VerifyBankAccountResponseHttpResponse.prototype['message'] = undefined;
 VerifyBankAccountResponseHttpResponse.prototype['errorCode'] = undefined;
 
 /**
- * @member {String} statusCode
+ * @member {Number} statusCode
  */
 VerifyBankAccountResponseHttpResponse.prototype['statusCode'] = undefined;
 
