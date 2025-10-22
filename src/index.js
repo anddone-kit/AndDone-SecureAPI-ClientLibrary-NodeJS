@@ -174,10 +174,12 @@ import TransactionDetailResponseSplitsInner from './model/TransactionDetailRespo
 import TransactionDetailResponseTenderInfo from './model/TransactionDetailResponseTenderInfo';
 import TransactionPaymentResponse from './model/TransactionPaymentResponse';
 import TransactionPaymentResponseAchTenderInfo from './model/TransactionPaymentResponseAchTenderInfo';
+import TransactionPaymentResponseAchTenderInfoCommissionType from './model/TransactionPaymentResponseAchTenderInfoCommissionType';
 import TransactionPaymentResponseBillingContact from './model/TransactionPaymentResponseBillingContact';
 import TransactionPaymentResponseBillingContactAddress from './model/TransactionPaymentResponseBillingContactAddress';
 import TransactionPaymentResponseBillingContactName from './model/TransactionPaymentResponseBillingContactName';
 import TransactionPaymentResponseCcTenderInfo from './model/TransactionPaymentResponseCcTenderInfo';
+import TransactionPaymentResponseRefundOrigin from './model/TransactionPaymentResponseRefundOrigin';
 import TransactionPaymentResponseRefundTransactions from './model/TransactionPaymentResponseRefundTransactions';
 import TransactionPaymentResponseRefundTransactionsDataInner from './model/TransactionPaymentResponseRefundTransactionsDataInner';
 import TransactionPaymentResponseTransactionEntitySplitResponsesInner from './model/TransactionPaymentResponseTransactionEntitySplitResponsesInner';
@@ -1219,6 +1221,12 @@ export {
     TransactionPaymentResponseAchTenderInfo,
 
     /**
+     * The TransactionPaymentResponseAchTenderInfoCommissionType model constructor.
+     * @property {module:model/TransactionPaymentResponseAchTenderInfoCommissionType}
+     */
+    TransactionPaymentResponseAchTenderInfoCommissionType,
+
+    /**
      * The TransactionPaymentResponseBillingContact model constructor.
      * @property {module:model/TransactionPaymentResponseBillingContact}
      */
@@ -1241,6 +1249,12 @@ export {
      * @property {module:model/TransactionPaymentResponseCcTenderInfo}
      */
     TransactionPaymentResponseCcTenderInfo,
+
+    /**
+     * The TransactionPaymentResponseRefundOrigin model constructor.
+     * @property {module:model/TransactionPaymentResponseRefundOrigin}
+     */
+    TransactionPaymentResponseRefundOrigin,
 
     /**
      * The TransactionPaymentResponseRefundTransactions model constructor.

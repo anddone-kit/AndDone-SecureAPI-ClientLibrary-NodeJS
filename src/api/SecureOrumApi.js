@@ -40,7 +40,7 @@ export default class SecureOrumApi {
      * Callback function to receive the result of the secureBankaccountsDetailsPost operation.
      * @callback module:api/SecureOrumApi~secureBankaccountsDetailsPostCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/VerifyBankAccountResponse>} data The data returned by the service call.
+     * @param {module:model/VerifyBankAccountResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -55,7 +55,7 @@ export default class SecureOrumApi {
      * @param {module:model/String} [type] Set Type
      * @param {module:model/VerificationEntityRequest} [verificationEntityRequest] Verification Entity
      * @param {module:api/SecureOrumApi~secureBankaccountsDetailsPostCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/VerifyBankAccountResponse>}
+     * data is of type: {@link module:model/VerifyBankAccountResponse}
      */
     secureBankaccountsDetailsPost(xApiKey, xAppKey, xVersion, origin, opts, callback) {
       opts = opts || {};
@@ -95,7 +95,7 @@ export default class SecureOrumApi {
       let authNames = ['x-api-key', 'x-app-key'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = [VerifyBankAccountResponse];
+      let returnType = VerifyBankAccountResponse;
       return this.apiClient.callApi(
         '/secure/bankaccounts/details', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -107,7 +107,7 @@ export default class SecureOrumApi {
      * Callback function to receive the result of the secureBankaccountsVerifyPost operation.
      * @callback module:api/SecureOrumApi~secureBankaccountsVerifyPostCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/VerifyBankAccountResponse>} data The data returned by the service call.
+     * @param {module:model/VerifyBankAccountResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -120,7 +120,7 @@ export default class SecureOrumApi {
      * @param {Object} opts Optional parameters
      * @param {module:model/VerifyBankAccountRequest} [verifyBankAccountRequest] Bank Accout detals
      * @param {module:api/SecureOrumApi~secureBankaccountsVerifyPostCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/VerifyBankAccountResponse>}
+     * data is of type: {@link module:model/VerifyBankAccountResponse}
      */
     secureBankaccountsVerifyPost(xApiKey, xAppKey, xVersion, origin, opts, callback) {
       opts = opts || {};
@@ -158,7 +158,7 @@ export default class SecureOrumApi {
       let authNames = ['x-api-key', 'x-app-key'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = [VerifyBankAccountResponse];
+      let returnType = VerifyBankAccountResponse;
       return this.apiClient.callApi(
         '/secure/bankaccounts/verify', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,

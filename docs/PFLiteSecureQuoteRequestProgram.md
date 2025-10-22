@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**programId** | **String** |  | [optional] 
+**programId** | **Number** |  | [optional] 
 **loanType** | **String** |  | 
 
 

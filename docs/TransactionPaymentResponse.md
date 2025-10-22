@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **processMethod** | **String** |  | [optional] 
 **processorName** | **String** |  | [optional] 
 **transactionOrigin** | **String** |  | [optional] 
-**refundOrigin** | **Number** |  | [optional] 
+**refundOrigin** | [**TransactionPaymentResponseRefundOrigin**](TransactionPaymentResponseRefundOrigin.md) |  | [optional] 
 **achTenderInfo** | [**TransactionPaymentResponseAchTenderInfo**](TransactionPaymentResponseAchTenderInfo.md) |  | [optional] 
 **ccTenderInfo** | [**TransactionPaymentResponseCcTenderInfo**](TransactionPaymentResponseCcTenderInfo.md) |  | [optional] 
 **debitCardTenderInfo** | [**TransactionPaymentResponseCcTenderInfo**](TransactionPaymentResponseCcTenderInfo.md) |  | [optional] 

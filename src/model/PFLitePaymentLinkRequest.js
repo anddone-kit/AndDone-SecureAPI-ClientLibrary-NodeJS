@@ -29,7 +29,7 @@ class PFLitePaymentLinkRequest {
      * @param quoteKey {String} 
      * @param title {String} 
      * @param paymentDescription {String} 
-     * @param expireIn {String} 
+     * @param expireIn {Number} 
      * @param expireInUnit {module:model/PFLitePaymentLinkRequest.ExpireInUnitEnum} 
      * @param referenceDataList {Array.<module:model/PFLitePaymentLinkRequestReferenceDataListInner>} 
      * @param settings {module:model/PFLitePaymentLinkRequestSettings} 
@@ -78,7 +78,7 @@ class PFLitePaymentLinkRequest {
                 obj['paymentDescription'] = ApiClient.convertToType(data['paymentDescription'], 'String');
             }
             if (data.hasOwnProperty('expireIn')) {
-                obj['expireIn'] = ApiClient.convertToType(data['expireIn'], 'String');
+                obj['expireIn'] = ApiClient.convertToType(data['expireIn'], 'Number');
             }
             if (data.hasOwnProperty('expireInUnit')) {
                 obj['expireInUnit'] = ApiClient.convertToType(data['expireInUnit'], 'String');
@@ -122,10 +122,6 @@ class PFLitePaymentLinkRequest {
         // ensure the json data is a string
         if (data['paymentDescription'] && !(typeof data['paymentDescription'] === 'string' || data['paymentDescription'] instanceof String)) {
             throw new Error("Expected the field `paymentDescription` to be a primitive type in the JSON string but got " + data['paymentDescription']);
-        }
-        // ensure the json data is a string
-        if (data['expireIn'] && !(typeof data['expireIn'] === 'string' || data['expireIn'] instanceof String)) {
-            throw new Error("Expected the field `expireIn` to be a primitive type in the JSON string but got " + data['expireIn']);
         }
         // ensure the json data is a string
         if (data['expireInUnit'] && !(typeof data['expireInUnit'] === 'string' || data['expireInUnit'] instanceof String)) {
@@ -189,7 +185,7 @@ PFLitePaymentLinkRequest.prototype['title'] = undefined;
 PFLitePaymentLinkRequest.prototype['paymentDescription'] = undefined;
 
 /**
- * @member {String} expireIn
+ * @member {Number} expireIn
  */
 PFLitePaymentLinkRequest.prototype['expireIn'] = undefined;
 

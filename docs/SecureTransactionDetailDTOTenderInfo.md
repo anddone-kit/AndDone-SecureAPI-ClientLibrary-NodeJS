@@ -37,7 +37,7 @@ Name | Type | Description | Notes
 **accountToken** | **String** |  | [optional] 
 **accountTokenMessage** | **String** |  | [optional] 
 **createAccountToken** | **Boolean** |  | [optional] 
-**commissionType** | **String** |  | [optional] 
+**commissionType** | [**TransactionPaymentResponseAchTenderInfoCommissionType**](TransactionPaymentResponseAchTenderInfoCommissionType.md) |  | [optional] 
 **commissionValue** | **Number** |  | [optional] 
 **commissionFixedValue** | **Number** |  | [optional] 
 
@@ -68,17 +68,6 @@ Name | Type | Description | Notes
 * `ConvenienceFee` (value: `"ConvenienceFee"`)
 
 * `CashDiscount` (value: `"CashDiscount"`)
-
-
-
-
-
-## Enum: CommissionTypeEnum
-
-
-* `Fixed` (value: `"Fixed"`)
-
-* `Percentage` (value: `"Percentage"`)
 
 
 

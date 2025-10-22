@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## secureBankaccountsDetailsPost
 
-> [VerifyBankAccountResponse] secureBankaccountsDetailsPost(xApiKey, xAppKey, xVersion, origin, opts)
+> VerifyBankAccountResponse secureBankaccountsDetailsPost(xApiKey, xAppKey, xVersion, origin, opts)
 
 This API will request for verified bank account.
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[VerifyBankAccountResponse]**](VerifyBankAccountResponse.md)
+[**VerifyBankAccountResponse**](VerifyBankAccountResponse.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 ## secureBankaccountsVerifyPost
 
-> [VerifyBankAccountResponse] secureBankaccountsVerifyPost(xApiKey, xAppKey, xVersion, origin, opts)
+> VerifyBankAccountResponse secureBankaccountsVerifyPost(xApiKey, xAppKey, xVersion, origin, opts)
 
 This API will request for account verification.
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[VerifyBankAccountResponse]**](VerifyBankAccountResponse.md)
+[**VerifyBankAccountResponse**](VerifyBankAccountResponse.md)
 
 ### Authorization
 

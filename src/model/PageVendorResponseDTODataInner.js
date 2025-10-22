@@ -105,7 +105,7 @@ class PageVendorResponseDTODataInner {
                 obj['remittanceAddress'] = VendorResponseDTORemittanceAddress.constructFromObject(data['remittanceAddress']);
             }
             if (data.hasOwnProperty('verificationResults')) {
-                obj['verificationResults'] = VendorResponseDTOVerificationResultsInner.constructFromObject(data['verificationResults']);
+                obj['verificationResults'] = ApiClient.convertToType(data['verificationResults'], [VendorResponseDTOVerificationResultsInner]);
             }
             if (data.hasOwnProperty('createdBy')) {
                 obj['createdBy'] = ApiClient.convertToType(data['createdBy'], 'String');
@@ -199,9 +199,15 @@ class PageVendorResponseDTODataInner {
         if (data['remittanceAddress']) { // data not null
           VendorResponseDTORemittanceAddress.validateJSON(data['remittanceAddress']);
         }
-        // validate the optional field `verificationResults`
         if (data['verificationResults']) { // data not null
-          VendorResponseDTOVerificationResultsInner.validateJSON(data['verificationResults']);
+            // ensure the json data is an array
+            if (!Array.isArray(data['verificationResults'])) {
+                throw new Error("Expected the field `verificationResults` to be an array in the JSON data but got " + data['verificationResults']);
+            }
+            // validate the optional field `verificationResults` (array)
+            for (const item of data['verificationResults']) {
+                VendorResponseDTOVerificationResultsInner.validateJSON(item);
+            };
         }
         // ensure the json data is a string
         if (data['createdBy'] && !(typeof data['createdBy'] === 'string' || data['createdBy'] instanceof String)) {
@@ -327,7 +333,7 @@ PageVendorResponseDTODataInner.prototype['physicalAddress'] = undefined;
 PageVendorResponseDTODataInner.prototype['remittanceAddress'] = undefined;
 
 /**
- * @member {module:model/VendorResponseDTOVerificationResultsInner} verificationResults
+ * @member {Array.<module:model/VendorResponseDTOVerificationResultsInner>} verificationResults
  */
 PageVendorResponseDTODataInner.prototype['verificationResults'] = undefined;
 

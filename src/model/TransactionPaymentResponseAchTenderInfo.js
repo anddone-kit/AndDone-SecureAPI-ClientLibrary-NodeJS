@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import TransactionPaymentResponseAchTenderInfoCommissionType from './TransactionPaymentResponseAchTenderInfoCommissionType';
 
 /**
  * The TransactionPaymentResponseAchTenderInfo model module.
@@ -117,7 +118,7 @@ class TransactionPaymentResponseAchTenderInfo {
                 obj['createAccountToken'] = ApiClient.convertToType(data['createAccountToken'], 'Boolean');
             }
             if (data.hasOwnProperty('commissionType')) {
-                obj['commissionType'] = ApiClient.convertToType(data['commissionType'], 'String');
+                obj['commissionType'] = TransactionPaymentResponseAchTenderInfoCommissionType.constructFromObject(data['commissionType']);
             }
             if (data.hasOwnProperty('commissionValue')) {
                 obj['commissionValue'] = ApiClient.convertToType(data['commissionValue'], 'Number');
@@ -199,9 +200,9 @@ class TransactionPaymentResponseAchTenderInfo {
         if (data['accountTokenMessage'] && !(typeof data['accountTokenMessage'] === 'string' || data['accountTokenMessage'] instanceof String)) {
             throw new Error("Expected the field `accountTokenMessage` to be a primitive type in the JSON string but got " + data['accountTokenMessage']);
         }
-        // ensure the json data is a string
-        if (data['commissionType'] && !(typeof data['commissionType'] === 'string' || data['commissionType'] instanceof String)) {
-            throw new Error("Expected the field `commissionType` to be a primitive type in the JSON string but got " + data['commissionType']);
+        // validate the optional field `commissionType`
+        if (data['commissionType']) { // data not null
+          TransactionPaymentResponseAchTenderInfoCommissionType.validateJSON(data['commissionType']);
         }
 
         return true;
@@ -328,7 +329,7 @@ TransactionPaymentResponseAchTenderInfo.prototype['accountTokenMessage'] = undef
 TransactionPaymentResponseAchTenderInfo.prototype['createAccountToken'] = undefined;
 
 /**
- * @member {module:model/TransactionPaymentResponseAchTenderInfo.CommissionTypeEnum} commissionType
+ * @member {module:model/TransactionPaymentResponseAchTenderInfoCommissionType} commissionType
  */
 TransactionPaymentResponseAchTenderInfo.prototype['commissionType'] = undefined;
 
@@ -403,27 +404,6 @@ TransactionPaymentResponseAchTenderInfo['PaymentAdjustmentTypeEnum'] = {
      * @const
      */
     "CashDiscount": "CashDiscount"
-};
-
-
-/**
- * Allowed values for the <code>commissionType</code> property.
- * @enum {String}
- * @readonly
- */
-TransactionPaymentResponseAchTenderInfo['CommissionTypeEnum'] = {
-
-    /**
-     * value: "Fixed"
-     * @const
-     */
-    "Fixed": "Fixed",
-
-    /**
-     * value: "Percentage"
-     * @const
-     */
-    "Percentage": "Percentage"
 };
 
 

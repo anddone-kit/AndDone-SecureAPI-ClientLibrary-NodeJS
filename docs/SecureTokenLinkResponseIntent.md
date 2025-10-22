@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**paymentTypes** | **String** |  | [optional] 
+**paymentTypes** | **[String]** |  | [optional] 
 
 
 
-## Enum: PaymentTypesEnum
+## Enum: [PaymentTypesEnum]
 
 
 * `NotDefined` (value: `"NotDefined"`)

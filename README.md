@@ -81,7 +81,7 @@ npm link secure_api
    Find it by searching **"what's my IP"** in Google or visiting [https://www.whatsmyip.org](https://www.whatsmyip.org).
 
    * Contact AndDone support to ensure your origin IP is registered.
-   * Email: [support@anddone.com](mailto:support@anddone.com)
+   * Email: [integrations@anddone.com](mailto:integrations@anddone.com)
 
 3. **Optional: Create a Configuration File:**
    Rename `config.example.json` to `config.json` and fill it with your values:
@@ -102,8 +102,8 @@ npm link secure_api
 Here’s a minimal working example to call the **Secure Create Payment Intent API**:
 
 ```javascript
-import expect from 'expect.js';
-import SecureEmbeddedPremiumFinanceApi from '../src/api/SecureEmbeddedPremiumFinanceApi.js';
+import ApiClient from '../src/ApiClient.js';
+import SecurePaymentIntentApi from '../src/api/SecurePaymentIntentApi.js';
 const fs = require('fs');
 
 fs.readFile('./config.json', 'utf8', (err, data) => {
@@ -119,21 +119,33 @@ fs.readFile('./config.json', 'utf8', (err, data) => {
     }
 });
 
-var xApiKey = jsonData.xApiKey;
-var xAppKey = jsonData.xAppKey;
-var xVersion = jsonData.xVersion;
-var origin = jsonData.origin;
+var xApiKey = "xApiKey_example";
+var xAppKey = "xAppKey_example";
+var xVersion = 2.3;
+var origin = "origin_example";
 
-let postBody = {
-  "category": "FIRE",
-  "newPolicyNumber": "1256",
-  "premium": 9000,
-  "quoteKey": 22857791
+var postBody = {
+    "saveForFuture": True,
+    "amount": 10000,
+    "title": "YOUR UNIQUE TITLE",
+    "shortDescription": "shortDescription",
+    "paymentDescription": "paymentDescription",
+    "invoiceNumber": "postman",
+    "expiresIn": "300000",
+    "intent": {
+        "paymentTypes": [
+            "CreditCard", 
+            "ACH"
+        ]
+    },
+    "enablePremiumFinance": True,
+    "splits": None,
+    "additionalDetailsPreference": "NoAdditionalDetails"
 };
 
-let api_instance = new SecureEmbeddedPremiumFinanceApi();
+var api_instance = new SecureApi.SecurePaymentIntentApi()
 
-api_instance.secureEpfMerchantsQuotesPolicyPut(xApiKey, xAppKey, xVersion, origin, postBody, (result) => {console.log('API response:', result);});
+api_instance.securePaymentIntentsecurePaymentintentsPost(xApiKey, xAppKey, xVersion, origin, postBody, (result) => {console.log('API response:', result);});
 ```
 
 ---

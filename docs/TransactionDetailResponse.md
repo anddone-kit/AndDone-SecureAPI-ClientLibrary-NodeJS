@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **batchId** | **String** |  | [optional] 
 **transactionCode** | **String** |  | [optional] 
 **transactionOrigin** | **String** |  | [optional] 
-**refundOrigin** | **Number** |  | [optional] 
+**refundOrigin** | [**TransactionPaymentResponseRefundOrigin**](TransactionPaymentResponseRefundOrigin.md) |  | [optional] 
 **billingContact** | [**TransactionPaymentResponseBillingContact**](TransactionPaymentResponseBillingContact.md) |  | [optional] 
 **referenceTransactionId** | **String** |  | [optional] 
 **transactionDate** | **String** |  | [optional] 
