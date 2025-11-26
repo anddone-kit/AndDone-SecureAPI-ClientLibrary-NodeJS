@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(SecureApi.PaymentIntentRequestCustomersInner);
     });
 
+    it('should have the property customerId (base name: "customerId")', function() {
+      // uncomment below and update the code to test the property customerId
+      //var instance = new SecureApi.PaymentIntentRequestCustomersInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
       //var instance = new SecureApi.PaymentIntentRequestCustomersInner();
@@ -74,12 +80,6 @@
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new SecureApi.PaymentIntentRequestCustomersInner();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property customerId (base name: "customerId")', function() {
-      // uncomment below and update the code to test the property customerId
       //var instance = new SecureApi.PaymentIntentRequestCustomersInner();
       //expect(instance).to.be();
     });

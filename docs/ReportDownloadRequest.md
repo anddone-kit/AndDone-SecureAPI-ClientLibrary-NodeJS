@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**reportId** | **String** |  | [optional] 
+**reportId** | **String** |  | 
 **reportGenerationLogId** | **String** |  | [optional] 
 **fileCompress** | **Boolean** |  | [optional] 
 **date** | **String** |  | [optional] 

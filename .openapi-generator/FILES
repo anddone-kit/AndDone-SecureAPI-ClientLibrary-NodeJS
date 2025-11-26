@@ -2,6 +2,8 @@
 .gitignore
 .travis.yml
 README.md
+docs/AutoPayEnrollmentRequest.md
+docs/AutoPayEnrollmentResponse.md
 docs/BankDetailDto.md
 docs/CancelPaymentRequestDTO.md
 docs/DataDto.md
@@ -10,6 +12,7 @@ docs/GetQuoteRequest.md
 docs/HeadingDto.md
 docs/MerchantTransactionEntityResponse.md
 docs/MerchantTransactionEntityResponseDataInner.md
+docs/OutboundPaymentImageResponseDTO.md
 docs/OutboundPaymentTimelineResponseDTOInner.md
 docs/PFCheckEndorsementsRequest.md
 docs/PFCheckEndorsementsResponse.md
@@ -17,8 +20,6 @@ docs/PFCheckEndorsementsResponseItem.md
 docs/PFCheckEndorsementsResponseItemPoliciesInner.md
 docs/PFEndorsementRequest.md
 docs/PFEndorsementRequestQuote.md
-docs/PFEndorsementRequestQuoteAgent.md
-docs/PFEndorsementRequestQuoteAgentAddress.md
 docs/PFEndorsementRequestQuoteCommunication.md
 docs/PFEndorsementRequestQuoteDetails.md
 docs/PFEndorsementRequestQuoteDetailsRecurringACH.md
@@ -52,6 +53,8 @@ docs/PFLiteQuoteByPaymentLinkResponse.md
 docs/PFLiteQuoteByPaymentLinkResponsePoliciesInner.md
 docs/PFLiteQuoteByPaymentLinkResponsePoliciesInnerCarrier.md
 docs/PFLiteSecureQuoteRequest.md
+docs/PFLiteSecureQuoteRequestAgent.md
+docs/PFLiteSecureQuoteRequestAgentAddress.md
 docs/PFLiteSecureQuoteRequestInsured.md
 docs/PFLiteSecureQuoteRequestInsuredAddress.md
 docs/PFLiteSecureQuoteRequestMerchant.md
@@ -86,8 +89,10 @@ docs/PaymentIntentRequestReferenceDataListInner.md
 docs/PaymentIntentRequestSplitsInner.md
 docs/PaymentIntentResponse.md
 docs/PaymentIntentResponseCustomersInner.md
+docs/PaymentIntentResponseIntent.md
 docs/PaymentLinkExpiresResponse.md
 docs/PaymentLinkRequest.md
+docs/PaymentLinkRequestReferenceDataListInner.md
 docs/PaymentLinkRequestSettings.md
 docs/PaymentLinkRequestSettingsIntent.md
 docs/PaymentLinkResponse.md
@@ -110,7 +115,6 @@ docs/PaymentResponseDto.md
 docs/PaymentTimeLineRequestDto.md
 docs/QuoteRequest.md
 docs/QuoteRequestAgent.md
-docs/QuoteRequestAgentAddress.md
 docs/QuoteRequestDetails.md
 docs/QuoteRequestInsured.md
 docs/QuoteRequestInsuredAddress.md
@@ -123,13 +127,14 @@ docs/RefundEligibility.md
 docs/RemittanceDataDto.md
 docs/ReportDownloadRequest.md
 docs/RowDto.md
+docs/SecureAutopayEnrollmentApi.md
 docs/SecureBatchExecuteRequest.md
 docs/SecureCancelledTransactionResponse.md
 docs/SecureEmbeddedPremiumFinanceApi.md
 docs/SecureEmbeddedPremiumFinanceEndorsementsApi.md
 docs/SecureMerchantTokenShortResponse.md
-docs/SecureOrumApi.md
 docs/SecureOutboundPaymentsApi.md
+docs/SecurePFQuoteBookingRequest.md
 docs/SecurePaymentBatchDetailsRequest.md
 docs/SecurePaymentBatchingApi.md
 docs/SecurePaymentDetailsRequest.md
@@ -171,7 +176,6 @@ docs/TokenLinkResponse.md
 docs/TokenLinkResponseDataInner.md
 docs/TokenLinkSecureRequest.md
 docs/TokenLinkSecureRequestCustomersInner.md
-docs/TokenLinkSecureRequestIntent.md
 docs/TokenRequest.md
 docs/TransactionDetailResponse.md
 docs/TransactionDetailResponseSplitsInner.md
@@ -198,18 +202,13 @@ docs/VendorResponseDTORemittanceAddress.md
 docs/VendorResponseDTOTemplate.md
 docs/VendorResponseDTOVerificationResultsInner.md
 docs/VendorTimelineResponseListInner.md
-docs/VerificationEntityRequest.md
-docs/VerifyBankAccountRequest.md
-docs/VerifyBankAccountRequestBankAccountEntity.md
-docs/VerifyBankAccountResponse.md
-docs/VerifyBankAccountResponseHttpResponse.md
 git_push.sh
 mocha.opts
 package.json
 src/ApiClient.js
+src/api/SecureAutopayEnrollmentApi.js
 src/api/SecureEmbeddedPremiumFinanceApi.js
 src/api/SecureEmbeddedPremiumFinanceEndorsementsApi.js
-src/api/SecureOrumApi.js
 src/api/SecureOutboundPaymentsApi.js
 src/api/SecurePaymentBatchingApi.js
 src/api/SecurePaymentIntentApi.js
@@ -223,6 +222,8 @@ src/api/SecureTokenManagementApi.js
 src/api/SecureVendorManagementApi.js
 src/api/SecureVoidsApi.js
 src/index.js
+src/model/AutoPayEnrollmentRequest.js
+src/model/AutoPayEnrollmentResponse.js
 src/model/BankDetailDto.js
 src/model/CancelPaymentRequestDTO.js
 src/model/DataDto.js
@@ -231,6 +232,7 @@ src/model/GetQuoteRequest.js
 src/model/HeadingDto.js
 src/model/MerchantTransactionEntityResponse.js
 src/model/MerchantTransactionEntityResponseDataInner.js
+src/model/OutboundPaymentImageResponseDTO.js
 src/model/OutboundPaymentTimelineResponseDTOInner.js
 src/model/PFCheckEndorsementsRequest.js
 src/model/PFCheckEndorsementsResponse.js
@@ -238,8 +240,6 @@ src/model/PFCheckEndorsementsResponseItem.js
 src/model/PFCheckEndorsementsResponseItemPoliciesInner.js
 src/model/PFEndorsementRequest.js
 src/model/PFEndorsementRequestQuote.js
-src/model/PFEndorsementRequestQuoteAgent.js
-src/model/PFEndorsementRequestQuoteAgentAddress.js
 src/model/PFEndorsementRequestQuoteCommunication.js
 src/model/PFEndorsementRequestQuoteDetails.js
 src/model/PFEndorsementRequestQuoteDetailsRecurringACH.js
@@ -273,6 +273,8 @@ src/model/PFLiteQuoteByPaymentLinkResponse.js
 src/model/PFLiteQuoteByPaymentLinkResponsePoliciesInner.js
 src/model/PFLiteQuoteByPaymentLinkResponsePoliciesInnerCarrier.js
 src/model/PFLiteSecureQuoteRequest.js
+src/model/PFLiteSecureQuoteRequestAgent.js
+src/model/PFLiteSecureQuoteRequestAgentAddress.js
 src/model/PFLiteSecureQuoteRequestInsured.js
 src/model/PFLiteSecureQuoteRequestInsuredAddress.js
 src/model/PFLiteSecureQuoteRequestMerchant.js
@@ -307,8 +309,10 @@ src/model/PaymentIntentRequestReferenceDataListInner.js
 src/model/PaymentIntentRequestSplitsInner.js
 src/model/PaymentIntentResponse.js
 src/model/PaymentIntentResponseCustomersInner.js
+src/model/PaymentIntentResponseIntent.js
 src/model/PaymentLinkExpiresResponse.js
 src/model/PaymentLinkRequest.js
+src/model/PaymentLinkRequestReferenceDataListInner.js
 src/model/PaymentLinkRequestSettings.js
 src/model/PaymentLinkRequestSettingsIntent.js
 src/model/PaymentLinkResponse.js
@@ -331,7 +335,6 @@ src/model/PaymentResponseDto.js
 src/model/PaymentTimeLineRequestDto.js
 src/model/QuoteRequest.js
 src/model/QuoteRequestAgent.js
-src/model/QuoteRequestAgentAddress.js
 src/model/QuoteRequestDetails.js
 src/model/QuoteRequestInsured.js
 src/model/QuoteRequestInsuredAddress.js
@@ -347,6 +350,7 @@ src/model/RowDto.js
 src/model/SecureBatchExecuteRequest.js
 src/model/SecureCancelledTransactionResponse.js
 src/model/SecureMerchantTokenShortResponse.js
+src/model/SecurePFQuoteBookingRequest.js
 src/model/SecurePaymentBatchDetailsRequest.js
 src/model/SecurePaymentDetailsRequest.js
 src/model/SecurePaymentLinkRequest.js
@@ -377,7 +381,6 @@ src/model/TokenLinkResponse.js
 src/model/TokenLinkResponseDataInner.js
 src/model/TokenLinkSecureRequest.js
 src/model/TokenLinkSecureRequestCustomersInner.js
-src/model/TokenLinkSecureRequestIntent.js
 src/model/TokenRequest.js
 src/model/TransactionDetailResponse.js
 src/model/TransactionDetailResponseSplitsInner.js
@@ -404,10 +407,11 @@ src/model/VendorResponseDTORemittanceAddress.js
 src/model/VendorResponseDTOTemplate.js
 src/model/VendorResponseDTOVerificationResultsInner.js
 src/model/VendorTimelineResponseListInner.js
-src/model/VerificationEntityRequest.js
-src/model/VerifyBankAccountRequest.js
-src/model/VerifyBankAccountRequestBankAccountEntity.js
-src/model/VerifyBankAccountResponse.js
-src/model/VerifyBankAccountResponseHttpResponse.js
-test/model/TransactionPaymentResponseAchTenderInfoCommissionType.spec.js
-test/model/TransactionPaymentResponseRefundOrigin.spec.js
+test/api/SecureAutopayEnrollmentApi.spec.js
+test/model/AutoPayEnrollmentRequest.spec.js
+test/model/AutoPayEnrollmentResponse.spec.js
+test/model/OutboundPaymentImageResponseDTO.spec.js
+test/model/PFLiteSecureQuoteRequestAgent.spec.js
+test/model/PFLiteSecureQuoteRequestAgentAddress.spec.js
+test/model/PaymentIntentResponseIntent.spec.js
+test/model/SecurePFQuoteBookingRequest.spec.js

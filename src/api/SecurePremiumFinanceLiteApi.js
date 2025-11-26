@@ -91,7 +91,7 @@ export default class SecurePremiumFinanceLiteApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PFLiteGenerateQuoteResponse;
@@ -154,7 +154,7 @@ export default class SecurePremiumFinanceLiteApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = [PFLiteQuoteByPaymentLinkResponse];
@@ -219,7 +219,7 @@ export default class SecurePremiumFinanceLiteApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PaymentLinkResponse;

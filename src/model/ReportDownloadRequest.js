@@ -22,10 +22,11 @@ class ReportDownloadRequest {
     /**
      * Constructs a new <code>ReportDownloadRequest</code>.
      * @alias module:model/ReportDownloadRequest
+     * @param reportId {String} 
      */
-    constructor() { 
+    constructor(reportId) { 
         
-        ReportDownloadRequest.initialize(this);
+        ReportDownloadRequest.initialize(this, reportId);
     }
 
     /**
@@ -33,7 +34,8 @@ class ReportDownloadRequest {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, reportId) { 
+        obj['reportId'] = reportId;
     }
 
     /**
@@ -69,6 +71,12 @@ class ReportDownloadRequest {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ReportDownloadRequest</code>.
      */
     static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ReportDownloadRequest.RequiredProperties) {
+            if (!data.hasOwnProperty(property)) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
         // ensure the json data is a string
         if (data['reportId'] && !(typeof data['reportId'] === 'string' || data['reportId'] instanceof String)) {
             throw new Error("Expected the field `reportId` to be a primitive type in the JSON string but got " + data['reportId']);
@@ -88,7 +96,7 @@ class ReportDownloadRequest {
 
 }
 
-
+ReportDownloadRequest.RequiredProperties = ["reportId"];
 
 /**
  * @member {String} reportId

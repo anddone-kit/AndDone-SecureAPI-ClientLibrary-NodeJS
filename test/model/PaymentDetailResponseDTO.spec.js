@@ -54,73 +54,73 @@
       //expect(instance).to.be.a(SecureApi.PaymentDetailResponseDTO);
     });
 
-    it('should have the property merchantId (base name: "MerchantId")', function() {
+    it('should have the property merchantId (base name: "merchantId")', function() {
       // uncomment below and update the code to test the property merchantId
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property vendorId (base name: "VendorId")', function() {
+    it('should have the property vendorId (base name: "vendorId")', function() {
       // uncomment below and update the code to test the property vendorId
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property vendorName (base name: "VendorName")', function() {
+    it('should have the property vendorName (base name: "vendorName")', function() {
       // uncomment below and update the code to test the property vendorName
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property merchantDBAName (base name: "MerchantDBAName")', function() {
+    it('should have the property merchantDBAName (base name: "merchantDBAName")', function() {
       // uncomment below and update the code to test the property merchantDBAName
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property paymentId (base name: "PaymentId")', function() {
+    it('should have the property paymentId (base name: "paymentId")', function() {
       // uncomment below and update the code to test the property paymentId
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property checkNumber (base name: "CheckNumber")', function() {
+    it('should have the property checkNumber (base name: "checkNumber")', function() {
       // uncomment below and update the code to test the property checkNumber
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property paymentMethod (base name: "PaymentMethod")', function() {
+    it('should have the property paymentMethod (base name: "paymentMethod")', function() {
       // uncomment below and update the code to test the property paymentMethod
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property amount (base name: "Amount")', function() {
+    it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property bankName (base name: "BankName")', function() {
+    it('should have the property bankName (base name: "bankName")', function() {
       // uncomment below and update the code to test the property bankName
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property bankAccountNumber (base name: "BankAccountNumber")', function() {
+    it('should have the property bankAccountNumber (base name: "bankAccountNumber")', function() {
       // uncomment below and update the code to test the property bankAccountNumber
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property paymentStatus (base name: "PaymentStatus")', function() {
+    it('should have the property paymentStatus (base name: "paymentStatus")', function() {
       // uncomment below and update the code to test the property paymentStatus
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();
     });
 
-    it('should have the property paymentMethodStatus (base name: "PaymentMethodStatus")', function() {
+    it('should have the property paymentMethodStatus (base name: "paymentMethodStatus")', function() {
       // uncomment below and update the code to test the property paymentMethodStatus
       //var instance = new SecureApi.PaymentDetailResponseDTO();
       //expect(instance).to.be();

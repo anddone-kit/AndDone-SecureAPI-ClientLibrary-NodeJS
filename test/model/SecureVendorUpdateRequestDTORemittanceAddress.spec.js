@@ -96,12 +96,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property addressType (base name: "addressType")', function() {
-      // uncomment below and update the code to test the property addressType
-      //var instance = new SecureApi.SecureVendorUpdateRequestDTORemittanceAddress();
-      //expect(instance).to.be();
-    });
-
     it('should have the property addressSource (base name: "addressSource")', function() {
       // uncomment below and update the code to test the property addressSource
       //var instance = new SecureApi.SecureVendorUpdateRequestDTORemittanceAddress();

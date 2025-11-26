@@ -46,8 +46,8 @@ class ApiClient {
          * @type {Array.<String>}
          */
         this.authentications = {
-            'x-api-key': {type: 'apiKey', 'in': 'header', name: 'x-api-key'},
-            'x-app-key': {type: 'apiKey', 'in': 'header', name: 'x-app-key'},
+            'api-key': {type: 'apiKey', 'in': 'header', name: 'x-api-key'},
+            'app-key': {type: 'apiKey', 'in': 'header', name: 'x-app-key'},
             'x-version': {type: 'apiKey', 'in': 'header', name: 'x-version'},
             'origin': {type: 'apiKey', 'in': 'header', name: 'origin'}
         }

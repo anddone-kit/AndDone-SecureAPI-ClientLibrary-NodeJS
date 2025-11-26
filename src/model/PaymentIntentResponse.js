@@ -12,11 +12,11 @@
  */
 
 import ApiClient from '../ApiClient';
-import PaymentIntentRequestIntent from './PaymentIntentRequestIntent';
 import PaymentIntentRequestPfr from './PaymentIntentRequestPfr';
 import PaymentIntentRequestReferenceDataListInner from './PaymentIntentRequestReferenceDataListInner';
 import PaymentIntentRequestSplitsInner from './PaymentIntentRequestSplitsInner';
 import PaymentIntentResponseCustomersInner from './PaymentIntentResponseCustomersInner';
+import PaymentIntentResponseIntent from './PaymentIntentResponseIntent';
 
 /**
  * The PaymentIntentResponse model module.
@@ -74,7 +74,7 @@ class PaymentIntentResponse {
                 obj['expiresOn'] = ApiClient.convertToType(data['expiresOn'], 'String');
             }
             if (data.hasOwnProperty('intent')) {
-                obj['intent'] = PaymentIntentRequestIntent.constructFromObject(data['intent']);
+                obj['intent'] = PaymentIntentResponseIntent.constructFromObject(data['intent']);
             }
             if (data.hasOwnProperty('saveForFuture')) {
                 obj['saveForFuture'] = ApiClient.convertToType(data['saveForFuture'], 'Boolean');
@@ -154,7 +154,7 @@ class PaymentIntentResponse {
         }
         // validate the optional field `intent`
         if (data['intent']) { // data not null
-          PaymentIntentRequestIntent.validateJSON(data['intent']);
+          PaymentIntentResponseIntent.validateJSON(data['intent']);
         }
         if (data['splits']) { // data not null
             // ensure the json data is an array
@@ -255,7 +255,7 @@ PaymentIntentResponse.prototype['invoiceNumber'] = undefined;
 PaymentIntentResponse.prototype['expiresOn'] = undefined;
 
 /**
- * @member {module:model/PaymentIntentRequestIntent} intent
+ * @member {module:model/PaymentIntentResponseIntent} intent
  */
 PaymentIntentResponse.prototype['intent'] = undefined;
 

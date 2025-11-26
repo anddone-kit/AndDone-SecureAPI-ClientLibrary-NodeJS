@@ -85,7 +85,7 @@ export default class SecureReportsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['text/csv'];
       let returnType = null;

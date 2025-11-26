@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(SecureApi.MerchantTransactionEntityResponse);
     });
 
-    it('should have the property totalRowCounts (base name: "totalRowCounts")', function() {
-      // uncomment below and update the code to test the property totalRowCounts
+    it('should have the property totalRowCount (base name: "totalRowCount")', function() {
+      // uncomment below and update the code to test the property totalRowCount
       //var instance = new SecureApi.MerchantTransactionEntityResponse();
       //expect(instance).to.be();
     });

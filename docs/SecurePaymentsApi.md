@@ -21,17 +21,6 @@ This API gets Secure payment by search criteria for the merchant.
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecurePaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -61,7 +50,7 @@ let opts = {
   'exportToPDF': true, // Boolean | Export To PDF
   'transactionOrigins': "transactionOrigins_example", // String | Type of origin used in the transaction
   'transactionSourceType': "transactionSourceType_example", // String | Transaction source type of the transaction
-  'sourceId': 3.4, // Number | Set SourceId
+  'sourceId': 56, // Number | Set SourceId
   'traceNumbers': "traceNumbers_example", // String | TraceNumbers associated with the transaction
   'binNumber': "binNumber_example", // String | BinNumber
   'processMethod': "processMethod_example", // String | Process Method used for the transaction
@@ -79,7 +68,7 @@ let opts = {
   'batchId': "batchId_example", // String | BatchId
   'sortField': "sortField_example", // String | SortField
   'startRow': 56, // Number | Set StartRow
-  'pageSize': 3.4, // Number | Set PageSize
+  'pageSize': 56, // Number | Set PageSize
   'asc': true // Boolean | Set Asc
 };
 apiInstance.securePaymentsExportPost(xApiKey, xAppKey, xVersion, origin, opts, (error, data, response) => {
@@ -149,7 +138,7 @@ null (empty response body)
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -167,17 +156,6 @@ This API posts new Secure payment request for the merchant.
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecurePaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -211,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -229,17 +207,6 @@ This API gets Secure payment by search criteria for the merchant.
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecurePaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -269,7 +236,7 @@ let opts = {
   'exportToPDF': true, // Boolean | Export To PDF
   'transactionOrigins': "transactionOrigins_example", // String | Type of origin used in the transaction
   'transactionSourceType': "transactionSourceType_example", // String | Transaction source type of the transaction
-  'sourceId': 3.4, // Number | Set SourceId
+  'sourceId': 56, // Number | Set SourceId
   'traceNumbers': "traceNumbers_example", // String | TraceNumbers associated with the transaction
   'binNumber': "binNumber_example", // String | BinNumber
   'processMethod': "processMethod_example", // String | Process Method used for the transaction
@@ -285,9 +252,10 @@ let opts = {
   'paymentCategories': "paymentCategories_example", // String | Set PaymentCategories
   'suppressTechnologyFee': true, // Boolean | SuppressTechnologyFee
   'batchId': "batchId_example", // String | BatchId
+  'transactionsCount': true, // Boolean | Set whether to return only the transactions count
   'sortField': "sortField_example", // String | SortField
   'startRow': 56, // Number | Set StartRow
-  'pageSize': 3.4, // Number | Set PageSize
+  'pageSize': 56, // Number | Set PageSize
   'asc': true // Boolean | Set Asc
 };
 apiInstance.securePaymentsSearchPost(xApiKey, xAppKey, xVersion, origin, opts, (error, data, response) => {
@@ -346,6 +314,7 @@ Name | Type | Description  | Notes
  **paymentCategories** | **String**| Set PaymentCategories | [optional] 
  **suppressTechnologyFee** | **Boolean**| SuppressTechnologyFee | [optional] 
  **batchId** | **String**| BatchId | [optional] 
+ **transactionsCount** | **Boolean**| Set whether to return only the transactions count | [optional] 
  **sortField** | **String**| SortField | [optional] 
  **startRow** | **Number**| Set StartRow | [optional] 
  **pageSize** | **Number**| Set PageSize | [optional] 
@@ -357,7 +326,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -375,17 +344,6 @@ This API is used for getting details of Payments
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecurePaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -419,7 +377,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 

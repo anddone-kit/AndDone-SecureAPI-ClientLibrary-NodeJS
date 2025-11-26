@@ -29,6 +29,7 @@ Name | Type | Description | Notes
 **apr** | **Number** | Annual percentage rate | [optional] 
 **installments** | **Number** | Number of installments | [optional] 
 **batchId** | **String** | Batch identifier | [optional] 
+**autopayStatus** | **String** | Autopayment status | [optional] 
 **paymentsRetained** | **Number** | Number of payments retained | [optional] 
 **paymentRetainedAmount** | **Number** | Amount retained from payments | [optional] 
 **retailAgentRegisterLoginURL** | **String** | URL for retail agent registration/login | [optional] 

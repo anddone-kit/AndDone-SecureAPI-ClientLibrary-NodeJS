@@ -24,13 +24,10 @@ class QuoteRequestInsuredAddress {
      * @alias module:model/QuoteRequestInsuredAddress
      * @param name {String} 
      * @param address1 {String} 
-     * @param city {String} 
-     * @param state {String} 
-     * @param zip {String} 
      */
-    constructor(name, address1, city, state, zip) { 
+    constructor(name, address1) { 
         
-        QuoteRequestInsuredAddress.initialize(this, name, address1, city, state, zip);
+        QuoteRequestInsuredAddress.initialize(this, name, address1);
     }
 
     /**
@@ -38,12 +35,9 @@ class QuoteRequestInsuredAddress {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, name, address1, city, state, zip) { 
+    static initialize(obj, name, address1) { 
         obj['name'] = name;
         obj['address1'] = address1;
-        obj['city'] = city;
-        obj['state'] = state;
-        obj['zip'] = zip;
     }
 
     /**
@@ -129,7 +123,7 @@ class QuoteRequestInsuredAddress {
 
 }
 
-QuoteRequestInsuredAddress.RequiredProperties = ["name", "address1", "city", "state", "zip"];
+QuoteRequestInsuredAddress.RequiredProperties = ["name", "address1"];
 
 /**
  * @member {String} name

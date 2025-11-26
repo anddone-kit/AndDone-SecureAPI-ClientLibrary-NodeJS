@@ -25,7 +25,6 @@ class VendorRequestDTO {
      * Constructs a new <code>VendorRequestDTO</code>.
      * @alias module:model/VendorRequestDTO
      * @param vendorName {String} 
-     * @param vendorDbName {String} Database name of the vendor
      * @param legalEntityType {module:model/VendorRequestDTO.LegalEntityTypeEnum} 
      * @param paymentMethodType {module:model/VendorRequestDTO.PaymentMethodTypeEnum} 
      * @param notificationType {module:model/VendorRequestDTO.NotificationTypeEnum} 
@@ -33,9 +32,9 @@ class VendorRequestDTO {
      * @param email {String} 
      * @param physicalAddress {module:model/VendorRequestDTOPhysicalAddress} 
      */
-    constructor(vendorName, vendorDbName, legalEntityType, paymentMethodType, notificationType, phoneNumber, email, physicalAddress) { 
+    constructor(vendorName, legalEntityType, paymentMethodType, notificationType, phoneNumber, email, physicalAddress) { 
         
-        VendorRequestDTO.initialize(this, vendorName, vendorDbName, legalEntityType, paymentMethodType, notificationType, phoneNumber, email, physicalAddress);
+        VendorRequestDTO.initialize(this, vendorName, legalEntityType, paymentMethodType, notificationType, phoneNumber, email, physicalAddress);
     }
 
     /**
@@ -43,9 +42,8 @@ class VendorRequestDTO {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, vendorName, vendorDbName, legalEntityType, paymentMethodType, notificationType, phoneNumber, email, physicalAddress) { 
+    static initialize(obj, vendorName, legalEntityType, paymentMethodType, notificationType, phoneNumber, email, physicalAddress) { 
         obj['vendorName'] = vendorName;
-        obj['vendorDbName'] = vendorDbName;
         obj['legalEntityType'] = legalEntityType;
         obj['paymentMethodType'] = paymentMethodType;
         obj['notificationType'] = notificationType;
@@ -178,7 +176,7 @@ class VendorRequestDTO {
 
 }
 
-VendorRequestDTO.RequiredProperties = ["vendorName", "vendorDbName", "legalEntityType", "paymentMethodType", "notificationType", "phoneNumber", "email", "physicalAddress"];
+VendorRequestDTO.RequiredProperties = ["vendorName", "legalEntityType", "paymentMethodType", "notificationType", "phoneNumber", "email", "physicalAddress"];
 
 /**
  * @member {String} vendorName

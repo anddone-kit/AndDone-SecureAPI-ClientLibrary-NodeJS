@@ -92,7 +92,7 @@ export default class SecurePaymentLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PaymentLinkResponse;
@@ -155,7 +155,7 @@ export default class SecurePaymentLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PaymentLinkExpiresResponse;
@@ -226,7 +226,7 @@ export default class SecurePaymentLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PaymentLinkResponse;
@@ -291,7 +291,7 @@ export default class SecurePaymentLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PaymentLinkResponse;

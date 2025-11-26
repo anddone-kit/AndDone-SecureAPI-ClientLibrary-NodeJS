@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **expireIn** | **Number** |  | 
 **expireInUnit** | **String** |  | 
 **responseType** | **String** |  | [optional] 
-**intent** | [**TokenLinkSecureRequestIntent**](TokenLinkSecureRequestIntent.md) |  | 
+**intent** | [**PaymentIntentRequestIntent**](PaymentIntentRequestIntent.md) |  | 
 **callbackParameters** | [**PaymentLinkResponseCallbackParameters**](PaymentLinkResponseCallbackParameters.md) |  | [optional] 
 **customers** | [**[TokenLinkSecureRequestCustomersInner]**](TokenLinkSecureRequestCustomersInner.md) |  | [optional] 
 

@@ -425,10 +425,10 @@ SecureVendorResponseDTO['VendorStatusEnum'] = {
     "Denied": "Denied",
 
     /**
-     * value: "Suspend"
+     * value: "Suspended"
      * @const
      */
-    "Suspend": "Suspend",
+    "Suspended": "Suspended",
 
     /**
      * value: "Deleted"

@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **firstDueDate** | **String** | The first due date. | [optional] 
 **apr** | **Number** | The annual percentage rate (APR). | [optional] 
 **installments** | **Number** | The number of installments. | [optional] 
+**offerAutoPay** | **Boolean** | The offerAutoPay status. | [optional] 
 **batchId** | **String** | The batch ID. | [optional] 
 **paymentsRetained** | **Number** | The number of payments retained. | [optional] 
 **paymentRetainedAmount** | **Number** | The amount retained from the payment. | [optional] 

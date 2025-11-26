@@ -48,74 +48,74 @@ class PFEndorsementRequestQuoteDetails {
         if (data) {
             obj = obj || new PFEndorsementRequestQuoteDetails();
 
-            if (data.hasOwnProperty('Commercial')) {
-                obj['Commercial'] = ApiClient.convertToType(data['Commercial'], 'String');
+            if (data.hasOwnProperty('commercial')) {
+                obj['commercial'] = ApiClient.convertToType(data['commercial'], 'String');
             }
-            if (data.hasOwnProperty('Coupon')) {
-                obj['Coupon'] = ApiClient.convertToType(data['Coupon'], 'String');
+            if (data.hasOwnProperty('coupon')) {
+                obj['coupon'] = ApiClient.convertToType(data['coupon'], 'String');
             }
-            if (data.hasOwnProperty('CouponInvoicePrinted')) {
-                obj['CouponInvoicePrinted'] = ApiClient.convertToType(data['CouponInvoicePrinted'], 'Boolean');
+            if (data.hasOwnProperty('couponInvoicePrinted')) {
+                obj['couponInvoicePrinted'] = ApiClient.convertToType(data['couponInvoicePrinted'], 'Boolean');
             }
-            if (data.hasOwnProperty('Crd')) {
-                obj['Crd'] = ApiClient.convertToType(data['Crd'], 'Number');
+            if (data.hasOwnProperty('crd')) {
+                obj['crd'] = ApiClient.convertToType(data['crd'], 'Number');
             }
-            if (data.hasOwnProperty('Interval')) {
-                obj['Interval'] = ApiClient.convertToType(data['Interval'], 'String');
+            if (data.hasOwnProperty('interval')) {
+                obj['interval'] = ApiClient.convertToType(data['interval'], 'String');
             }
-            if (data.hasOwnProperty('Installments')) {
-                obj['Installments'] = ApiClient.convertToType(data['Installments'], 'Number');
+            if (data.hasOwnProperty('installments')) {
+                obj['installments'] = ApiClient.convertToType(data['installments'], 'Number');
             }
-            if (data.hasOwnProperty('ProgramID')) {
-                obj['ProgramID'] = ApiClient.convertToType(data['ProgramID'], 'Number');
+            if (data.hasOwnProperty('programID')) {
+                obj['programID'] = ApiClient.convertToType(data['programID'], 'Number');
             }
-            if (data.hasOwnProperty('BrokerFee')) {
-                obj['BrokerFee'] = ApiClient.convertToType(data['BrokerFee'], 'Number');
+            if (data.hasOwnProperty('brokerFee')) {
+                obj['brokerFee'] = ApiClient.convertToType(data['brokerFee'], 'Number');
             }
-            if (data.hasOwnProperty('ESignOption')) {
-                obj['ESignOption'] = ApiClient.convertToType(data['ESignOption'], 'String');
+            if (data.hasOwnProperty('eSignOption')) {
+                obj['eSignOption'] = ApiClient.convertToType(data['eSignOption'], 'String');
             }
-            if (data.hasOwnProperty('ProcessDownPayment')) {
-                obj['ProcessDownPayment'] = ApiClient.convertToType(data['ProcessDownPayment'], 'Boolean');
+            if (data.hasOwnProperty('processDownPayment')) {
+                obj['processDownPayment'] = ApiClient.convertToType(data['processDownPayment'], 'Boolean');
             }
-            if (data.hasOwnProperty('ProcessDownPaymentNoReason')) {
-                obj['ProcessDownPaymentNoReason'] = ApiClient.convertToType(data['ProcessDownPaymentNoReason'], 'String');
+            if (data.hasOwnProperty('processDownPaymentNoReason')) {
+                obj['processDownPaymentNoReason'] = ApiClient.convertToType(data['processDownPaymentNoReason'], 'String');
             }
-            if (data.hasOwnProperty('DownPaymentMethod')) {
-                obj['DownPaymentMethod'] = ApiClient.convertToType(data['DownPaymentMethod'], 'String');
+            if (data.hasOwnProperty('downPaymentMethod')) {
+                obj['downPaymentMethod'] = ApiClient.convertToType(data['downPaymentMethod'], 'String');
             }
-            if (data.hasOwnProperty('DownPaymentPaidBy')) {
-                obj['DownPaymentPaidBy'] = ApiClient.convertToType(data['DownPaymentPaidBy'], 'String');
+            if (data.hasOwnProperty('downPaymentPaidBy')) {
+                obj['downPaymentPaidBy'] = ApiClient.convertToType(data['downPaymentPaidBy'], 'String');
             }
-            if (data.hasOwnProperty('RecurringACH')) {
-                obj['RecurringACH'] = PFEndorsementRequestQuoteDetailsRecurringACH.constructFromObject(data['RecurringACH']);
+            if (data.hasOwnProperty('recurringACH')) {
+                obj['recurringACH'] = PFEndorsementRequestQuoteDetailsRecurringACH.constructFromObject(data['recurringACH']);
             }
-            if (data.hasOwnProperty('BatchID')) {
-                obj['BatchID'] = ApiClient.convertToType(data['BatchID'], 'String');
+            if (data.hasOwnProperty('batchID')) {
+                obj['batchID'] = ApiClient.convertToType(data['batchID'], 'String');
             }
-            if (data.hasOwnProperty('ReturnPFA')) {
-                obj['ReturnPFA'] = ApiClient.convertToType(data['ReturnPFA'], 'Boolean');
+            if (data.hasOwnProperty('returnPFA')) {
+                obj['returnPFA'] = ApiClient.convertToType(data['returnPFA'], 'Boolean');
             }
-            if (data.hasOwnProperty('EqualPayments')) {
-                obj['EqualPayments'] = ApiClient.convertToType(data['EqualPayments'], 'String');
+            if (data.hasOwnProperty('equalPayments')) {
+                obj['equalPayments'] = ApiClient.convertToType(data['equalPayments'], 'String');
             }
-            if (data.hasOwnProperty('QuoteExpirationDays')) {
-                obj['QuoteExpirationDays'] = ApiClient.convertToType(data['QuoteExpirationDays'], 'Number');
+            if (data.hasOwnProperty('quoteExpirationDays')) {
+                obj['quoteExpirationDays'] = ApiClient.convertToType(data['quoteExpirationDays'], 'Number');
             }
-            if (data.hasOwnProperty('BypassCADNB')) {
-                obj['BypassCADNB'] = ApiClient.convertToType(data['BypassCADNB'], 'Boolean');
+            if (data.hasOwnProperty('bypassCADNB')) {
+                obj['bypassCADNB'] = ApiClient.convertToType(data['bypassCADNB'], 'Boolean');
             }
-            if (data.hasOwnProperty('AllowZeroAPR')) {
-                obj['AllowZeroAPR'] = ApiClient.convertToType(data['AllowZeroAPR'], 'Boolean');
+            if (data.hasOwnProperty('allowZeroAPR')) {
+                obj['allowZeroAPR'] = ApiClient.convertToType(data['allowZeroAPR'], 'Boolean');
             }
-            if (data.hasOwnProperty('AssociatedAccountNumber')) {
-                obj['AssociatedAccountNumber'] = ApiClient.convertToType(data['AssociatedAccountNumber'], 'String');
+            if (data.hasOwnProperty('associatedAccountNumber')) {
+                obj['associatedAccountNumber'] = ApiClient.convertToType(data['associatedAccountNumber'], 'String');
             }
-            if (data.hasOwnProperty('Channel')) {
-                obj['Channel'] = ApiClient.convertToType(data['Channel'], 'String');
+            if (data.hasOwnProperty('channel')) {
+                obj['channel'] = ApiClient.convertToType(data['channel'], 'String');
             }
-            if (data.hasOwnProperty('ChannelVersion')) {
-                obj['ChannelVersion'] = ApiClient.convertToType(data['ChannelVersion'], 'String');
+            if (data.hasOwnProperty('channelVersion')) {
+                obj['channelVersion'] = ApiClient.convertToType(data['channelVersion'], 'String');
             }
         }
         return obj;
@@ -128,56 +128,56 @@ class PFEndorsementRequestQuoteDetails {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['Commercial'] && !(typeof data['Commercial'] === 'string' || data['Commercial'] instanceof String)) {
-            throw new Error("Expected the field `Commercial` to be a primitive type in the JSON string but got " + data['Commercial']);
+        if (data['commercial'] && !(typeof data['commercial'] === 'string' || data['commercial'] instanceof String)) {
+            throw new Error("Expected the field `commercial` to be a primitive type in the JSON string but got " + data['commercial']);
         }
         // ensure the json data is a string
-        if (data['Coupon'] && !(typeof data['Coupon'] === 'string' || data['Coupon'] instanceof String)) {
-            throw new Error("Expected the field `Coupon` to be a primitive type in the JSON string but got " + data['Coupon']);
+        if (data['coupon'] && !(typeof data['coupon'] === 'string' || data['coupon'] instanceof String)) {
+            throw new Error("Expected the field `coupon` to be a primitive type in the JSON string but got " + data['coupon']);
         }
         // ensure the json data is a string
-        if (data['Interval'] && !(typeof data['Interval'] === 'string' || data['Interval'] instanceof String)) {
-            throw new Error("Expected the field `Interval` to be a primitive type in the JSON string but got " + data['Interval']);
+        if (data['interval'] && !(typeof data['interval'] === 'string' || data['interval'] instanceof String)) {
+            throw new Error("Expected the field `interval` to be a primitive type in the JSON string but got " + data['interval']);
         }
         // ensure the json data is a string
-        if (data['ESignOption'] && !(typeof data['ESignOption'] === 'string' || data['ESignOption'] instanceof String)) {
-            throw new Error("Expected the field `ESignOption` to be a primitive type in the JSON string but got " + data['ESignOption']);
+        if (data['eSignOption'] && !(typeof data['eSignOption'] === 'string' || data['eSignOption'] instanceof String)) {
+            throw new Error("Expected the field `eSignOption` to be a primitive type in the JSON string but got " + data['eSignOption']);
         }
         // ensure the json data is a string
-        if (data['ProcessDownPaymentNoReason'] && !(typeof data['ProcessDownPaymentNoReason'] === 'string' || data['ProcessDownPaymentNoReason'] instanceof String)) {
-            throw new Error("Expected the field `ProcessDownPaymentNoReason` to be a primitive type in the JSON string but got " + data['ProcessDownPaymentNoReason']);
+        if (data['processDownPaymentNoReason'] && !(typeof data['processDownPaymentNoReason'] === 'string' || data['processDownPaymentNoReason'] instanceof String)) {
+            throw new Error("Expected the field `processDownPaymentNoReason` to be a primitive type in the JSON string but got " + data['processDownPaymentNoReason']);
         }
         // ensure the json data is a string
-        if (data['DownPaymentMethod'] && !(typeof data['DownPaymentMethod'] === 'string' || data['DownPaymentMethod'] instanceof String)) {
-            throw new Error("Expected the field `DownPaymentMethod` to be a primitive type in the JSON string but got " + data['DownPaymentMethod']);
+        if (data['downPaymentMethod'] && !(typeof data['downPaymentMethod'] === 'string' || data['downPaymentMethod'] instanceof String)) {
+            throw new Error("Expected the field `downPaymentMethod` to be a primitive type in the JSON string but got " + data['downPaymentMethod']);
         }
         // ensure the json data is a string
-        if (data['DownPaymentPaidBy'] && !(typeof data['DownPaymentPaidBy'] === 'string' || data['DownPaymentPaidBy'] instanceof String)) {
-            throw new Error("Expected the field `DownPaymentPaidBy` to be a primitive type in the JSON string but got " + data['DownPaymentPaidBy']);
+        if (data['downPaymentPaidBy'] && !(typeof data['downPaymentPaidBy'] === 'string' || data['downPaymentPaidBy'] instanceof String)) {
+            throw new Error("Expected the field `downPaymentPaidBy` to be a primitive type in the JSON string but got " + data['downPaymentPaidBy']);
         }
-        // validate the optional field `RecurringACH`
-        if (data['RecurringACH']) { // data not null
-          PFEndorsementRequestQuoteDetailsRecurringACH.validateJSON(data['RecurringACH']);
-        }
-        // ensure the json data is a string
-        if (data['BatchID'] && !(typeof data['BatchID'] === 'string' || data['BatchID'] instanceof String)) {
-            throw new Error("Expected the field `BatchID` to be a primitive type in the JSON string but got " + data['BatchID']);
+        // validate the optional field `recurringACH`
+        if (data['recurringACH']) { // data not null
+          PFEndorsementRequestQuoteDetailsRecurringACH.validateJSON(data['recurringACH']);
         }
         // ensure the json data is a string
-        if (data['EqualPayments'] && !(typeof data['EqualPayments'] === 'string' || data['EqualPayments'] instanceof String)) {
-            throw new Error("Expected the field `EqualPayments` to be a primitive type in the JSON string but got " + data['EqualPayments']);
+        if (data['batchID'] && !(typeof data['batchID'] === 'string' || data['batchID'] instanceof String)) {
+            throw new Error("Expected the field `batchID` to be a primitive type in the JSON string but got " + data['batchID']);
         }
         // ensure the json data is a string
-        if (data['AssociatedAccountNumber'] && !(typeof data['AssociatedAccountNumber'] === 'string' || data['AssociatedAccountNumber'] instanceof String)) {
-            throw new Error("Expected the field `AssociatedAccountNumber` to be a primitive type in the JSON string but got " + data['AssociatedAccountNumber']);
+        if (data['equalPayments'] && !(typeof data['equalPayments'] === 'string' || data['equalPayments'] instanceof String)) {
+            throw new Error("Expected the field `equalPayments` to be a primitive type in the JSON string but got " + data['equalPayments']);
         }
         // ensure the json data is a string
-        if (data['Channel'] && !(typeof data['Channel'] === 'string' || data['Channel'] instanceof String)) {
-            throw new Error("Expected the field `Channel` to be a primitive type in the JSON string but got " + data['Channel']);
+        if (data['associatedAccountNumber'] && !(typeof data['associatedAccountNumber'] === 'string' || data['associatedAccountNumber'] instanceof String)) {
+            throw new Error("Expected the field `associatedAccountNumber` to be a primitive type in the JSON string but got " + data['associatedAccountNumber']);
         }
         // ensure the json data is a string
-        if (data['ChannelVersion'] && !(typeof data['ChannelVersion'] === 'string' || data['ChannelVersion'] instanceof String)) {
-            throw new Error("Expected the field `ChannelVersion` to be a primitive type in the JSON string but got " + data['ChannelVersion']);
+        if (data['channel'] && !(typeof data['channel'] === 'string' || data['channel'] instanceof String)) {
+            throw new Error("Expected the field `channel` to be a primitive type in the JSON string but got " + data['channel']);
+        }
+        // ensure the json data is a string
+        if (data['channelVersion'] && !(typeof data['channelVersion'] === 'string' || data['channelVersion'] instanceof String)) {
+            throw new Error("Expected the field `channelVersion` to be a primitive type in the JSON string but got " + data['channelVersion']);
         }
 
         return true;
@@ -190,140 +190,140 @@ class PFEndorsementRequestQuoteDetails {
 
 /**
  * This denotes the Commercial.
- * @member {String} Commercial
+ * @member {String} commercial
  */
-PFEndorsementRequestQuoteDetails.prototype['Commercial'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['commercial'] = undefined;
 
 /**
  * This denotes the Coupon.
- * @member {String} Coupon
+ * @member {String} coupon
  */
-PFEndorsementRequestQuoteDetails.prototype['Coupon'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['coupon'] = undefined;
 
 /**
  * This denotes the flag if invoice printed or not.
- * @member {Boolean} CouponInvoicePrinted
+ * @member {Boolean} couponInvoicePrinted
  */
-PFEndorsementRequestQuoteDetails.prototype['CouponInvoicePrinted'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['couponInvoicePrinted'] = undefined;
 
 /**
  * This denotes the Crd.
- * @member {Number} Crd
+ * @member {Number} crd
  */
-PFEndorsementRequestQuoteDetails.prototype['Crd'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['crd'] = undefined;
 
 /**
  * This denotes the Interval.
- * @member {String} Interval
+ * @member {String} interval
  */
-PFEndorsementRequestQuoteDetails.prototype['Interval'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['interval'] = undefined;
 
 /**
  * This denotes the number of installments.
- * @member {Number} Installments
+ * @member {Number} installments
  */
-PFEndorsementRequestQuoteDetails.prototype['Installments'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['installments'] = undefined;
 
 /**
  * This denotes the program ID.
- * @member {Number} ProgramID
+ * @member {Number} programID
  */
-PFEndorsementRequestQuoteDetails.prototype['ProgramID'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['programID'] = undefined;
 
 /**
  * This denotes the broker fees.
- * @member {Number} BrokerFee
+ * @member {Number} brokerFee
  */
-PFEndorsementRequestQuoteDetails.prototype['BrokerFee'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['brokerFee'] = undefined;
 
 /**
  * This denotes the eSign Option.
- * @member {String} ESignOption
+ * @member {String} eSignOption
  */
-PFEndorsementRequestQuoteDetails.prototype['ESignOption'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['eSignOption'] = undefined;
 
 /**
  * This denotes the flag that down payment is processed or not.
- * @member {Boolean} ProcessDownPayment
+ * @member {Boolean} processDownPayment
  */
-PFEndorsementRequestQuoteDetails.prototype['ProcessDownPayment'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['processDownPayment'] = undefined;
 
 /**
  * This denotes the Process Down Payment No Reason.
- * @member {String} ProcessDownPaymentNoReason
+ * @member {String} processDownPaymentNoReason
  */
-PFEndorsementRequestQuoteDetails.prototype['ProcessDownPaymentNoReason'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['processDownPaymentNoReason'] = undefined;
 
 /**
  * This denotes the Down Payment Method.
- * @member {String} DownPaymentMethod
+ * @member {String} downPaymentMethod
  */
-PFEndorsementRequestQuoteDetails.prototype['DownPaymentMethod'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['downPaymentMethod'] = undefined;
 
 /**
  * This denotes the Down Payment Paid by.
- * @member {String} DownPaymentPaidBy
+ * @member {String} downPaymentPaidBy
  */
-PFEndorsementRequestQuoteDetails.prototype['DownPaymentPaidBy'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['downPaymentPaidBy'] = undefined;
 
 /**
- * @member {module:model/PFEndorsementRequestQuoteDetailsRecurringACH} RecurringACH
+ * @member {module:model/PFEndorsementRequestQuoteDetailsRecurringACH} recurringACH
  */
-PFEndorsementRequestQuoteDetails.prototype['RecurringACH'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['recurringACH'] = undefined;
 
 /**
  * This denotes the batch ID.
- * @member {String} BatchID
+ * @member {String} batchID
  */
-PFEndorsementRequestQuoteDetails.prototype['BatchID'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['batchID'] = undefined;
 
 /**
  * This denotes the flag whether to return PFA or not.
- * @member {Boolean} ReturnPFA
+ * @member {Boolean} returnPFA
  */
-PFEndorsementRequestQuoteDetails.prototype['ReturnPFA'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['returnPFA'] = undefined;
 
 /**
  * This denotes the equal payments.
- * @member {String} EqualPayments
+ * @member {String} equalPayments
  */
-PFEndorsementRequestQuoteDetails.prototype['EqualPayments'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['equalPayments'] = undefined;
 
 /**
  * This denotes the number of days to expire.
- * @member {Number} QuoteExpirationDays
+ * @member {Number} quoteExpirationDays
  */
-PFEndorsementRequestQuoteDetails.prototype['QuoteExpirationDays'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['quoteExpirationDays'] = undefined;
 
 /**
  * This denotes the flag whether to bypass CADNB.
- * @member {Boolean} BypassCADNB
+ * @member {Boolean} bypassCADNB
  */
-PFEndorsementRequestQuoteDetails.prototype['BypassCADNB'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['bypassCADNB'] = undefined;
 
 /**
  * This denotes the Allow Zero APR.
- * @member {Boolean} AllowZeroAPR
+ * @member {Boolean} allowZeroAPR
  */
-PFEndorsementRequestQuoteDetails.prototype['AllowZeroAPR'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['allowZeroAPR'] = undefined;
 
 /**
  * This denotes the associated account number.
- * @member {String} AssociatedAccountNumber
+ * @member {String} associatedAccountNumber
  */
-PFEndorsementRequestQuoteDetails.prototype['AssociatedAccountNumber'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['associatedAccountNumber'] = undefined;
 
 /**
  * This denotes the channel.
- * @member {String} Channel
+ * @member {String} channel
  */
-PFEndorsementRequestQuoteDetails.prototype['Channel'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['channel'] = undefined;
 
 /**
  * This denotes the channel version.
- * @member {String} ChannelVersion
+ * @member {String} channelVersion
  */
-PFEndorsementRequestQuoteDetails.prototype['ChannelVersion'] = undefined;
+PFEndorsementRequestQuoteDetails.prototype['channelVersion'] = undefined;
 
 
 

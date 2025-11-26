@@ -75,8 +75,8 @@ class PFLitePaymentLinkRequestCustomersInnerAddress {
             if (data.hasOwnProperty('postalCode')) {
                 obj['postalCode'] = ApiClient.convertToType(data['postalCode'], 'String');
             }
-            if (data.hasOwnProperty('TimeZone')) {
-                obj['TimeZone'] = ApiClient.convertToType(data['TimeZone'], 'String');
+            if (data.hasOwnProperty('timeZone')) {
+                obj['timeZone'] = ApiClient.convertToType(data['timeZone'], 'String');
             }
         }
         return obj;
@@ -115,8 +115,8 @@ class PFLitePaymentLinkRequestCustomersInnerAddress {
             throw new Error("Expected the field `postalCode` to be a primitive type in the JSON string but got " + data['postalCode']);
         }
         // ensure the json data is a string
-        if (data['TimeZone'] && !(typeof data['TimeZone'] === 'string' || data['TimeZone'] instanceof String)) {
-            throw new Error("Expected the field `TimeZone` to be a primitive type in the JSON string but got " + data['TimeZone']);
+        if (data['timeZone'] && !(typeof data['timeZone'] === 'string' || data['timeZone'] instanceof String)) {
+            throw new Error("Expected the field `timeZone` to be a primitive type in the JSON string but got " + data['timeZone']);
         }
 
         return true;
@@ -158,9 +158,9 @@ PFLitePaymentLinkRequestCustomersInnerAddress.prototype['country'] = undefined;
 PFLitePaymentLinkRequestCustomersInnerAddress.prototype['postalCode'] = undefined;
 
 /**
- * @member {String} TimeZone
+ * @member {String} timeZone
  */
-PFLitePaymentLinkRequestCustomersInnerAddress.prototype['TimeZone'] = undefined;
+PFLitePaymentLinkRequestCustomersInnerAddress.prototype['timeZone'] = undefined;
 
 
 

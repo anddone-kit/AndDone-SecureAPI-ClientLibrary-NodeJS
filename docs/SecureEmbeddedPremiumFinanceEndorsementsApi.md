@@ -20,17 +20,6 @@ This API will do a check of eligibility of account
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureEmbeddedPremiumFinanceEndorsementsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -64,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -74,7 +63,7 @@ Name | Type | Description  | Notes
 
 ## secureEpfQuoteEndorsementBookingPut
 
-> PFUpdatePFAResponse secureEpfQuoteEndorsementBookingPut(xApiKey, xAppKey, xVersion, origin, pFQuoteBookingRequest)
+> PFUpdatePFAResponse secureEpfQuoteEndorsementBookingPut(xApiKey, xAppKey, xVersion, origin, securePFQuoteBookingRequest)
 
 This API will update PFA to book a endorsement quote.
 
@@ -82,25 +71,14 @@ This API will update PFA to book a endorsement quote.
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureEmbeddedPremiumFinanceEndorsementsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
 let xAppKey = "xAppKey_example"; // String | an authorization header
 let xVersion = 3.4; // Number | x-version
 let origin = "origin_example"; // String | origin
-let pFQuoteBookingRequest = new SecureApi.PFQuoteBookingRequest(); // PFQuoteBookingRequest | PFQuoteBooking Request details
-apiInstance.secureEpfQuoteEndorsementBookingPut(xApiKey, xAppKey, xVersion, origin, pFQuoteBookingRequest, (error, data, response) => {
+let securePFQuoteBookingRequest = new SecureApi.SecurePFQuoteBookingRequest(); // SecurePFQuoteBookingRequest | PFQuoteBooking Request details
+apiInstance.secureEpfQuoteEndorsementBookingPut(xApiKey, xAppKey, xVersion, origin, securePFQuoteBookingRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -118,7 +96,7 @@ Name | Type | Description  | Notes
  **xAppKey** | **String**| an authorization header | 
  **xVersion** | **Number**| x-version | 
  **origin** | **String**| origin | 
- **pFQuoteBookingRequest** | [**PFQuoteBookingRequest**](PFQuoteBookingRequest.md)| PFQuoteBooking Request details | 
+ **securePFQuoteBookingRequest** | [**SecurePFQuoteBookingRequest**](SecurePFQuoteBookingRequest.md)| PFQuoteBooking Request details | 
 
 ### Return type
 
@@ -126,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -144,17 +122,6 @@ This API will do return a quote for an existing policy or new policy for an exis
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureEmbeddedPremiumFinanceEndorsementsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -188,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 

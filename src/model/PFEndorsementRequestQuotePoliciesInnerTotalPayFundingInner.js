@@ -47,29 +47,29 @@ class PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner {
         if (data) {
             obj = obj || new PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner();
 
-            if (data.hasOwnProperty('PayTo')) {
-                obj['PayTo'] = ApiClient.convertToType(data['PayTo'], 'String');
+            if (data.hasOwnProperty('payTo')) {
+                obj['payTo'] = ApiClient.convertToType(data['payTo'], 'String');
             }
-            if (data.hasOwnProperty('PaymentMethod')) {
-                obj['PaymentMethod'] = ApiClient.convertToType(data['PaymentMethod'], 'String');
+            if (data.hasOwnProperty('paymentMethod')) {
+                obj['paymentMethod'] = ApiClient.convertToType(data['paymentMethod'], 'String');
             }
-            if (data.hasOwnProperty('FundingType')) {
-                obj['FundingType'] = ApiClient.convertToType(data['FundingType'], 'String');
+            if (data.hasOwnProperty('fundingType')) {
+                obj['fundingType'] = ApiClient.convertToType(data['fundingType'], 'String');
             }
-            if (data.hasOwnProperty('BankRoutingNumber')) {
-                obj['BankRoutingNumber'] = ApiClient.convertToType(data['BankRoutingNumber'], 'String');
+            if (data.hasOwnProperty('bankRoutingNumber')) {
+                obj['bankRoutingNumber'] = ApiClient.convertToType(data['bankRoutingNumber'], 'String');
             }
-            if (data.hasOwnProperty('BankAcctNumber')) {
-                obj['BankAcctNumber'] = ApiClient.convertToType(data['BankAcctNumber'], 'String');
+            if (data.hasOwnProperty('bankAcctNumber')) {
+                obj['bankAcctNumber'] = ApiClient.convertToType(data['bankAcctNumber'], 'String');
             }
-            if (data.hasOwnProperty('IsCheckingAccount')) {
-                obj['IsCheckingAccount'] = ApiClient.convertToType(data['IsCheckingAccount'], 'Boolean');
+            if (data.hasOwnProperty('isCheckingAccount')) {
+                obj['isCheckingAccount'] = ApiClient.convertToType(data['isCheckingAccount'], 'Boolean');
             }
-            if (data.hasOwnProperty('Amount')) {
-                obj['Amount'] = ApiClient.convertToType(data['Amount'], 'Number');
+            if (data.hasOwnProperty('amount')) {
+                obj['amount'] = ApiClient.convertToType(data['amount'], 'Number');
             }
-            if (data.hasOwnProperty('FundingDate')) {
-                obj['FundingDate'] = ApiClient.convertToType(data['FundingDate'], 'String');
+            if (data.hasOwnProperty('fundingDate')) {
+                obj['fundingDate'] = ApiClient.convertToType(data['fundingDate'], 'String');
             }
         }
         return obj;
@@ -82,28 +82,28 @@ class PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['PayTo'] && !(typeof data['PayTo'] === 'string' || data['PayTo'] instanceof String)) {
-            throw new Error("Expected the field `PayTo` to be a primitive type in the JSON string but got " + data['PayTo']);
+        if (data['payTo'] && !(typeof data['payTo'] === 'string' || data['payTo'] instanceof String)) {
+            throw new Error("Expected the field `payTo` to be a primitive type in the JSON string but got " + data['payTo']);
         }
         // ensure the json data is a string
-        if (data['PaymentMethod'] && !(typeof data['PaymentMethod'] === 'string' || data['PaymentMethod'] instanceof String)) {
-            throw new Error("Expected the field `PaymentMethod` to be a primitive type in the JSON string but got " + data['PaymentMethod']);
+        if (data['paymentMethod'] && !(typeof data['paymentMethod'] === 'string' || data['paymentMethod'] instanceof String)) {
+            throw new Error("Expected the field `paymentMethod` to be a primitive type in the JSON string but got " + data['paymentMethod']);
         }
         // ensure the json data is a string
-        if (data['FundingType'] && !(typeof data['FundingType'] === 'string' || data['FundingType'] instanceof String)) {
-            throw new Error("Expected the field `FundingType` to be a primitive type in the JSON string but got " + data['FundingType']);
+        if (data['fundingType'] && !(typeof data['fundingType'] === 'string' || data['fundingType'] instanceof String)) {
+            throw new Error("Expected the field `fundingType` to be a primitive type in the JSON string but got " + data['fundingType']);
         }
         // ensure the json data is a string
-        if (data['BankRoutingNumber'] && !(typeof data['BankRoutingNumber'] === 'string' || data['BankRoutingNumber'] instanceof String)) {
-            throw new Error("Expected the field `BankRoutingNumber` to be a primitive type in the JSON string but got " + data['BankRoutingNumber']);
+        if (data['bankRoutingNumber'] && !(typeof data['bankRoutingNumber'] === 'string' || data['bankRoutingNumber'] instanceof String)) {
+            throw new Error("Expected the field `bankRoutingNumber` to be a primitive type in the JSON string but got " + data['bankRoutingNumber']);
         }
         // ensure the json data is a string
-        if (data['BankAcctNumber'] && !(typeof data['BankAcctNumber'] === 'string' || data['BankAcctNumber'] instanceof String)) {
-            throw new Error("Expected the field `BankAcctNumber` to be a primitive type in the JSON string but got " + data['BankAcctNumber']);
+        if (data['bankAcctNumber'] && !(typeof data['bankAcctNumber'] === 'string' || data['bankAcctNumber'] instanceof String)) {
+            throw new Error("Expected the field `bankAcctNumber` to be a primitive type in the JSON string but got " + data['bankAcctNumber']);
         }
         // ensure the json data is a string
-        if (data['FundingDate'] && !(typeof data['FundingDate'] === 'string' || data['FundingDate'] instanceof String)) {
-            throw new Error("Expected the field `FundingDate` to be a primitive type in the JSON string but got " + data['FundingDate']);
+        if (data['fundingDate'] && !(typeof data['fundingDate'] === 'string' || data['fundingDate'] instanceof String)) {
+            throw new Error("Expected the field `fundingDate` to be a primitive type in the JSON string but got " + data['fundingDate']);
         }
 
         return true;
@@ -115,44 +115,44 @@ class PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner {
 
 
 /**
- * @member {String} PayTo
+ * @member {String} payTo
  */
-PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['PayTo'] = undefined;
+PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['payTo'] = undefined;
 
 /**
- * @member {String} PaymentMethod
+ * @member {String} paymentMethod
  */
-PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['PaymentMethod'] = undefined;
+PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['paymentMethod'] = undefined;
 
 /**
- * @member {String} FundingType
+ * @member {String} fundingType
  */
-PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['FundingType'] = undefined;
+PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['fundingType'] = undefined;
 
 /**
- * @member {String} BankRoutingNumber
+ * @member {String} bankRoutingNumber
  */
-PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['BankRoutingNumber'] = undefined;
+PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['bankRoutingNumber'] = undefined;
 
 /**
- * @member {String} BankAcctNumber
+ * @member {String} bankAcctNumber
  */
-PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['BankAcctNumber'] = undefined;
+PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['bankAcctNumber'] = undefined;
 
 /**
- * @member {Boolean} IsCheckingAccount
+ * @member {Boolean} isCheckingAccount
  */
-PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['IsCheckingAccount'] = undefined;
+PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['isCheckingAccount'] = undefined;
 
 /**
- * @member {Number} Amount
+ * @member {Number} amount
  */
-PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['Amount'] = undefined;
+PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['amount'] = undefined;
 
 /**
- * @member {String} FundingDate
+ * @member {String} fundingDate
  */
-PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['FundingDate'] = undefined;
+PFEndorsementRequestQuotePoliciesInnerTotalPayFundingInner.prototype['fundingDate'] = undefined;
 
 
 

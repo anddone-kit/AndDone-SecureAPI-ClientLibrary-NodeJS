@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **notifyViaSMS** | **Boolean** |  | [optional] 
 **notifyViaEmail** | **Boolean** |  | [optional] 
 **createdOn** | **String** |  | [optional] 
+**companyName** | **String** |  | [optional] 
 **accounts** | [**[PaymentLinkResponseCustomersInnerAccountsInner]**](PaymentLinkResponseCustomersInnerAccountsInner.md) |  | [optional] 
 **address** | [**TransactionPaymentResponseBillingContactAddress**](TransactionPaymentResponseBillingContactAddress.md) |  | [optional] 
 

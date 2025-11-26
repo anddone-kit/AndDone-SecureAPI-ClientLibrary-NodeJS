@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **vendorName** | **String** |  | 
 **vendorAliasName** | **String** |  | [optional] 
-**vendorDbName** | **String** | Database name of the vendor | 
+**vendorDbName** | **String** | Database name of the vendor | [optional] 
 **legalEntityType** | **String** |  | 
 **paymentMethodType** | **String** |  | 
 **notificationType** | **String** |  | 

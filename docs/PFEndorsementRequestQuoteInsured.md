@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **isCancellationWarningEnabled** | **Boolean** | Indicates if cancellation warnings are enabled. | [optional] 
 **faxNumber** | **String** | This denotes the fax number. | [optional] 
 **emailAddress** | **String** | This denotes an alternate email address. | [optional] 
-**pFType** | **String** | This denotes the PFType (enum or string depending on your definition). | [optional] 
+**pfType** | **String** | This denotes the PFType (enum or string depending on your definition). | [optional] 
 **address** | [**PFEndorsementRequestQuoteInsuredAddress**](PFEndorsementRequestQuoteInsuredAddress.md) |  | [optional] 
 **hasDataChangeAgentCustomerNumber** | **Boolean** |  | [optional] 
 **hasDataChangeName** | **Boolean** |  | [optional] 
@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 
 
 
-## Enum: PFTypeEnum
+## Enum: PfTypeEnum
 
 
 * `None` (value: `"None"`)

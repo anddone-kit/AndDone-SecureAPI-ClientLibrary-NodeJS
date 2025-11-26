@@ -114,12 +114,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property customerAccountId (base name: "customerAccountId")', function() {
-      // uncomment below and update the code to test the property customerAccountId
-      //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
-      //expect(instance).to.be();
-    });
-
     it('should have the property recurringId (base name: "recurringId")', function() {
       // uncomment below and update the code to test the property recurringId
       //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
@@ -210,12 +204,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property tipAmount (base name: "tipAmount")', function() {
-      // uncomment below and update the code to test the property tipAmount
-      //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
-      //expect(instance).to.be();
-    });
-
     it('should have the property convenienceAmount (base name: "convenienceAmount")', function() {
       // uncomment below and update the code to test the property convenienceAmount
       //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
@@ -224,18 +212,6 @@
 
     it('should have the property captureAmount (base name: "captureAmount")', function() {
       // uncomment below and update the code to test the property captureAmount
-      //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property taxPercent (base name: "taxPercent")', function() {
-      // uncomment below and update the code to test the property taxPercent
-      //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property taxAmount (base name: "taxAmount")', function() {
-      // uncomment below and update the code to test the property taxAmount
       //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
       //expect(instance).to.be();
     });
@@ -314,6 +290,12 @@
 
     it('should have the property processorName (base name: "processorName")', function() {
       // uncomment below and update the code to test the property processorName
+      //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property processorDisplayName (base name: "processorDisplayName")', function() {
+      // uncomment below and update the code to test the property processorDisplayName
       //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
       //expect(instance).to.be();
     });
@@ -408,6 +390,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property accountToken (base name: "accountToken")', function() {
+      // uncomment below and update the code to test the property accountToken
+      //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property paymentType (base name: "paymentType")', function() {
       // uncomment below and update the code to test the property paymentType
       //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
@@ -416,6 +404,18 @@
 
     it('should have the property paymentCategory (base name: "paymentCategory")', function() {
       // uncomment below and update the code to test the property paymentCategory
+      //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property refundReason (base name: "refundReason")', function() {
+      // uncomment below and update the code to test the property refundReason
+      //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property refundDetail (base name: "refundDetail")', function() {
+      // uncomment below and update the code to test the property refundDetail
       //var instance = new SecureApi.MerchantTransactionEntityResponseDataInner();
       //expect(instance).to.be();
     });

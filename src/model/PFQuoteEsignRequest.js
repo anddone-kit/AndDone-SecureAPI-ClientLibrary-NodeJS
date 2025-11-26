@@ -72,6 +72,9 @@ class PFQuoteEsignRequest {
             if (data.hasOwnProperty('actionName')) {
                 obj['actionName'] = ApiClient.convertToType(data['actionName'], 'String');
             }
+            if (data.hasOwnProperty('isSignAPA')) {
+                obj['isSignAPA'] = ApiClient.convertToType(data['isSignAPA'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -166,6 +169,12 @@ PFQuoteEsignRequest.prototype['captchaToken'] = undefined;
  * @member {String} actionName
  */
 PFQuoteEsignRequest.prototype['actionName'] = undefined;
+
+/**
+ * This denotes isSignAPA status.
+ * @member {Boolean} isSignAPA
+ */
+PFQuoteEsignRequest.prototype['isSignAPA'] = undefined;
 
 
 

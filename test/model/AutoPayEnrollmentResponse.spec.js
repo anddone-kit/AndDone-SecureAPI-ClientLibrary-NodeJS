@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SecureApi.PFRetrievePFAResponse();
+    instance = new SecureApi.AutoPayEnrollmentResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,52 +47,28 @@
       object[property] = value;
   }
 
-  describe('PFRetrievePFAResponse', function() {
-    it('should create an instance of PFRetrievePFAResponse', function() {
-      // uncomment below and update the code to test PFRetrievePFAResponse
-      //var instance = new SecureApi.PFRetrievePFAResponse();
-      //expect(instance).to.be.a(SecureApi.PFRetrievePFAResponse);
-    });
-
-    it('should have the property pfa (base name: "pfa")', function() {
-      // uncomment below and update the code to test the property pfa
-      //var instance = new SecureApi.PFRetrievePFAResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property mimetype (base name: "mimetype")', function() {
-      // uncomment below and update the code to test the property mimetype
-      //var instance = new SecureApi.PFRetrievePFAResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property extension (base name: "extension")', function() {
-      // uncomment below and update the code to test the property extension
-      //var instance = new SecureApi.PFRetrievePFAResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property filename (base name: "filename")', function() {
-      // uncomment below and update the code to test the property filename
-      //var instance = new SecureApi.PFRetrievePFAResponse();
-      //expect(instance).to.be();
+  describe('AutoPayEnrollmentResponse', function() {
+    it('should create an instance of AutoPayEnrollmentResponse', function() {
+      // uncomment below and update the code to test AutoPayEnrollmentResponse
+      //var instance = new SecureApi.AutoPayEnrollmentResponse();
+      //expect(instance).to.be.a(SecureApi.AutoPayEnrollmentResponse);
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new SecureApi.PFRetrievePFAResponse();
+      //var instance = new SecureApi.AutoPayEnrollmentResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property isSuccess (base name: "isSuccess")', function() {
       // uncomment below and update the code to test the property isSuccess
-      //var instance = new SecureApi.PFRetrievePFAResponse();
+      //var instance = new SecureApi.AutoPayEnrollmentResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property integrationID (base name: "integrationID")', function() {
       // uncomment below and update the code to test the property integrationID
-      //var instance = new SecureApi.PFRetrievePFAResponse();
+      //var instance = new SecureApi.AutoPayEnrollmentResponse();
       //expect(instance).to.be();
     });
 

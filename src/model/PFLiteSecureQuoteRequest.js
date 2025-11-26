@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import PFLiteSecureQuoteRequestAgent from './PFLiteSecureQuoteRequestAgent';
 import PFLiteSecureQuoteRequestInsured from './PFLiteSecureQuoteRequestInsured';
 import PFLiteSecureQuoteRequestMerchant from './PFLiteSecureQuoteRequestMerchant';
 import PFLiteSecureQuoteRequestPoliciesInner from './PFLiteSecureQuoteRequestPoliciesInner';
@@ -79,6 +80,12 @@ class PFLiteSecureQuoteRequest {
             if (data.hasOwnProperty('policies')) {
                 obj['policies'] = ApiClient.convertToType(data['policies'], [PFLiteSecureQuoteRequestPoliciesInner]);
             }
+            if (data.hasOwnProperty('offerAutoPay')) {
+                obj['offerAutoPay'] = ApiClient.convertToType(data['offerAutoPay'], 'Boolean');
+            }
+            if (data.hasOwnProperty('agent')) {
+                obj['agent'] = PFLiteSecureQuoteRequestAgent.constructFromObject(data['agent']);
+            }
         }
         return obj;
     }
@@ -121,6 +128,10 @@ class PFLiteSecureQuoteRequest {
                 PFLiteSecureQuoteRequestPoliciesInner.validateJSON(item);
             };
         }
+        // validate the optional field `agent`
+        if (data['agent']) { // data not null
+          PFLiteSecureQuoteRequestAgent.validateJSON(data['agent']);
+        }
 
         return true;
     }
@@ -159,6 +170,16 @@ PFLiteSecureQuoteRequest.prototype['program'] = undefined;
  * @member {Array.<module:model/PFLiteSecureQuoteRequestPoliciesInner>} policies
  */
 PFLiteSecureQuoteRequest.prototype['policies'] = undefined;
+
+/**
+ * @member {Boolean} offerAutoPay
+ */
+PFLiteSecureQuoteRequest.prototype['offerAutoPay'] = undefined;
+
+/**
+ * @member {module:model/PFLiteSecureQuoteRequestAgent} agent
+ */
+PFLiteSecureQuoteRequest.prototype['agent'] = undefined;
 
 
 

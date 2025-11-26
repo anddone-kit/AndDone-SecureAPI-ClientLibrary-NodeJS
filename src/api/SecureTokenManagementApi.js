@@ -89,7 +89,7 @@ export default class SecureTokenManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;
@@ -154,7 +154,7 @@ export default class SecureTokenManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = SecureMerchantTokenShortResponse;

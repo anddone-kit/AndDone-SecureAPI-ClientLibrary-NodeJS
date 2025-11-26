@@ -13,6 +13,8 @@
 
 
 import ApiClient from './ApiClient';
+import AutoPayEnrollmentRequest from './model/AutoPayEnrollmentRequest';
+import AutoPayEnrollmentResponse from './model/AutoPayEnrollmentResponse';
 import BankDetailDto from './model/BankDetailDto';
 import CancelPaymentRequestDTO from './model/CancelPaymentRequestDTO';
 import DataDto from './model/DataDto';
@@ -21,6 +23,7 @@ import GetQuoteRequest from './model/GetQuoteRequest';
 import HeadingDto from './model/HeadingDto';
 import MerchantTransactionEntityResponse from './model/MerchantTransactionEntityResponse';
 import MerchantTransactionEntityResponseDataInner from './model/MerchantTransactionEntityResponseDataInner';
+import OutboundPaymentImageResponseDTO from './model/OutboundPaymentImageResponseDTO';
 import OutboundPaymentTimelineResponseDTOInner from './model/OutboundPaymentTimelineResponseDTOInner';
 import PFCheckEndorsementsRequest from './model/PFCheckEndorsementsRequest';
 import PFCheckEndorsementsResponse from './model/PFCheckEndorsementsResponse';
@@ -28,8 +31,6 @@ import PFCheckEndorsementsResponseItem from './model/PFCheckEndorsementsResponse
 import PFCheckEndorsementsResponseItemPoliciesInner from './model/PFCheckEndorsementsResponseItemPoliciesInner';
 import PFEndorsementRequest from './model/PFEndorsementRequest';
 import PFEndorsementRequestQuote from './model/PFEndorsementRequestQuote';
-import PFEndorsementRequestQuoteAgent from './model/PFEndorsementRequestQuoteAgent';
-import PFEndorsementRequestQuoteAgentAddress from './model/PFEndorsementRequestQuoteAgentAddress';
 import PFEndorsementRequestQuoteCommunication from './model/PFEndorsementRequestQuoteCommunication';
 import PFEndorsementRequestQuoteDetails from './model/PFEndorsementRequestQuoteDetails';
 import PFEndorsementRequestQuoteDetailsRecurringACH from './model/PFEndorsementRequestQuoteDetailsRecurringACH';
@@ -63,6 +64,8 @@ import PFLiteQuoteByPaymentLinkResponse from './model/PFLiteQuoteByPaymentLinkRe
 import PFLiteQuoteByPaymentLinkResponsePoliciesInner from './model/PFLiteQuoteByPaymentLinkResponsePoliciesInner';
 import PFLiteQuoteByPaymentLinkResponsePoliciesInnerCarrier from './model/PFLiteQuoteByPaymentLinkResponsePoliciesInnerCarrier';
 import PFLiteSecureQuoteRequest from './model/PFLiteSecureQuoteRequest';
+import PFLiteSecureQuoteRequestAgent from './model/PFLiteSecureQuoteRequestAgent';
+import PFLiteSecureQuoteRequestAgentAddress from './model/PFLiteSecureQuoteRequestAgentAddress';
 import PFLiteSecureQuoteRequestInsured from './model/PFLiteSecureQuoteRequestInsured';
 import PFLiteSecureQuoteRequestInsuredAddress from './model/PFLiteSecureQuoteRequestInsuredAddress';
 import PFLiteSecureQuoteRequestMerchant from './model/PFLiteSecureQuoteRequestMerchant';
@@ -97,8 +100,10 @@ import PaymentIntentRequestReferenceDataListInner from './model/PaymentIntentReq
 import PaymentIntentRequestSplitsInner from './model/PaymentIntentRequestSplitsInner';
 import PaymentIntentResponse from './model/PaymentIntentResponse';
 import PaymentIntentResponseCustomersInner from './model/PaymentIntentResponseCustomersInner';
+import PaymentIntentResponseIntent from './model/PaymentIntentResponseIntent';
 import PaymentLinkExpiresResponse from './model/PaymentLinkExpiresResponse';
 import PaymentLinkRequest from './model/PaymentLinkRequest';
+import PaymentLinkRequestReferenceDataListInner from './model/PaymentLinkRequestReferenceDataListInner';
 import PaymentLinkRequestSettings from './model/PaymentLinkRequestSettings';
 import PaymentLinkRequestSettingsIntent from './model/PaymentLinkRequestSettingsIntent';
 import PaymentLinkResponse from './model/PaymentLinkResponse';
@@ -121,7 +126,6 @@ import PaymentResponseDto from './model/PaymentResponseDto';
 import PaymentTimeLineRequestDto from './model/PaymentTimeLineRequestDto';
 import QuoteRequest from './model/QuoteRequest';
 import QuoteRequestAgent from './model/QuoteRequestAgent';
-import QuoteRequestAgentAddress from './model/QuoteRequestAgentAddress';
 import QuoteRequestDetails from './model/QuoteRequestDetails';
 import QuoteRequestInsured from './model/QuoteRequestInsured';
 import QuoteRequestInsuredAddress from './model/QuoteRequestInsuredAddress';
@@ -137,6 +141,7 @@ import RowDto from './model/RowDto';
 import SecureBatchExecuteRequest from './model/SecureBatchExecuteRequest';
 import SecureCancelledTransactionResponse from './model/SecureCancelledTransactionResponse';
 import SecureMerchantTokenShortResponse from './model/SecureMerchantTokenShortResponse';
+import SecurePFQuoteBookingRequest from './model/SecurePFQuoteBookingRequest';
 import SecurePaymentBatchDetailsRequest from './model/SecurePaymentBatchDetailsRequest';
 import SecurePaymentDetailsRequest from './model/SecurePaymentDetailsRequest';
 import SecurePaymentLinkRequest from './model/SecurePaymentLinkRequest';
@@ -167,7 +172,6 @@ import TokenLinkResponse from './model/TokenLinkResponse';
 import TokenLinkResponseDataInner from './model/TokenLinkResponseDataInner';
 import TokenLinkSecureRequest from './model/TokenLinkSecureRequest';
 import TokenLinkSecureRequestCustomersInner from './model/TokenLinkSecureRequestCustomersInner';
-import TokenLinkSecureRequestIntent from './model/TokenLinkSecureRequestIntent';
 import TokenRequest from './model/TokenRequest';
 import TransactionDetailResponse from './model/TransactionDetailResponse';
 import TransactionDetailResponseSplitsInner from './model/TransactionDetailResponseSplitsInner';
@@ -194,14 +198,9 @@ import VendorResponseDTORemittanceAddress from './model/VendorResponseDTORemitta
 import VendorResponseDTOTemplate from './model/VendorResponseDTOTemplate';
 import VendorResponseDTOVerificationResultsInner from './model/VendorResponseDTOVerificationResultsInner';
 import VendorTimelineResponseListInner from './model/VendorTimelineResponseListInner';
-import VerificationEntityRequest from './model/VerificationEntityRequest';
-import VerifyBankAccountRequest from './model/VerifyBankAccountRequest';
-import VerifyBankAccountRequestBankAccountEntity from './model/VerifyBankAccountRequestBankAccountEntity';
-import VerifyBankAccountResponse from './model/VerifyBankAccountResponse';
-import VerifyBankAccountResponseHttpResponse from './model/VerifyBankAccountResponseHttpResponse';
+import SecureAutopayEnrollmentApi from './api/SecureAutopayEnrollmentApi';
 import SecureEmbeddedPremiumFinanceApi from './api/SecureEmbeddedPremiumFinanceApi';
 import SecureEmbeddedPremiumFinanceEndorsementsApi from './api/SecureEmbeddedPremiumFinanceEndorsementsApi';
-import SecureOrumApi from './api/SecureOrumApi';
 import SecureOutboundPaymentsApi from './api/SecureOutboundPaymentsApi';
 import SecurePaymentBatchingApi from './api/SecurePaymentBatchingApi';
 import SecurePaymentIntentApi from './api/SecurePaymentIntentApi';
@@ -255,6 +254,18 @@ export {
     ApiClient,
 
     /**
+     * The AutoPayEnrollmentRequest model constructor.
+     * @property {module:model/AutoPayEnrollmentRequest}
+     */
+    AutoPayEnrollmentRequest,
+
+    /**
+     * The AutoPayEnrollmentResponse model constructor.
+     * @property {module:model/AutoPayEnrollmentResponse}
+     */
+    AutoPayEnrollmentResponse,
+
+    /**
      * The BankDetailDto model constructor.
      * @property {module:model/BankDetailDto}
      */
@@ -303,6 +314,12 @@ export {
     MerchantTransactionEntityResponseDataInner,
 
     /**
+     * The OutboundPaymentImageResponseDTO model constructor.
+     * @property {module:model/OutboundPaymentImageResponseDTO}
+     */
+    OutboundPaymentImageResponseDTO,
+
+    /**
      * The OutboundPaymentTimelineResponseDTOInner model constructor.
      * @property {module:model/OutboundPaymentTimelineResponseDTOInner}
      */
@@ -343,18 +360,6 @@ export {
      * @property {module:model/PFEndorsementRequestQuote}
      */
     PFEndorsementRequestQuote,
-
-    /**
-     * The PFEndorsementRequestQuoteAgent model constructor.
-     * @property {module:model/PFEndorsementRequestQuoteAgent}
-     */
-    PFEndorsementRequestQuoteAgent,
-
-    /**
-     * The PFEndorsementRequestQuoteAgentAddress model constructor.
-     * @property {module:model/PFEndorsementRequestQuoteAgentAddress}
-     */
-    PFEndorsementRequestQuoteAgentAddress,
 
     /**
      * The PFEndorsementRequestQuoteCommunication model constructor.
@@ -553,6 +558,18 @@ export {
      * @property {module:model/PFLiteSecureQuoteRequest}
      */
     PFLiteSecureQuoteRequest,
+
+    /**
+     * The PFLiteSecureQuoteRequestAgent model constructor.
+     * @property {module:model/PFLiteSecureQuoteRequestAgent}
+     */
+    PFLiteSecureQuoteRequestAgent,
+
+    /**
+     * The PFLiteSecureQuoteRequestAgentAddress model constructor.
+     * @property {module:model/PFLiteSecureQuoteRequestAgentAddress}
+     */
+    PFLiteSecureQuoteRequestAgentAddress,
 
     /**
      * The PFLiteSecureQuoteRequestInsured model constructor.
@@ -759,6 +776,12 @@ export {
     PaymentIntentResponseCustomersInner,
 
     /**
+     * The PaymentIntentResponseIntent model constructor.
+     * @property {module:model/PaymentIntentResponseIntent}
+     */
+    PaymentIntentResponseIntent,
+
+    /**
      * The PaymentLinkExpiresResponse model constructor.
      * @property {module:model/PaymentLinkExpiresResponse}
      */
@@ -769,6 +792,12 @@ export {
      * @property {module:model/PaymentLinkRequest}
      */
     PaymentLinkRequest,
+
+    /**
+     * The PaymentLinkRequestReferenceDataListInner model constructor.
+     * @property {module:model/PaymentLinkRequestReferenceDataListInner}
+     */
+    PaymentLinkRequestReferenceDataListInner,
 
     /**
      * The PaymentLinkRequestSettings model constructor.
@@ -903,12 +932,6 @@ export {
     QuoteRequestAgent,
 
     /**
-     * The QuoteRequestAgentAddress model constructor.
-     * @property {module:model/QuoteRequestAgentAddress}
-     */
-    QuoteRequestAgentAddress,
-
-    /**
      * The QuoteRequestDetails model constructor.
      * @property {module:model/QuoteRequestDetails}
      */
@@ -997,6 +1020,12 @@ export {
      * @property {module:model/SecureMerchantTokenShortResponse}
      */
     SecureMerchantTokenShortResponse,
+
+    /**
+     * The SecurePFQuoteBookingRequest model constructor.
+     * @property {module:model/SecurePFQuoteBookingRequest}
+     */
+    SecurePFQuoteBookingRequest,
 
     /**
      * The SecurePaymentBatchDetailsRequest model constructor.
@@ -1179,12 +1208,6 @@ export {
     TokenLinkSecureRequestCustomersInner,
 
     /**
-     * The TokenLinkSecureRequestIntent model constructor.
-     * @property {module:model/TokenLinkSecureRequestIntent}
-     */
-    TokenLinkSecureRequestIntent,
-
-    /**
      * The TokenRequest model constructor.
      * @property {module:model/TokenRequest}
      */
@@ -1341,34 +1364,10 @@ export {
     VendorTimelineResponseListInner,
 
     /**
-     * The VerificationEntityRequest model constructor.
-     * @property {module:model/VerificationEntityRequest}
-     */
-    VerificationEntityRequest,
-
-    /**
-     * The VerifyBankAccountRequest model constructor.
-     * @property {module:model/VerifyBankAccountRequest}
-     */
-    VerifyBankAccountRequest,
-
-    /**
-     * The VerifyBankAccountRequestBankAccountEntity model constructor.
-     * @property {module:model/VerifyBankAccountRequestBankAccountEntity}
-     */
-    VerifyBankAccountRequestBankAccountEntity,
-
-    /**
-     * The VerifyBankAccountResponse model constructor.
-     * @property {module:model/VerifyBankAccountResponse}
-     */
-    VerifyBankAccountResponse,
-
-    /**
-     * The VerifyBankAccountResponseHttpResponse model constructor.
-     * @property {module:model/VerifyBankAccountResponseHttpResponse}
-     */
-    VerifyBankAccountResponseHttpResponse,
+    * The SecureAutopayEnrollmentApi service constructor.
+    * @property {module:api/SecureAutopayEnrollmentApi}
+    */
+    SecureAutopayEnrollmentApi,
 
     /**
     * The SecureEmbeddedPremiumFinanceApi service constructor.
@@ -1381,12 +1380,6 @@ export {
     * @property {module:api/SecureEmbeddedPremiumFinanceEndorsementsApi}
     */
     SecureEmbeddedPremiumFinanceEndorsementsApi,
-
-    /**
-    * The SecureOrumApi service constructor.
-    * @property {module:api/SecureOrumApi}
-    */
-    SecureOrumApi,
 
     /**
     * The SecureOutboundPaymentsApi service constructor.

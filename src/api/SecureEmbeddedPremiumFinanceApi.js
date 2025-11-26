@@ -96,7 +96,7 @@ export default class SecureEmbeddedPremiumFinanceApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PFPolicyUpdateResponse;
@@ -161,7 +161,7 @@ export default class SecureEmbeddedPremiumFinanceApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PFUpdatePFAResponse;
@@ -223,7 +223,7 @@ export default class SecureEmbeddedPremiumFinanceApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;
@@ -286,7 +286,7 @@ export default class SecureEmbeddedPremiumFinanceApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = [PFGenerateQuoteResponse];
@@ -412,7 +412,7 @@ export default class SecureEmbeddedPremiumFinanceApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = QuoteResponse;
@@ -475,7 +475,7 @@ export default class SecureEmbeddedPremiumFinanceApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = 'String';

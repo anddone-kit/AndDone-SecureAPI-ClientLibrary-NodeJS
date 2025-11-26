@@ -14,11 +14,11 @@
 import ApiClient from '../ApiClient';
 import PaymentIntentRequestPfr from './PaymentIntentRequestPfr';
 import PaymentIntentRequestSplitsInner from './PaymentIntentRequestSplitsInner';
+import PaymentLinkRequestReferenceDataListInner from './PaymentLinkRequestReferenceDataListInner';
 import PaymentLinkRequestSettings from './PaymentLinkRequestSettings';
 import PaymentLinkResponseCallbackParameters from './PaymentLinkResponseCallbackParameters';
 import PaymentLinkResponseCustomersInner from './PaymentLinkResponseCustomersInner';
 import PaymentLinkResponseLineItemsInner from './PaymentLinkResponseLineItemsInner';
-import PaymentLinkResponseReferenceDataListInner from './PaymentLinkResponseReferenceDataListInner';
 
 /**
  * The PaymentLinkRequest model module.
@@ -32,14 +32,15 @@ class PaymentLinkRequest {
      * @param merchantId {String} 
      * @param title {String} 
      * @param amount {Number} 
+     * @param paymentDescription {String} 
      * @param expireIn {Number} 
      * @param expireInUnit {module:model/PaymentLinkRequest.ExpireInUnitEnum} 
      * @param settings {module:model/PaymentLinkRequestSettings} 
-     * @param referenceDataList {Array.<module:model/PaymentLinkResponseReferenceDataListInner>} 
+     * @param referenceDataList {Array.<module:model/PaymentLinkRequestReferenceDataListInner>} 
      */
-    constructor(merchantId, title, amount, expireIn, expireInUnit, settings, referenceDataList) { 
+    constructor(merchantId, title, amount, paymentDescription, expireIn, expireInUnit, settings, referenceDataList) { 
         
-        PaymentLinkRequest.initialize(this, merchantId, title, amount, expireIn, expireInUnit, settings, referenceDataList);
+        PaymentLinkRequest.initialize(this, merchantId, title, amount, paymentDescription, expireIn, expireInUnit, settings, referenceDataList);
     }
 
     /**
@@ -47,10 +48,11 @@ class PaymentLinkRequest {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, merchantId, title, amount, expireIn, expireInUnit, settings, referenceDataList) { 
+    static initialize(obj, merchantId, title, amount, paymentDescription, expireIn, expireInUnit, settings, referenceDataList) { 
         obj['merchantId'] = merchantId;
         obj['title'] = title;
         obj['amount'] = amount;
+        obj['paymentDescription'] = paymentDescription;
         obj['expireIn'] = expireIn;
         obj['expireInUnit'] = expireInUnit;
         obj['settings'] = settings;
@@ -138,7 +140,7 @@ class PaymentLinkRequest {
                 obj['referenceKey'] = ApiClient.convertToType(data['referenceKey'], 'String');
             }
             if (data.hasOwnProperty('referenceDataList')) {
-                obj['referenceDataList'] = ApiClient.convertToType(data['referenceDataList'], [PaymentLinkResponseReferenceDataListInner]);
+                obj['referenceDataList'] = ApiClient.convertToType(data['referenceDataList'], [PaymentLinkRequestReferenceDataListInner]);
             }
             if (data.hasOwnProperty('enablePremiumFinance')) {
                 obj['enablePremiumFinance'] = ApiClient.convertToType(data['enablePremiumFinance'], 'Boolean');
@@ -281,7 +283,7 @@ class PaymentLinkRequest {
             }
             // validate the optional field `referenceDataList` (array)
             for (const item of data['referenceDataList']) {
-                PaymentLinkResponseReferenceDataListInner.validateJSON(item);
+                PaymentLinkRequestReferenceDataListInner.validateJSON(item);
             };
         }
         // ensure the json data is a string
@@ -303,7 +305,7 @@ class PaymentLinkRequest {
 
 }
 
-PaymentLinkRequest.RequiredProperties = ["merchantId", "title", "amount", "expireIn", "expireInUnit", "settings", "referenceDataList"];
+PaymentLinkRequest.RequiredProperties = ["merchantId", "title", "amount", "paymentDescription", "expireIn", "expireInUnit", "settings", "referenceDataList"];
 
 /**
  * @member {String} merchantId
@@ -421,7 +423,7 @@ PaymentLinkRequest.prototype['referenceNumber'] = undefined;
 PaymentLinkRequest.prototype['referenceKey'] = undefined;
 
 /**
- * @member {Array.<module:model/PaymentLinkResponseReferenceDataListInner>} referenceDataList
+ * @member {Array.<module:model/PaymentLinkRequestReferenceDataListInner>} referenceDataList
  */
 PaymentLinkRequest.prototype['referenceDataList'] = undefined;
 

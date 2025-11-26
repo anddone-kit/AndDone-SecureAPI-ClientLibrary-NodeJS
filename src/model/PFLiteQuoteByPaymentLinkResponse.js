@@ -124,6 +124,9 @@ class PFLiteQuoteByPaymentLinkResponse {
             if (data.hasOwnProperty('batchId')) {
                 obj['batchId'] = ApiClient.convertToType(data['batchId'], 'String');
             }
+            if (data.hasOwnProperty('autopayStatus')) {
+                obj['autopayStatus'] = ApiClient.convertToType(data['autopayStatus'], 'String');
+            }
             if (data.hasOwnProperty('paymentsRetained')) {
                 obj['paymentsRetained'] = ApiClient.convertToType(data['paymentsRetained'], 'Number');
             }
@@ -227,6 +230,10 @@ class PFLiteQuoteByPaymentLinkResponse {
         // ensure the json data is a string
         if (data['batchId'] && !(typeof data['batchId'] === 'string' || data['batchId'] instanceof String)) {
             throw new Error("Expected the field `batchId` to be a primitive type in the JSON string but got " + data['batchId']);
+        }
+        // ensure the json data is a string
+        if (data['autopayStatus'] && !(typeof data['autopayStatus'] === 'string' || data['autopayStatus'] instanceof String)) {
+            throw new Error("Expected the field `autopayStatus` to be a primitive type in the JSON string but got " + data['autopayStatus']);
         }
         // ensure the json data is a string
         if (data['retailAgentRegisterLoginURL'] && !(typeof data['retailAgentRegisterLoginURL'] === 'string' || data['retailAgentRegisterLoginURL'] instanceof String)) {
@@ -425,6 +432,12 @@ PFLiteQuoteByPaymentLinkResponse.prototype['installments'] = undefined;
  * @member {String} batchId
  */
 PFLiteQuoteByPaymentLinkResponse.prototype['batchId'] = undefined;
+
+/**
+ * Autopayment status
+ * @member {String} autopayStatus
+ */
+PFLiteQuoteByPaymentLinkResponse.prototype['autopayStatus'] = undefined;
 
 /**
  * Number of payments retained

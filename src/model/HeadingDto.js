@@ -53,6 +53,9 @@ class HeadingDto {
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
             }
+            if (data.hasOwnProperty('isAggregateAmount')) {
+                obj['isAggregateAmount'] = ApiClient.convertToType(data['isAggregateAmount'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -89,6 +92,11 @@ HeadingDto.prototype['name'] = undefined;
  * @member {String} type
  */
 HeadingDto.prototype['type'] = undefined;
+
+/**
+ * @member {Boolean} isAggregateAmount
+ */
+HeadingDto.prototype['isAggregateAmount'] = undefined;
 
 
 

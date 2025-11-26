@@ -78,7 +78,7 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "Data")', function() {
+    it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
       //var instance = new SecureApi.PaymentRequestDto();
       //expect(instance).to.be();

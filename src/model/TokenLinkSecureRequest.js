@@ -12,9 +12,9 @@
  */
 
 import ApiClient from '../ApiClient';
+import PaymentIntentRequestIntent from './PaymentIntentRequestIntent';
 import PaymentLinkResponseCallbackParameters from './PaymentLinkResponseCallbackParameters';
 import TokenLinkSecureRequestCustomersInner from './TokenLinkSecureRequestCustomersInner';
-import TokenLinkSecureRequestIntent from './TokenLinkSecureRequestIntent';
 
 /**
  * The TokenLinkSecureRequest model module.
@@ -28,7 +28,7 @@ class TokenLinkSecureRequest {
      * @param title {String} 
      * @param expireIn {Number} 
      * @param expireInUnit {module:model/TokenLinkSecureRequest.ExpireInUnitEnum} 
-     * @param intent {module:model/TokenLinkSecureRequestIntent} 
+     * @param intent {module:model/PaymentIntentRequestIntent} 
      */
     constructor(title, expireIn, expireInUnit, intent) { 
         
@@ -74,7 +74,7 @@ class TokenLinkSecureRequest {
                 obj['responseType'] = ApiClient.convertToType(data['responseType'], 'String');
             }
             if (data.hasOwnProperty('intent')) {
-                obj['intent'] = TokenLinkSecureRequestIntent.constructFromObject(data['intent']);
+                obj['intent'] = PaymentIntentRequestIntent.constructFromObject(data['intent']);
             }
             if (data.hasOwnProperty('callbackParameters')) {
                 obj['callbackParameters'] = PaymentLinkResponseCallbackParameters.constructFromObject(data['callbackParameters']);
@@ -116,7 +116,7 @@ class TokenLinkSecureRequest {
         }
         // validate the optional field `intent`
         if (data['intent']) { // data not null
-          TokenLinkSecureRequestIntent.validateJSON(data['intent']);
+          PaymentIntentRequestIntent.validateJSON(data['intent']);
         }
         // validate the optional field `callbackParameters`
         if (data['callbackParameters']) { // data not null
@@ -167,7 +167,7 @@ TokenLinkSecureRequest.prototype['expireInUnit'] = undefined;
 TokenLinkSecureRequest.prototype['responseType'] = undefined;
 
 /**
- * @member {module:model/TokenLinkSecureRequestIntent} intent
+ * @member {module:model/PaymentIntentRequestIntent} intent
  */
 TokenLinkSecureRequest.prototype['intent'] = undefined;
 

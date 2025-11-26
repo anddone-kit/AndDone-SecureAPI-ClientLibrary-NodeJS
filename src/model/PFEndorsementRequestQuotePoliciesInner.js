@@ -58,7 +58,7 @@ class PFEndorsementRequestQuotePoliciesInner {
             obj = obj || new PFEndorsementRequestQuotePoliciesInner();
 
             if (data.hasOwnProperty('policyId')) {
-                obj['policyId'] = ApiClient.convertToType(data['policyId'], 'String');
+                obj['policyId'] = ApiClient.convertToType(data['policyId'], 'Number');
             }
             if (data.hasOwnProperty('premium')) {
                 obj['premium'] = ApiClient.convertToType(data['premium'], 'Number');
@@ -102,8 +102,8 @@ class PFEndorsementRequestQuotePoliciesInner {
             if (data.hasOwnProperty('minimumEarned')) {
                 obj['minimumEarned'] = ApiClient.convertToType(data['minimumEarned'], 'Number');
             }
-            if (data.hasOwnProperty('MinimumEarnedPercent')) {
-                obj['MinimumEarnedPercent'] = ApiClient.convertToType(data['MinimumEarnedPercent'], 'Number');
+            if (data.hasOwnProperty('minimumEarnedPercent')) {
+                obj['minimumEarnedPercent'] = ApiClient.convertToType(data['minimumEarnedPercent'], 'Number');
             }
             if (data.hasOwnProperty('auditable')) {
                 obj['auditable'] = ApiClient.convertToType(data['auditable'], 'Boolean');
@@ -144,10 +144,6 @@ class PFEndorsementRequestQuotePoliciesInner {
             if (!data.hasOwnProperty(property)) {
                 throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
             }
-        }
-        // ensure the json data is a string
-        if (data['policyId'] && !(typeof data['policyId'] === 'string' || data['policyId'] instanceof String)) {
-            throw new Error("Expected the field `policyId` to be a primitive type in the JSON string but got " + data['policyId']);
         }
         // ensure the json data is a string
         if (data['policyNumber'] && !(typeof data['policyNumber'] === 'string' || data['policyNumber'] instanceof String)) {
@@ -216,7 +212,7 @@ PFEndorsementRequestQuotePoliciesInner.RequiredProperties = ["premium", "effecti
 
 /**
  * This denotes the policy identifier.
- * @member {String} policyId
+ * @member {Number} policyId
  */
 PFEndorsementRequestQuotePoliciesInner.prototype['policyId'] = undefined;
 
@@ -303,9 +299,9 @@ PFEndorsementRequestQuotePoliciesInner.prototype['minimumEarned'] = undefined;
 
 /**
  * This denotes the minimum earned percent.
- * @member {Number} MinimumEarnedPercent
+ * @member {Number} minimumEarnedPercent
  */
-PFEndorsementRequestQuotePoliciesInner.prototype['MinimumEarnedPercent'] = undefined;
+PFEndorsementRequestQuotePoliciesInner.prototype['minimumEarnedPercent'] = undefined;
 
 /**
  * This denotes the flag if it is auditable or not.

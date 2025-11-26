@@ -54,26 +54,158 @@
       //expect(instance).to.be.a(SecureApi.SecureUpdatePaymentLinkRequest);
     });
 
+    it('should have the property merchantId (base name: "merchantId")', function() {
+      // uncomment below and update the code to test the property merchantId
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property title (base name: "title")', function() {
+      // uncomment below and update the code to test the property title
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property paymentDescription (base name: "paymentDescription")', function() {
+      // uncomment below and update the code to test the property paymentDescription
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property customers (base name: "customers")', function() {
+      // uncomment below and update the code to test the property customers
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property invoiceNumber (base name: "invoiceNumber")', function() {
+      // uncomment below and update the code to test the property invoiceNumber
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property expireBy (base name: "expireBy")', function() {
+      // uncomment below and update the code to test the property expireBy
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property expireOn (base name: "expireOn")', function() {
+      // uncomment below and update the code to test the property expireOn
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property lineItems (base name: "lineItems")', function() {
+      // uncomment below and update the code to test the property lineItems
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property shortDescription (base name: "shortDescription")', function() {
+      // uncomment below and update the code to test the property shortDescription
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property responseType (base name: "responseType")', function() {
+      // uncomment below and update the code to test the property responseType
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property callbackParameters (base name: "callbackParameters")', function() {
+      // uncomment below and update the code to test the property callbackParameters
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property paymentLinkType (base name: "paymentLinkType")', function() {
+      // uncomment below and update the code to test the property paymentLinkType
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property saveForFuture (base name: "saveForFuture")', function() {
+      // uncomment below and update the code to test the property saveForFuture
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property splits (base name: "splits")', function() {
+      // uncomment below and update the code to test the property splits
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property quoteKey (base name: "quoteKey")', function() {
+      // uncomment below and update the code to test the property quoteKey
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property accountNumber (base name: "accountNumber")', function() {
+      // uncomment below and update the code to test the property accountNumber
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property referenceType (base name: "referenceType")', function() {
+      // uncomment below and update the code to test the property referenceType
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property referenceNumber (base name: "referenceNumber")', function() {
+      // uncomment below and update the code to test the property referenceNumber
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property referenceKey (base name: "referenceKey")', function() {
+      // uncomment below and update the code to test the property referenceKey
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property referenceDataList (base name: "referenceDataList")', function() {
+      // uncomment below and update the code to test the property referenceDataList
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property platformSettlementStatus (base name: "platformSettlementStatus")', function() {
+      // uncomment below and update the code to test the property platformSettlementStatus
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isPayInFull (base name: "isPayInFull")', function() {
+      // uncomment below and update the code to test the property isPayInFull
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isPremiumFinancier (base name: "isPremiumFinancier")', function() {
+      // uncomment below and update the code to test the property isPremiumFinancier
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property pfr (base name: "pfr")', function() {
+      // uncomment below and update the code to test the property pfr
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property pfType (base name: "pfType")', function() {
+      // uncomment below and update the code to test the property pfType
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
+      //expect(instance).to.be();
+    });
+
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property enablePartialPayment (base name: "enablePartialPayment")', function() {
-      // uncomment below and update the code to test the property enablePartialPayment
-      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property enableMultiplePayment (base name: "enableMultiplePayment")', function() {
-      // uncomment below and update the code to test the property enableMultiplePayment
-      //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property enableProtection (base name: "enableProtection")', function() {
-      // uncomment below and update the code to test the property enableProtection
       //var instance = new SecureApi.SecureUpdatePaymentLinkRequest();
       //expect(instance).to.be();
     });

@@ -70,6 +70,9 @@ class PaymentLinkResponseCustomersInner {
             if (data.hasOwnProperty('createdOn')) {
                 obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'String');
             }
+            if (data.hasOwnProperty('companyName')) {
+                obj['companyName'] = ApiClient.convertToType(data['companyName'], 'String');
+            }
             if (data.hasOwnProperty('accounts')) {
                 obj['accounts'] = ApiClient.convertToType(data['accounts'], [PaymentLinkResponseCustomersInnerAccountsInner]);
             }
@@ -105,6 +108,10 @@ class PaymentLinkResponseCustomersInner {
         // ensure the json data is a string
         if (data['createdOn'] && !(typeof data['createdOn'] === 'string' || data['createdOn'] instanceof String)) {
             throw new Error("Expected the field `createdOn` to be a primitive type in the JSON string but got " + data['createdOn']);
+        }
+        // ensure the json data is a string
+        if (data['companyName'] && !(typeof data['companyName'] === 'string' || data['companyName'] instanceof String)) {
+            throw new Error("Expected the field `companyName` to be a primitive type in the JSON string but got " + data['companyName']);
         }
         if (data['accounts']) { // data not null
             // ensure the json data is an array
@@ -163,6 +170,11 @@ PaymentLinkResponseCustomersInner.prototype['notifyViaEmail'] = undefined;
  * @member {String} createdOn
  */
 PaymentLinkResponseCustomersInner.prototype['createdOn'] = undefined;
+
+/**
+ * @member {String} companyName
+ */
+PaymentLinkResponseCustomersInner.prototype['companyName'] = undefined;
 
 /**
  * @member {Array.<module:model/PaymentLinkResponseCustomersInnerAccountsInner>} accounts

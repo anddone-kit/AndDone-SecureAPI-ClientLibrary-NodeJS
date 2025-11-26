@@ -47,35 +47,35 @@ class PFEndorsementRequestQuoteCommunication {
         if (data) {
             obj = obj || new PFEndorsementRequestQuoteCommunication();
 
-            if (data.hasOwnProperty('InsuredESignCompletionURL')) {
-                obj['InsuredESignCompletionURL'] = ApiClient.convertToType(data['InsuredESignCompletionURL'], 'String');
+            if (data.hasOwnProperty('insuredESignCompletionURL')) {
+                obj['insuredESignCompletionURL'] = ApiClient.convertToType(data['insuredESignCompletionURL'], 'String');
             }
-            if (data.hasOwnProperty('PaymentPortalCancelRedirectURL')) {
-                obj['PaymentPortalCancelRedirectURL'] = ApiClient.convertToType(data['PaymentPortalCancelRedirectURL'], 'String');
+            if (data.hasOwnProperty('paymentPortalCancelRedirectURL')) {
+                obj['paymentPortalCancelRedirectURL'] = ApiClient.convertToType(data['paymentPortalCancelRedirectURL'], 'String');
             }
-            if (data.hasOwnProperty('PaymentPortalDeclineOfferRedirectURL')) {
-                obj['PaymentPortalDeclineOfferRedirectURL'] = ApiClient.convertToType(data['PaymentPortalDeclineOfferRedirectURL'], 'Boolean');
+            if (data.hasOwnProperty('paymentPortalDeclineOfferRedirectURL')) {
+                obj['paymentPortalDeclineOfferRedirectURL'] = ApiClient.convertToType(data['paymentPortalDeclineOfferRedirectURL'], 'Boolean');
             }
-            if (data.hasOwnProperty('ReturnInsuredESignURL')) {
-                obj['ReturnInsuredESignURL'] = ApiClient.convertToType(data['ReturnInsuredESignURL'], 'Boolean');
+            if (data.hasOwnProperty('returnInsuredESignURL')) {
+                obj['returnInsuredESignURL'] = ApiClient.convertToType(data['returnInsuredESignURL'], 'Boolean');
             }
-            if (data.hasOwnProperty('ESignAutoStart')) {
-                obj['ESignAutoStart'] = ApiClient.convertToType(data['ESignAutoStart'], 'Boolean');
+            if (data.hasOwnProperty('eSignAutoStart')) {
+                obj['eSignAutoStart'] = ApiClient.convertToType(data['eSignAutoStart'], 'Boolean');
             }
-            if (data.hasOwnProperty('ESignStartPickOptions')) {
-                obj['ESignStartPickOptions'] = ApiClient.convertToType(data['ESignStartPickOptions'], 'Boolean');
+            if (data.hasOwnProperty('eSignStartPickOptions')) {
+                obj['eSignStartPickOptions'] = ApiClient.convertToType(data['eSignStartPickOptions'], 'Boolean');
             }
-            if (data.hasOwnProperty('SuppressInsuredESignEmail')) {
-                obj['SuppressInsuredESignEmail'] = ApiClient.convertToType(data['SuppressInsuredESignEmail'], 'Boolean');
+            if (data.hasOwnProperty('suppressInsuredESignEmail')) {
+                obj['suppressInsuredESignEmail'] = ApiClient.convertToType(data['suppressInsuredESignEmail'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDocumentsToUpload')) {
-                obj['HasDocumentsToUpload'] = ApiClient.convertToType(data['HasDocumentsToUpload'], 'Boolean');
+            if (data.hasOwnProperty('hasDocumentsToUpload')) {
+                obj['hasDocumentsToUpload'] = ApiClient.convertToType(data['hasDocumentsToUpload'], 'Boolean');
             }
-            if (data.hasOwnProperty('SendEmailToRetailAgent')) {
-                obj['SendEmailToRetailAgent'] = ApiClient.convertToType(data['SendEmailToRetailAgent'], 'Boolean');
+            if (data.hasOwnProperty('sendEmailToRetailAgent')) {
+                obj['sendEmailToRetailAgent'] = ApiClient.convertToType(data['sendEmailToRetailAgent'], 'Boolean');
             }
-            if (data.hasOwnProperty('SendWelcomeLetterEmailToInsured')) {
-                obj['SendWelcomeLetterEmailToInsured'] = ApiClient.convertToType(data['SendWelcomeLetterEmailToInsured'], 'Boolean');
+            if (data.hasOwnProperty('sendWelcomeLetterEmailToInsured')) {
+                obj['sendWelcomeLetterEmailToInsured'] = ApiClient.convertToType(data['sendWelcomeLetterEmailToInsured'], 'Boolean');
             }
         }
         return obj;
@@ -88,12 +88,12 @@ class PFEndorsementRequestQuoteCommunication {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['InsuredESignCompletionURL'] && !(typeof data['InsuredESignCompletionURL'] === 'string' || data['InsuredESignCompletionURL'] instanceof String)) {
-            throw new Error("Expected the field `InsuredESignCompletionURL` to be a primitive type in the JSON string but got " + data['InsuredESignCompletionURL']);
+        if (data['insuredESignCompletionURL'] && !(typeof data['insuredESignCompletionURL'] === 'string' || data['insuredESignCompletionURL'] instanceof String)) {
+            throw new Error("Expected the field `insuredESignCompletionURL` to be a primitive type in the JSON string but got " + data['insuredESignCompletionURL']);
         }
         // ensure the json data is a string
-        if (data['PaymentPortalCancelRedirectURL'] && !(typeof data['PaymentPortalCancelRedirectURL'] === 'string' || data['PaymentPortalCancelRedirectURL'] instanceof String)) {
-            throw new Error("Expected the field `PaymentPortalCancelRedirectURL` to be a primitive type in the JSON string but got " + data['PaymentPortalCancelRedirectURL']);
+        if (data['paymentPortalCancelRedirectURL'] && !(typeof data['paymentPortalCancelRedirectURL'] === 'string' || data['paymentPortalCancelRedirectURL'] instanceof String)) {
+            throw new Error("Expected the field `paymentPortalCancelRedirectURL` to be a primitive type in the JSON string but got " + data['paymentPortalCancelRedirectURL']);
         }
 
         return true;
@@ -105,54 +105,54 @@ class PFEndorsementRequestQuoteCommunication {
 
 
 /**
- * @member {String} InsuredESignCompletionURL
+ * @member {String} insuredESignCompletionURL
  */
-PFEndorsementRequestQuoteCommunication.prototype['InsuredESignCompletionURL'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['insuredESignCompletionURL'] = undefined;
 
 /**
- * @member {String} PaymentPortalCancelRedirectURL
+ * @member {String} paymentPortalCancelRedirectURL
  */
-PFEndorsementRequestQuoteCommunication.prototype['PaymentPortalCancelRedirectURL'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['paymentPortalCancelRedirectURL'] = undefined;
 
 /**
- * @member {Boolean} PaymentPortalDeclineOfferRedirectURL
+ * @member {Boolean} paymentPortalDeclineOfferRedirectURL
  */
-PFEndorsementRequestQuoteCommunication.prototype['PaymentPortalDeclineOfferRedirectURL'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['paymentPortalDeclineOfferRedirectURL'] = undefined;
 
 /**
- * @member {Boolean} ReturnInsuredESignURL
+ * @member {Boolean} returnInsuredESignURL
  */
-PFEndorsementRequestQuoteCommunication.prototype['ReturnInsuredESignURL'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['returnInsuredESignURL'] = undefined;
 
 /**
- * @member {Boolean} ESignAutoStart
+ * @member {Boolean} eSignAutoStart
  */
-PFEndorsementRequestQuoteCommunication.prototype['ESignAutoStart'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['eSignAutoStart'] = undefined;
 
 /**
- * @member {Boolean} ESignStartPickOptions
+ * @member {Boolean} eSignStartPickOptions
  */
-PFEndorsementRequestQuoteCommunication.prototype['ESignStartPickOptions'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['eSignStartPickOptions'] = undefined;
 
 /**
- * @member {Boolean} SuppressInsuredESignEmail
+ * @member {Boolean} suppressInsuredESignEmail
  */
-PFEndorsementRequestQuoteCommunication.prototype['SuppressInsuredESignEmail'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['suppressInsuredESignEmail'] = undefined;
 
 /**
- * @member {Boolean} HasDocumentsToUpload
+ * @member {Boolean} hasDocumentsToUpload
  */
-PFEndorsementRequestQuoteCommunication.prototype['HasDocumentsToUpload'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['hasDocumentsToUpload'] = undefined;
 
 /**
- * @member {Boolean} SendEmailToRetailAgent
+ * @member {Boolean} sendEmailToRetailAgent
  */
-PFEndorsementRequestQuoteCommunication.prototype['SendEmailToRetailAgent'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['sendEmailToRetailAgent'] = undefined;
 
 /**
- * @member {Boolean} SendWelcomeLetterEmailToInsured
+ * @member {Boolean} sendWelcomeLetterEmailToInsured
  */
-PFEndorsementRequestQuoteCommunication.prototype['SendWelcomeLetterEmailToInsured'] = undefined;
+PFEndorsementRequestQuoteCommunication.prototype['sendWelcomeLetterEmailToInsured'] = undefined;
 
 
 

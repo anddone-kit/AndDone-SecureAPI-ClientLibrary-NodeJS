@@ -64,6 +64,9 @@ class QuoteRequest {
             if (data.hasOwnProperty('merchantId')) {
                 obj['merchantId'] = ApiClient.convertToType(data['merchantId'], 'String');
             }
+            if (data.hasOwnProperty('offerAutoPay')) {
+                obj['offerAutoPay'] = ApiClient.convertToType(data['offerAutoPay'], 'Boolean');
+            }
             if (data.hasOwnProperty('paymentIntentId')) {
                 obj['paymentIntentId'] = ApiClient.convertToType(data['paymentIntentId'], 'String');
             }
@@ -138,6 +141,11 @@ QuoteRequest.RequiredProperties = ["paymentIntentId", "details", "insured", "age
  * @member {String} merchantId
  */
 QuoteRequest.prototype['merchantId'] = undefined;
+
+/**
+ * @member {Boolean} offerAutoPay
+ */
+QuoteRequest.prototype['offerAutoPay'] = undefined;
 
 /**
  * @member {String} paymentIntentId

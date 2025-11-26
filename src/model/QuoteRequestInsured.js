@@ -24,11 +24,10 @@ class QuoteRequestInsured {
      * Constructs a new <code>QuoteRequestInsured</code>.
      * @alias module:model/QuoteRequestInsured
      * @param email {String} 
-     * @param address {module:model/QuoteRequestInsuredAddress} 
      */
-    constructor(email, address) { 
+    constructor(email) { 
         
-        QuoteRequestInsured.initialize(this, email, address);
+        QuoteRequestInsured.initialize(this, email);
     }
 
     /**
@@ -36,9 +35,8 @@ class QuoteRequestInsured {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, email, address) { 
+    static initialize(obj, email) { 
         obj['email'] = email;
-        obj['address'] = address;
     }
 
     /**
@@ -143,7 +141,7 @@ class QuoteRequestInsured {
 
 }
 
-QuoteRequestInsured.RequiredProperties = ["email", "address"];
+QuoteRequestInsured.RequiredProperties = ["email"];
 
 /**
  * @member {String} agentCustomerNumber

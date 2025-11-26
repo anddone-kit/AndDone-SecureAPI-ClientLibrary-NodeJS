@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property transactionCode (base name: "transactionCode")', function() {
+      // uncomment below and update the code to test the property transactionCode
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property billingContact (base name: "billingContact")', function() {
       // uncomment below and update the code to test the property billingContact
       //var instance = new SecureApi.TransactionPaymentResponse();
@@ -78,8 +84,26 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property ipAddress (base name: "ipAddress")', function() {
+      // uncomment below and update the code to test the property ipAddress
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property channelType (base name: "channelType")', function() {
+      // uncomment below and update the code to test the property channelType
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property processMethod (base name: "processMethod")', function() {
       // uncomment below and update the code to test the property processMethod
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property processorName (base name: "processorName")', function() {
+      // uncomment below and update the code to test the property processorName
       //var instance = new SecureApi.TransactionPaymentResponse();
       //expect(instance).to.be();
     });
@@ -120,20 +144,26 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property customerAccountId (base name: "customerAccountId")', function() {
-      // uncomment below and update the code to test the property customerAccountId
-      //var instance = new SecureApi.TransactionPaymentResponse();
-      //expect(instance).to.be();
-    });
-
     it('should have the property invoiceNo (base name: "invoiceNo")', function() {
       // uncomment below and update the code to test the property invoiceNo
       //var instance = new SecureApi.TransactionPaymentResponse();
       //expect(instance).to.be();
     });
 
+    it('should have the property referenceNo (base name: "referenceNo")', function() {
+      // uncomment below and update the code to test the property referenceNo
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property remarks (base name: "remarks")', function() {
       // uncomment below and update the code to test the property remarks
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property terminalId (base name: "terminalId")', function() {
+      // uncomment below and update the code to test the property terminalId
       //var instance = new SecureApi.TransactionPaymentResponse();
       //expect(instance).to.be();
     });
@@ -168,6 +198,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property settlementDate (base name: "settlementDate")', function() {
+      // uncomment below and update the code to test the property settlementDate
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property issuer (base name: "issuer")', function() {
+      // uncomment below and update the code to test the property issuer
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property paymentType (base name: "paymentType")', function() {
       // uncomment below and update the code to test the property paymentType
       //var instance = new SecureApi.TransactionPaymentResponse();
@@ -182,6 +224,36 @@
 
     it('should have the property transactionEntitySplitResponses (base name: "transactionEntitySplitResponses")', function() {
       // uncomment below and update the code to test the property transactionEntitySplitResponses
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property paymentDescription (base name: "paymentDescription")', function() {
+      // uncomment below and update the code to test the property paymentDescription
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property refundTransactions (base name: "refundTransactions")', function() {
+      // uncomment below and update the code to test the property refundTransactions
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property chargebackTargetAccount (base name: "chargebackTargetAccount")', function() {
+      // uncomment below and update the code to test the property chargebackTargetAccount
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property userId (base name: "userId")', function() {
+      // uncomment below and update the code to test the property userId
+      //var instance = new SecureApi.TransactionPaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property userName (base name: "userName")', function() {
+      // uncomment below and update the code to test the property userName
       //var instance = new SecureApi.TransactionPaymentResponse();
       //expect(instance).to.be();
     });

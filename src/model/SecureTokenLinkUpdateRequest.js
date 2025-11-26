@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import PaymentIntentRequestIntent from './PaymentIntentRequestIntent';
+import PaymentIntentResponseIntent from './PaymentIntentResponseIntent';
 import PaymentLinkResponseCallbackParameters from './PaymentLinkResponseCallbackParameters';
 
 /**
@@ -27,7 +27,7 @@ class SecureTokenLinkUpdateRequest {
      * @param tokenLinkId {String} 
      * @param expireIn {Number} 
      * @param expireInUnit {module:model/SecureTokenLinkUpdateRequest.ExpireInUnitEnum} 
-     * @param intent {module:model/PaymentIntentRequestIntent} 
+     * @param intent {module:model/PaymentIntentResponseIntent} 
      */
     constructor(tokenLinkId, expireIn, expireInUnit, intent) { 
         
@@ -70,7 +70,7 @@ class SecureTokenLinkUpdateRequest {
                 obj['expireInUnit'] = ApiClient.convertToType(data['expireInUnit'], 'String');
             }
             if (data.hasOwnProperty('intent')) {
-                obj['intent'] = PaymentIntentRequestIntent.constructFromObject(data['intent']);
+                obj['intent'] = PaymentIntentResponseIntent.constructFromObject(data['intent']);
             }
             if (data.hasOwnProperty('callBackParameters')) {
                 obj['callBackParameters'] = PaymentLinkResponseCallbackParameters.constructFromObject(data['callBackParameters']);
@@ -105,7 +105,7 @@ class SecureTokenLinkUpdateRequest {
         }
         // validate the optional field `intent`
         if (data['intent']) { // data not null
-          PaymentIntentRequestIntent.validateJSON(data['intent']);
+          PaymentIntentResponseIntent.validateJSON(data['intent']);
         }
         // validate the optional field `callBackParameters`
         if (data['callBackParameters']) { // data not null
@@ -141,7 +141,7 @@ SecureTokenLinkUpdateRequest.prototype['responseType'] = undefined;
 SecureTokenLinkUpdateRequest.prototype['expireInUnit'] = undefined;
 
 /**
- * @member {module:model/PaymentIntentRequestIntent} intent
+ * @member {module:model/PaymentIntentResponseIntent} intent
  */
 SecureTokenLinkUpdateRequest.prototype['intent'] = undefined;
 

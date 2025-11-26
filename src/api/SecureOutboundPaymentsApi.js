@@ -14,6 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import CancelPaymentRequestDTO from '../model/CancelPaymentRequestDTO';
+import OutboundPaymentImageResponseDTO from '../model/OutboundPaymentImageResponseDTO';
 import OutboundPaymentTimelineResponseDTOInner from '../model/OutboundPaymentTimelineResponseDTOInner';
 import PagePaymentListResponseDTO from '../model/PagePaymentListResponseDTO';
 import PaymentDetailResponseDTO from '../model/PaymentDetailResponseDTO';
@@ -95,7 +96,7 @@ export default class SecureOutboundPaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = [OutboundPaymentTimelineResponseDTOInner];
@@ -159,7 +160,7 @@ export default class SecureOutboundPaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;
@@ -224,12 +225,77 @@ export default class SecureOutboundPaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PaymentDetailResponseDTO;
       return this.apiClient.callApi(
         '/vendorapi/secure/outboundpayments/detail', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the vendorapiSecureOutboundpaymentsImagePost operation.
+     * @callback module:api/SecureOutboundPaymentsApi~vendorapiSecureOutboundpaymentsImagePostCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/OutboundPaymentImageResponseDTO} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * This API gets outbound payment JPG image in Base64 string format
+     * @param {String} xApiKey an authorization header
+     * @param {String} xAppKey an authorization header
+     * @param {Number} xVersion x-version
+     * @param {String} origin origin
+     * @param {module:model/PaymentTimeLineRequestDto} paymentTimeLineRequestDto OutboundPaymentImageRequestDto
+     * @param {module:api/SecureOutboundPaymentsApi~vendorapiSecureOutboundpaymentsImagePostCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/OutboundPaymentImageResponseDTO}
+     */
+    vendorapiSecureOutboundpaymentsImagePost(xApiKey, xAppKey, xVersion, origin, paymentTimeLineRequestDto, callback) {
+      let postBody = paymentTimeLineRequestDto;
+      // verify the required parameter 'xApiKey' is set
+      if (xApiKey === undefined || xApiKey === null) {
+        throw new Error("Missing the required parameter 'xApiKey' when calling vendorapiSecureOutboundpaymentsImagePost");
+      }
+      // verify the required parameter 'xAppKey' is set
+      if (xAppKey === undefined || xAppKey === null) {
+        throw new Error("Missing the required parameter 'xAppKey' when calling vendorapiSecureOutboundpaymentsImagePost");
+      }
+      // verify the required parameter 'xVersion' is set
+      if (xVersion === undefined || xVersion === null) {
+        throw new Error("Missing the required parameter 'xVersion' when calling vendorapiSecureOutboundpaymentsImagePost");
+      }
+      // verify the required parameter 'origin' is set
+      if (origin === undefined || origin === null) {
+        throw new Error("Missing the required parameter 'origin' when calling vendorapiSecureOutboundpaymentsImagePost");
+      }
+      // verify the required parameter 'paymentTimeLineRequestDto' is set
+      if (paymentTimeLineRequestDto === undefined || paymentTimeLineRequestDto === null) {
+        throw new Error("Missing the required parameter 'paymentTimeLineRequestDto' when calling vendorapiSecureOutboundpaymentsImagePost");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+        'x-api-key': xApiKey,
+        'x-app-key': xAppKey,
+        'x-version': xVersion,
+        'origin': origin
+      };
+      let formParams = {
+      };
+
+      let authNames = [];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = OutboundPaymentImageResponseDTO;
+      return this.apiClient.callApi(
+        '/vendorapi/secure/outboundpayments/image', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -289,7 +355,7 @@ export default class SecureOutboundPaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PaymentResponseDto;
@@ -327,7 +393,10 @@ export default class SecureOutboundPaymentsApi {
      * @param {String} [startDate] sets startDate
      * @param {String} [endDate] sets endDate
      * @param {String} [searchText] sets searchText
+     * @param {Number} [startRow] sets startRow
+     * @param {Number} [pageSize] sets pageSize
      * @param {String} [sortField] sets sortField
+     * @param {Boolean} [asc] Set Asc
      * @param {module:api/SecureOutboundPaymentsApi~vendorapiSecureOutboundpaymentsSearchPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PagePaymentListResponseDTO}
      */
@@ -366,7 +435,10 @@ export default class SecureOutboundPaymentsApi {
         'startDate': opts['startDate'],
         'endDate': opts['endDate'],
         'searchText': opts['searchText'],
-        'sortField': opts['sortField']
+        'startRow': opts['startRow'],
+        'pageSize': opts['pageSize'],
+        'sortField': opts['sortField'],
+        'asc': opts['asc']
       };
       let headerParams = {
         'x-api-key': xApiKey,
@@ -377,7 +449,7 @@ export default class SecureOutboundPaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = PagePaymentListResponseDTO;

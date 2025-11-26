@@ -6,5 +6,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **String** |  | [optional] 
 **type** | **String** |  | [optional] 
+**isAggregateAmount** | **Boolean** |  | [optional] 
 
 

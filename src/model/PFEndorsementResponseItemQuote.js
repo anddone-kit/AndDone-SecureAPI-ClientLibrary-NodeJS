@@ -96,11 +96,11 @@ class PFEndorsementResponseItemQuote {
             if (data.hasOwnProperty('isDownPaymentRequired')) {
                 obj['isDownPaymentRequired'] = ApiClient.convertToType(data['isDownPaymentRequired'], 'Boolean');
             }
-            if (data.hasOwnProperty('IsEsignRequired')) {
-                obj['IsEsignRequired'] = ApiClient.convertToType(data['IsEsignRequired'], 'Boolean');
+            if (data.hasOwnProperty('isEsignRequired')) {
+                obj['isEsignRequired'] = ApiClient.convertToType(data['isEsignRequired'], 'Boolean');
             }
-            if (data.hasOwnProperty('IsEndorsement')) {
-                obj['IsEndorsement'] = ApiClient.convertToType(data['IsEndorsement'], 'Boolean');
+            if (data.hasOwnProperty('isEndorsement')) {
+                obj['isEndorsement'] = ApiClient.convertToType(data['isEndorsement'], 'Boolean');
             }
         }
         return obj;
@@ -214,14 +214,14 @@ PFEndorsementResponseItemQuote.prototype['eSignResult'] = undefined;
 PFEndorsementResponseItemQuote.prototype['isDownPaymentRequired'] = undefined;
 
 /**
- * @member {Boolean} IsEsignRequired
+ * @member {Boolean} isEsignRequired
  */
-PFEndorsementResponseItemQuote.prototype['IsEsignRequired'] = undefined;
+PFEndorsementResponseItemQuote.prototype['isEsignRequired'] = undefined;
 
 /**
- * @member {Boolean} IsEndorsement
+ * @member {Boolean} isEndorsement
  */
-PFEndorsementResponseItemQuote.prototype['IsEndorsement'] = undefined;
+PFEndorsementResponseItemQuote.prototype['isEndorsement'] = undefined;
 
 
 

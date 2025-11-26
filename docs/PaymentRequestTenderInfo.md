@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **trackData** | **String** |  | [optional] 
 **removeDiscounting** | **Boolean** |  | [optional] 
 **suppressCommission** | **Boolean** |  | [optional] 
-**amount** | **Number** |  | [optional] 
+**amount** | **Number** |  | 
 **convenienceAmount** | **Number** |  | [optional] 
 **preAuthCode** | **String** |  | [optional] 
 **createAccountToken** | **Boolean** |  | [optional] 

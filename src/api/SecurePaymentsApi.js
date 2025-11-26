@@ -172,7 +172,7 @@ export default class SecurePaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['text/csv'];
       let returnType = null;
@@ -237,7 +237,7 @@ export default class SecurePaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = TransactionDetailResponse;
@@ -301,6 +301,7 @@ export default class SecurePaymentsApi {
      * @param {String} [paymentCategories] Set PaymentCategories
      * @param {Boolean} [suppressTechnologyFee] SuppressTechnologyFee
      * @param {String} [batchId] BatchId
+     * @param {Boolean} [transactionsCount] Set whether to return only the transactions count
      * @param {String} [sortField] SortField
      * @param {Number} [startRow] Set StartRow
      * @param {Number} [pageSize] Set PageSize
@@ -369,6 +370,7 @@ export default class SecurePaymentsApi {
         'paymentCategories': opts['paymentCategories'],
         'suppressTechnologyFee': opts['suppressTechnologyFee'],
         'batchId': opts['batchId'],
+        'transactionsCount': opts['transactionsCount'],
         'sortField': opts['sortField'],
         'startRow': opts['startRow'],
         'pageSize': opts['pageSize'],
@@ -383,7 +385,7 @@ export default class SecurePaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = MerchantTransactionEntityResponse;
@@ -448,7 +450,7 @@ export default class SecurePaymentsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = TransactionPaymentResponse;

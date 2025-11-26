@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **email** | **String** |  | 
 **careOf** | **String** |  | [optional] 
 **uniqueId** | **String** |  | [optional] 
-**address** | [**QuoteRequestInsuredAddress**](QuoteRequestInsuredAddress.md) |  | 
+**address** | [**QuoteRequestInsuredAddress**](QuoteRequestInsuredAddress.md) |  | [optional] 
 **hasDataChangeAgentCustomerNumber** | **Boolean** |  | [optional] 
 **hasDataChangeName** | **Boolean** |  | [optional] 
 **hasDataChangeAddress1** | **Boolean** |  | [optional] 

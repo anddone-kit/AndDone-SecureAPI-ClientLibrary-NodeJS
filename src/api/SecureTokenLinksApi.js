@@ -94,7 +94,7 @@ export default class SecureTokenLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = SecureTokenLinkByIdResponse;
@@ -159,7 +159,7 @@ export default class SecureTokenLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = SecureTokenLinkExpiredResponse;
@@ -257,7 +257,7 @@ export default class SecureTokenLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = TokenLinkResponse;
@@ -322,7 +322,7 @@ export default class SecureTokenLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = SecureTokenLinkResponse;
@@ -386,7 +386,7 @@ export default class SecureTokenLinksApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;

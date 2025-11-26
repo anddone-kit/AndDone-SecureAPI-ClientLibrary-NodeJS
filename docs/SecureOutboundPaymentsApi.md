@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**vendorapiSecureOutboundPaymentsTimelinesPost**](SecureOutboundPaymentsApi.md#vendorapiSecureOutboundPaymentsTimelinesPost) | **POST** /vendorapi/secure/outboundPayments/timelines | This API gets outbound payment timelines
 [**vendorapiSecureOutboundpaymentsCancelPost**](SecureOutboundPaymentsApi.md#vendorapiSecureOutboundpaymentsCancelPost) | **POST** /vendorapi/secure/outboundpayments/cancel | This API cancel outbound payment request
 [**vendorapiSecureOutboundpaymentsDetailPost**](SecureOutboundPaymentsApi.md#vendorapiSecureOutboundpaymentsDetailPost) | **POST** /vendorapi/secure/outboundpayments/detail | This API fetch outbound payment by paymentId
+[**vendorapiSecureOutboundpaymentsImagePost**](SecureOutboundPaymentsApi.md#vendorapiSecureOutboundpaymentsImagePost) | **POST** /vendorapi/secure/outboundpayments/image | This API gets outbound payment JPG image in Base64 string format
 [**vendorapiSecureOutboundpaymentsPost**](SecureOutboundPaymentsApi.md#vendorapiSecureOutboundpaymentsPost) | **POST** /vendorapi/secure/outboundpayments | This API creates outbound payment request
 [**vendorapiSecureOutboundpaymentsSearchPost**](SecureOutboundPaymentsApi.md#vendorapiSecureOutboundpaymentsSearchPost) | **POST** /vendorapi/secure/outboundpayments/search | This API gets all outbound payment
 
@@ -22,17 +23,6 @@ This API gets outbound payment timelines
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureOutboundPaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -66,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -84,17 +74,6 @@ This API cancel outbound payment request
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureOutboundPaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -128,7 +107,7 @@ null (empty response body)
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -146,17 +125,6 @@ This API fetch outbound payment by paymentId
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureOutboundPaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -190,7 +158,58 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## vendorapiSecureOutboundpaymentsImagePost
+
+> OutboundPaymentImageResponseDTO vendorapiSecureOutboundpaymentsImagePost(xApiKey, xAppKey, xVersion, origin, paymentTimeLineRequestDto)
+
+This API gets outbound payment JPG image in Base64 string format
+
+### Example
+
+```javascript
+import SecureApi from 'secure_api';
+
+let apiInstance = new SecureApi.SecureOutboundPaymentsApi();
+let xApiKey = "xApiKey_example"; // String | an authorization header
+let xAppKey = "xAppKey_example"; // String | an authorization header
+let xVersion = 3.4; // Number | x-version
+let origin = "origin_example"; // String | origin
+let paymentTimeLineRequestDto = new SecureApi.PaymentTimeLineRequestDto(); // PaymentTimeLineRequestDto | OutboundPaymentImageRequestDto
+apiInstance.vendorapiSecureOutboundpaymentsImagePost(xApiKey, xAppKey, xVersion, origin, paymentTimeLineRequestDto, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **xApiKey** | **String**| an authorization header | 
+ **xAppKey** | **String**| an authorization header | 
+ **xVersion** | **Number**| x-version | 
+ **origin** | **String**| origin | 
+ **paymentTimeLineRequestDto** | [**PaymentTimeLineRequestDto**](PaymentTimeLineRequestDto.md)| OutboundPaymentImageRequestDto | 
+
+### Return type
+
+[**OutboundPaymentImageResponseDTO**](OutboundPaymentImageResponseDTO.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 
@@ -208,17 +227,6 @@ This API creates outbound payment request
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureOutboundPaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -252,7 +260,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -270,17 +278,6 @@ This API gets all outbound payment
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureOutboundPaymentsApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -300,7 +297,10 @@ let opts = {
   'startDate': "startDate_example", // String | sets startDate
   'endDate': "endDate_example", // String | sets endDate
   'searchText': "searchText_example", // String | sets searchText
-  'sortField': "sortField_example" // String | sets sortField
+  'startRow': 56, // Number | sets startRow
+  'pageSize': 56, // Number | sets pageSize
+  'sortField': "sortField_example", // String | sets sortField
+  'asc': true // Boolean | Set Asc
 };
 apiInstance.vendorapiSecureOutboundpaymentsSearchPost(xApiKey, xAppKey, xVersion, origin, opts, (error, data, response) => {
   if (error) {
@@ -332,7 +332,10 @@ Name | Type | Description  | Notes
  **startDate** | **String**| sets startDate | [optional] 
  **endDate** | **String**| sets endDate | [optional] 
  **searchText** | **String**| sets searchText | [optional] 
+ **startRow** | **Number**| sets startRow | [optional] 
+ **pageSize** | **Number**| sets pageSize | [optional] 
  **sortField** | **String**| sets sortField | [optional] 
+ **asc** | **Boolean**| Set Asc | [optional] 
 
 ### Return type
 
@@ -340,7 +343,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 

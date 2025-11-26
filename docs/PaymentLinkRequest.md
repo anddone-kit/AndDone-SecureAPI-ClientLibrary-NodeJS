@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **merchantId** | **String** |  | 
 **title** | **String** |  | 
 **amount** | **Number** |  | 
-**paymentDescription** | **String** |  | [optional] 
+**paymentDescription** | **String** |  | 
 **customers** | [**[PaymentLinkResponseCustomersInner]**](PaymentLinkResponseCustomersInner.md) |  | [optional] 
 **invoiceNumber** | **String** |  | [optional] 
 **expireBy** | **Number** |  | [optional] 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 **referenceType** | **String** |  | [optional] 
 **referenceNumber** | **String** |  | [optional] 
 **referenceKey** | **String** |  | [optional] 
-**referenceDataList** | [**[PaymentLinkResponseReferenceDataListInner]**](PaymentLinkResponseReferenceDataListInner.md) |  | 
+**referenceDataList** | [**[PaymentLinkRequestReferenceDataListInner]**](PaymentLinkRequestReferenceDataListInner.md) |  | 
 **enablePremiumFinance** | **Boolean** |  | [optional] 
 **suppressTechnologyFee** | **Boolean** |  | [optional] 
 **overrideTechnologyFee** | **Number** |  | [optional] 

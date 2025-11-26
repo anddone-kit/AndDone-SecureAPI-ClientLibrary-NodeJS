@@ -91,7 +91,7 @@ export default class SecureRefundsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = RefundEligibility;
@@ -156,7 +156,7 @@ export default class SecureRefundsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = SecureTransactionDetailDTO;

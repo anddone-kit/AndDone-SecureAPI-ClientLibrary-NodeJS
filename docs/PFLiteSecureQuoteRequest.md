@@ -10,5 +10,7 @@ Name | Type | Description | Notes
 **insured** | [**PFLiteSecureQuoteRequestInsured**](PFLiteSecureQuoteRequestInsured.md) |  | 
 **program** | [**PFLiteSecureQuoteRequestProgram**](PFLiteSecureQuoteRequestProgram.md) |  | 
 **policies** | [**[PFLiteSecureQuoteRequestPoliciesInner]**](PFLiteSecureQuoteRequestPoliciesInner.md) |  | 
+**offerAutoPay** | **Boolean** |  | [optional] 
+**agent** | [**PFLiteSecureQuoteRequestAgent**](PFLiteSecureQuoteRequestAgent.md) |  | [optional] 
 
 

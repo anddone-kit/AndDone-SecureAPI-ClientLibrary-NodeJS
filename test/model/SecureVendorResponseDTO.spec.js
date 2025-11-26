@@ -156,6 +156,36 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property vendorStatus (base name: "vendorStatus")', function() {
+      // uncomment below and update the code to test the property vendorStatus
+      //var instance = new SecureApi.SecureVendorResponseDTO();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property createdBy (base name: "createdBy")', function() {
+      // uncomment below and update the code to test the property createdBy
+      //var instance = new SecureApi.SecureVendorResponseDTO();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property modifiedBy (base name: "modifiedBy")', function() {
+      // uncomment below and update the code to test the property modifiedBy
+      //var instance = new SecureApi.SecureVendorResponseDTO();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property createdOn (base name: "createdOn")', function() {
+      // uncomment below and update the code to test the property createdOn
+      //var instance = new SecureApi.SecureVendorResponseDTO();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property modifiedOn (base name: "modifiedOn")', function() {
+      // uncomment below and update the code to test the property modifiedOn
+      //var instance = new SecureApi.SecureVendorResponseDTO();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

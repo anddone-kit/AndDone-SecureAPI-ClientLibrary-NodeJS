@@ -17,8 +17,8 @@ import PFCheckEndorsementsRequest from '../model/PFCheckEndorsementsRequest';
 import PFCheckEndorsementsResponse from '../model/PFCheckEndorsementsResponse';
 import PFEndorsementRequest from '../model/PFEndorsementRequest';
 import PFEndorsementResponse from '../model/PFEndorsementResponse';
-import PFQuoteBookingRequest from '../model/PFQuoteBookingRequest';
 import PFUpdatePFAResponse from '../model/PFUpdatePFAResponse';
+import SecurePFQuoteBookingRequest from '../model/SecurePFQuoteBookingRequest';
 
 /**
 * SecureEmbeddedPremiumFinanceEndorsements service.
@@ -93,7 +93,7 @@ export default class SecureEmbeddedPremiumFinanceEndorsementsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PFCheckEndorsementsResponse;
@@ -118,12 +118,12 @@ export default class SecureEmbeddedPremiumFinanceEndorsementsApi {
      * @param {String} xAppKey an authorization header
      * @param {Number} xVersion x-version
      * @param {String} origin origin
-     * @param {module:model/PFQuoteBookingRequest} pFQuoteBookingRequest PFQuoteBooking Request details
+     * @param {module:model/SecurePFQuoteBookingRequest} securePFQuoteBookingRequest PFQuoteBooking Request details
      * @param {module:api/SecureEmbeddedPremiumFinanceEndorsementsApi~secureEpfQuoteEndorsementBookingPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PFUpdatePFAResponse}
      */
-    secureEpfQuoteEndorsementBookingPut(xApiKey, xAppKey, xVersion, origin, pFQuoteBookingRequest, callback) {
-      let postBody = pFQuoteBookingRequest;
+    secureEpfQuoteEndorsementBookingPut(xApiKey, xAppKey, xVersion, origin, securePFQuoteBookingRequest, callback) {
+      let postBody = securePFQuoteBookingRequest;
       // verify the required parameter 'xApiKey' is set
       if (xApiKey === undefined || xApiKey === null) {
         throw new Error("Missing the required parameter 'xApiKey' when calling secureEpfQuoteEndorsementBookingPut");
@@ -140,9 +140,9 @@ export default class SecureEmbeddedPremiumFinanceEndorsementsApi {
       if (origin === undefined || origin === null) {
         throw new Error("Missing the required parameter 'origin' when calling secureEpfQuoteEndorsementBookingPut");
       }
-      // verify the required parameter 'pFQuoteBookingRequest' is set
-      if (pFQuoteBookingRequest === undefined || pFQuoteBookingRequest === null) {
-        throw new Error("Missing the required parameter 'pFQuoteBookingRequest' when calling secureEpfQuoteEndorsementBookingPut");
+      // verify the required parameter 'securePFQuoteBookingRequest' is set
+      if (securePFQuoteBookingRequest === undefined || securePFQuoteBookingRequest === null) {
+        throw new Error("Missing the required parameter 'securePFQuoteBookingRequest' when calling secureEpfQuoteEndorsementBookingPut");
       }
 
       let pathParams = {
@@ -158,7 +158,7 @@ export default class SecureEmbeddedPremiumFinanceEndorsementsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PFUpdatePFAResponse;
@@ -223,7 +223,7 @@ export default class SecureEmbeddedPremiumFinanceEndorsementsApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PFEndorsementResponse;

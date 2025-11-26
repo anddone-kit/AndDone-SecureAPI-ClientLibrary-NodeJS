@@ -48,68 +48,68 @@ class PFEndorsementRequestQuoteInsured {
         if (data) {
             obj = obj || new PFEndorsementRequestQuoteInsured();
 
-            if (data.hasOwnProperty('AgentCustomerNumber')) {
-                obj['AgentCustomerNumber'] = ApiClient.convertToType(data['AgentCustomerNumber'], 'String');
+            if (data.hasOwnProperty('agentCustomerNumber')) {
+                obj['agentCustomerNumber'] = ApiClient.convertToType(data['agentCustomerNumber'], 'String');
             }
-            if (data.hasOwnProperty('Email')) {
-                obj['Email'] = ApiClient.convertToType(data['Email'], 'String');
+            if (data.hasOwnProperty('email')) {
+                obj['email'] = ApiClient.convertToType(data['email'], 'String');
             }
-            if (data.hasOwnProperty('CareOf')) {
-                obj['CareOf'] = ApiClient.convertToType(data['CareOf'], 'String');
+            if (data.hasOwnProperty('careOf')) {
+                obj['careOf'] = ApiClient.convertToType(data['careOf'], 'String');
             }
-            if (data.hasOwnProperty('UniqueID')) {
-                obj['UniqueID'] = ApiClient.convertToType(data['UniqueID'], 'String');
+            if (data.hasOwnProperty('uniqueID')) {
+                obj['uniqueID'] = ApiClient.convertToType(data['uniqueID'], 'String');
             }
-            if (data.hasOwnProperty('MobilePhoneNumber')) {
-                obj['MobilePhoneNumber'] = ApiClient.convertToType(data['MobilePhoneNumber'], 'String');
+            if (data.hasOwnProperty('mobilePhoneNumber')) {
+                obj['mobilePhoneNumber'] = ApiClient.convertToType(data['mobilePhoneNumber'], 'String');
             }
-            if (data.hasOwnProperty('IsCancellationWarningEnabled')) {
-                obj['IsCancellationWarningEnabled'] = ApiClient.convertToType(data['IsCancellationWarningEnabled'], 'Boolean');
+            if (data.hasOwnProperty('isCancellationWarningEnabled')) {
+                obj['isCancellationWarningEnabled'] = ApiClient.convertToType(data['isCancellationWarningEnabled'], 'Boolean');
             }
-            if (data.hasOwnProperty('FaxNumber')) {
-                obj['FaxNumber'] = ApiClient.convertToType(data['FaxNumber'], 'String');
+            if (data.hasOwnProperty('faxNumber')) {
+                obj['faxNumber'] = ApiClient.convertToType(data['faxNumber'], 'String');
             }
-            if (data.hasOwnProperty('EmailAddress')) {
-                obj['EmailAddress'] = ApiClient.convertToType(data['EmailAddress'], 'String');
+            if (data.hasOwnProperty('emailAddress')) {
+                obj['emailAddress'] = ApiClient.convertToType(data['emailAddress'], 'String');
             }
-            if (data.hasOwnProperty('PFType')) {
-                obj['PFType'] = ApiClient.convertToType(data['PFType'], 'String');
+            if (data.hasOwnProperty('pfType')) {
+                obj['pfType'] = ApiClient.convertToType(data['pfType'], 'String');
             }
-            if (data.hasOwnProperty('Address')) {
-                obj['Address'] = PFEndorsementRequestQuoteInsuredAddress.constructFromObject(data['Address']);
+            if (data.hasOwnProperty('address')) {
+                obj['address'] = PFEndorsementRequestQuoteInsuredAddress.constructFromObject(data['address']);
             }
-            if (data.hasOwnProperty('HasDataChangeAgentCustomerNumber')) {
-                obj['HasDataChangeAgentCustomerNumber'] = ApiClient.convertToType(data['HasDataChangeAgentCustomerNumber'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeAgentCustomerNumber')) {
+                obj['hasDataChangeAgentCustomerNumber'] = ApiClient.convertToType(data['hasDataChangeAgentCustomerNumber'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeName')) {
-                obj['HasDataChangeName'] = ApiClient.convertToType(data['HasDataChangeName'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeName')) {
+                obj['hasDataChangeName'] = ApiClient.convertToType(data['hasDataChangeName'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeAddress1')) {
-                obj['HasDataChangeAddress1'] = ApiClient.convertToType(data['HasDataChangeAddress1'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeAddress1')) {
+                obj['hasDataChangeAddress1'] = ApiClient.convertToType(data['hasDataChangeAddress1'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeAddress2')) {
-                obj['HasDataChangeAddress2'] = ApiClient.convertToType(data['HasDataChangeAddress2'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeAddress2')) {
+                obj['hasDataChangeAddress2'] = ApiClient.convertToType(data['hasDataChangeAddress2'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeCity')) {
-                obj['HasDataChangeCity'] = ApiClient.convertToType(data['HasDataChangeCity'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeCity')) {
+                obj['hasDataChangeCity'] = ApiClient.convertToType(data['hasDataChangeCity'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeState')) {
-                obj['HasDataChangeState'] = ApiClient.convertToType(data['HasDataChangeState'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeState')) {
+                obj['hasDataChangeState'] = ApiClient.convertToType(data['hasDataChangeState'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeZip')) {
-                obj['HasDataChangeZip'] = ApiClient.convertToType(data['HasDataChangeZip'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeZip')) {
+                obj['hasDataChangeZip'] = ApiClient.convertToType(data['hasDataChangeZip'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangePhone')) {
-                obj['HasDataChangePhone'] = ApiClient.convertToType(data['HasDataChangePhone'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangePhone')) {
+                obj['hasDataChangePhone'] = ApiClient.convertToType(data['hasDataChangePhone'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeEmail')) {
-                obj['HasDataChangeEmail'] = ApiClient.convertToType(data['HasDataChangeEmail'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeEmail')) {
+                obj['hasDataChangeEmail'] = ApiClient.convertToType(data['hasDataChangeEmail'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeCareOf')) {
-                obj['HasDataChangeCareOf'] = ApiClient.convertToType(data['HasDataChangeCareOf'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeCareOf')) {
+                obj['hasDataChangeCareOf'] = ApiClient.convertToType(data['hasDataChangeCareOf'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasDataChangeInsured')) {
-                obj['HasDataChangeInsured'] = ApiClient.convertToType(data['HasDataChangeInsured'], 'Boolean');
+            if (data.hasOwnProperty('hasDataChangeInsured')) {
+                obj['hasDataChangeInsured'] = ApiClient.convertToType(data['hasDataChangeInsured'], 'Boolean');
             }
         }
         return obj;
@@ -122,40 +122,40 @@ class PFEndorsementRequestQuoteInsured {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['AgentCustomerNumber'] && !(typeof data['AgentCustomerNumber'] === 'string' || data['AgentCustomerNumber'] instanceof String)) {
-            throw new Error("Expected the field `AgentCustomerNumber` to be a primitive type in the JSON string but got " + data['AgentCustomerNumber']);
+        if (data['agentCustomerNumber'] && !(typeof data['agentCustomerNumber'] === 'string' || data['agentCustomerNumber'] instanceof String)) {
+            throw new Error("Expected the field `agentCustomerNumber` to be a primitive type in the JSON string but got " + data['agentCustomerNumber']);
         }
         // ensure the json data is a string
-        if (data['Email'] && !(typeof data['Email'] === 'string' || data['Email'] instanceof String)) {
-            throw new Error("Expected the field `Email` to be a primitive type in the JSON string but got " + data['Email']);
+        if (data['email'] && !(typeof data['email'] === 'string' || data['email'] instanceof String)) {
+            throw new Error("Expected the field `email` to be a primitive type in the JSON string but got " + data['email']);
         }
         // ensure the json data is a string
-        if (data['CareOf'] && !(typeof data['CareOf'] === 'string' || data['CareOf'] instanceof String)) {
-            throw new Error("Expected the field `CareOf` to be a primitive type in the JSON string but got " + data['CareOf']);
+        if (data['careOf'] && !(typeof data['careOf'] === 'string' || data['careOf'] instanceof String)) {
+            throw new Error("Expected the field `careOf` to be a primitive type in the JSON string but got " + data['careOf']);
         }
         // ensure the json data is a string
-        if (data['UniqueID'] && !(typeof data['UniqueID'] === 'string' || data['UniqueID'] instanceof String)) {
-            throw new Error("Expected the field `UniqueID` to be a primitive type in the JSON string but got " + data['UniqueID']);
+        if (data['uniqueID'] && !(typeof data['uniqueID'] === 'string' || data['uniqueID'] instanceof String)) {
+            throw new Error("Expected the field `uniqueID` to be a primitive type in the JSON string but got " + data['uniqueID']);
         }
         // ensure the json data is a string
-        if (data['MobilePhoneNumber'] && !(typeof data['MobilePhoneNumber'] === 'string' || data['MobilePhoneNumber'] instanceof String)) {
-            throw new Error("Expected the field `MobilePhoneNumber` to be a primitive type in the JSON string but got " + data['MobilePhoneNumber']);
+        if (data['mobilePhoneNumber'] && !(typeof data['mobilePhoneNumber'] === 'string' || data['mobilePhoneNumber'] instanceof String)) {
+            throw new Error("Expected the field `mobilePhoneNumber` to be a primitive type in the JSON string but got " + data['mobilePhoneNumber']);
         }
         // ensure the json data is a string
-        if (data['FaxNumber'] && !(typeof data['FaxNumber'] === 'string' || data['FaxNumber'] instanceof String)) {
-            throw new Error("Expected the field `FaxNumber` to be a primitive type in the JSON string but got " + data['FaxNumber']);
+        if (data['faxNumber'] && !(typeof data['faxNumber'] === 'string' || data['faxNumber'] instanceof String)) {
+            throw new Error("Expected the field `faxNumber` to be a primitive type in the JSON string but got " + data['faxNumber']);
         }
         // ensure the json data is a string
-        if (data['EmailAddress'] && !(typeof data['EmailAddress'] === 'string' || data['EmailAddress'] instanceof String)) {
-            throw new Error("Expected the field `EmailAddress` to be a primitive type in the JSON string but got " + data['EmailAddress']);
+        if (data['emailAddress'] && !(typeof data['emailAddress'] === 'string' || data['emailAddress'] instanceof String)) {
+            throw new Error("Expected the field `emailAddress` to be a primitive type in the JSON string but got " + data['emailAddress']);
         }
         // ensure the json data is a string
-        if (data['PFType'] && !(typeof data['PFType'] === 'string' || data['PFType'] instanceof String)) {
-            throw new Error("Expected the field `PFType` to be a primitive type in the JSON string but got " + data['PFType']);
+        if (data['pfType'] && !(typeof data['pfType'] === 'string' || data['pfType'] instanceof String)) {
+            throw new Error("Expected the field `pfType` to be a primitive type in the JSON string but got " + data['pfType']);
         }
-        // validate the optional field `Address`
-        if (data['Address']) { // data not null
-          PFEndorsementRequestQuoteInsuredAddress.validateJSON(data['Address']);
+        // validate the optional field `address`
+        if (data['address']) { // data not null
+          PFEndorsementRequestQuoteInsuredAddress.validateJSON(data['address']);
         }
 
         return true;
@@ -168,128 +168,128 @@ class PFEndorsementRequestQuoteInsured {
 
 /**
  * This denotes the Agent Customer Number.
- * @member {String} AgentCustomerNumber
+ * @member {String} agentCustomerNumber
  */
-PFEndorsementRequestQuoteInsured.prototype['AgentCustomerNumber'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['agentCustomerNumber'] = undefined;
 
 /**
  * This denotes the email.
- * @member {String} Email
+ * @member {String} email
  */
-PFEndorsementRequestQuoteInsured.prototype['Email'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['email'] = undefined;
 
 /**
  * This denotes the care of.
- * @member {String} CareOf
+ * @member {String} careOf
  */
-PFEndorsementRequestQuoteInsured.prototype['CareOf'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['careOf'] = undefined;
 
 /**
  * This denotes a unique identifier for the insured.
- * @member {String} UniqueID
+ * @member {String} uniqueID
  */
-PFEndorsementRequestQuoteInsured.prototype['UniqueID'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['uniqueID'] = undefined;
 
 /**
  * This denotes the mobile phone number.
- * @member {String} MobilePhoneNumber
+ * @member {String} mobilePhoneNumber
  */
-PFEndorsementRequestQuoteInsured.prototype['MobilePhoneNumber'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['mobilePhoneNumber'] = undefined;
 
 /**
  * Indicates if cancellation warnings are enabled.
- * @member {Boolean} IsCancellationWarningEnabled
+ * @member {Boolean} isCancellationWarningEnabled
  */
-PFEndorsementRequestQuoteInsured.prototype['IsCancellationWarningEnabled'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['isCancellationWarningEnabled'] = undefined;
 
 /**
  * This denotes the fax number.
- * @member {String} FaxNumber
+ * @member {String} faxNumber
  */
-PFEndorsementRequestQuoteInsured.prototype['FaxNumber'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['faxNumber'] = undefined;
 
 /**
  * This denotes an alternate email address.
- * @member {String} EmailAddress
+ * @member {String} emailAddress
  */
-PFEndorsementRequestQuoteInsured.prototype['EmailAddress'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['emailAddress'] = undefined;
 
 /**
  * This denotes the PFType (enum or string depending on your definition).
- * @member {module:model/PFEndorsementRequestQuoteInsured.PFTypeEnum} PFType
+ * @member {module:model/PFEndorsementRequestQuoteInsured.PfTypeEnum} pfType
  */
-PFEndorsementRequestQuoteInsured.prototype['PFType'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['pfType'] = undefined;
 
 /**
- * @member {module:model/PFEndorsementRequestQuoteInsuredAddress} Address
+ * @member {module:model/PFEndorsementRequestQuoteInsuredAddress} address
  */
-PFEndorsementRequestQuoteInsured.prototype['Address'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['address'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeAgentCustomerNumber
+ * @member {Boolean} hasDataChangeAgentCustomerNumber
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeAgentCustomerNumber'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeAgentCustomerNumber'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeName
+ * @member {Boolean} hasDataChangeName
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeName'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeName'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeAddress1
+ * @member {Boolean} hasDataChangeAddress1
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeAddress1'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeAddress1'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeAddress2
+ * @member {Boolean} hasDataChangeAddress2
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeAddress2'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeAddress2'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeCity
+ * @member {Boolean} hasDataChangeCity
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeCity'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeCity'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeState
+ * @member {Boolean} hasDataChangeState
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeState'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeState'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeZip
+ * @member {Boolean} hasDataChangeZip
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeZip'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeZip'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangePhone
+ * @member {Boolean} hasDataChangePhone
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangePhone'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangePhone'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeEmail
+ * @member {Boolean} hasDataChangeEmail
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeEmail'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeEmail'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeCareOf
+ * @member {Boolean} hasDataChangeCareOf
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeCareOf'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeCareOf'] = undefined;
 
 /**
- * @member {Boolean} HasDataChangeInsured
+ * @member {Boolean} hasDataChangeInsured
  */
-PFEndorsementRequestQuoteInsured.prototype['HasDataChangeInsured'] = undefined;
+PFEndorsementRequestQuoteInsured.prototype['hasDataChangeInsured'] = undefined;
 
 
 
 
 
 /**
- * Allowed values for the <code>PFType</code> property.
+ * Allowed values for the <code>pfType</code> property.
  * @enum {String}
  * @readonly
  */
-PFEndorsementRequestQuoteInsured['PFTypeEnum'] = {
+PFEndorsementRequestQuoteInsured['PfTypeEnum'] = {
 
     /**
      * value: "None"

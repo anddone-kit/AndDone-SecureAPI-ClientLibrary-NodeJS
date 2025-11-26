@@ -22,17 +22,6 @@ This API is used for getting Token Links by TokenLink ID
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureTokenLinksApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -66,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -84,17 +73,6 @@ This API expires the token link.
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureTokenLinksApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -128,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -146,17 +124,6 @@ This API is used for getting all Token Links for Merchant
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureTokenLinksApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -178,8 +145,8 @@ let opts = {
   'toExpiryDate': "toExpiryDate_example", // String | toExpiryDate
   'fromDate': "fromDate_example", // String | fromDate
   'toDate': "toDate_example", // String | toDate
-  'startRow': 3.4, // Number | Set StartRow
-  'pageSize': 3.4, // Number | Set PageSize
+  'startRow': 56, // Number | Set StartRow
+  'pageSize': 56, // Number | Set PageSize
   'sortField': "sortField_example", // String | Set SortField
   'asc': true // Boolean | Set Asc
 };
@@ -226,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -244,17 +211,6 @@ This API is use to create Secure Token Links
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureTokenLinksApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -288,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -306,17 +262,6 @@ This API will update the expireIn and paymentType of Token Link.
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureTokenLinksApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -350,7 +295,7 @@ null (empty response body)
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 

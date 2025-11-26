@@ -70,7 +70,7 @@ Name | Type | Description | Notes
 
 * `Denied` (value: `"Denied"`)
 
-* `Suspend` (value: `"Suspend"`)
+* `Suspended` (value: `"Suspended"`)
 
 * `Deleted` (value: `"Deleted"`)
 

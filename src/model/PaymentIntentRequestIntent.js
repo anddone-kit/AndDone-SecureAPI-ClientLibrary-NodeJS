@@ -22,10 +22,11 @@ class PaymentIntentRequestIntent {
     /**
      * Constructs a new <code>PaymentIntentRequestIntent</code>.
      * @alias module:model/PaymentIntentRequestIntent
+     * @param paymentTypes {Array.<module:model/PaymentIntentRequestIntent.PaymentTypesEnum>} 
      */
-    constructor() { 
+    constructor(paymentTypes) { 
         
-        PaymentIntentRequestIntent.initialize(this);
+        PaymentIntentRequestIntent.initialize(this, paymentTypes);
     }
 
     /**
@@ -33,7 +34,8 @@ class PaymentIntentRequestIntent {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, paymentTypes) { 
+        obj['paymentTypes'] = paymentTypes;
     }
 
     /**
@@ -60,6 +62,12 @@ class PaymentIntentRequestIntent {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PaymentIntentRequestIntent</code>.
      */
     static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of PaymentIntentRequestIntent.RequiredProperties) {
+            if (!data.hasOwnProperty(property)) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
         // ensure the json data is an array
         if (!Array.isArray(data['paymentTypes'])) {
             throw new Error("Expected the field `paymentTypes` to be an array in the JSON data but got " + data['paymentTypes']);
@@ -71,7 +79,7 @@ class PaymentIntentRequestIntent {
 
 }
 
-
+PaymentIntentRequestIntent.RequiredProperties = ["paymentTypes"];
 
 /**
  * @member {Array.<module:model/PaymentIntentRequestIntent.PaymentTypesEnum>} paymentTypes

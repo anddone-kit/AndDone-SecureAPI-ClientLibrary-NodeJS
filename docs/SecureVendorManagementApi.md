@@ -25,17 +25,6 @@ This API deletes vendor into system
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureVendorManagementApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -69,7 +58,7 @@ null (empty response body)
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -87,17 +76,6 @@ This API gets details of particular vendor
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureVendorManagementApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -131,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -149,17 +127,6 @@ This API Updates the existing vendor
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureVendorManagementApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -193,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -211,17 +178,6 @@ This API creates vendor into system
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureVendorManagementApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -255,7 +211,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -273,17 +229,6 @@ This API returns list of all the Vendors of Merchant
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureVendorManagementApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -299,10 +244,10 @@ let opts = {
   'createdBy': "createdBy_example", // String | Set createdBy
   'startDate': "startDate_example", // String | set start Date
   'endDate': "endDate_example", // String | set end Date
-  'pageSize': 3.4, // Number | Set PageSize
+  'pageSize': 56, // Number | Set PageSize
   'searchText': "searchText_example", // String | search Text
   'sortField': "sortField_example", // String | Set SortField
-  'startRow': "startRow_example", // String | Set StartRow
+  'startRow': 56, // Number | Set StartRow
   'asc': true // Boolean | Set Asc
 };
 apiInstance.vendorapiSecureMerchantsVendorsSearchPost(xApiKey, xAppKey, xVersion, origin, opts, (error, data, response) => {
@@ -334,7 +279,7 @@ Name | Type | Description  | Notes
  **pageSize** | **Number**| Set PageSize | [optional] 
  **searchText** | **String**| search Text | [optional] 
  **sortField** | **String**| Set SortField | [optional] 
- **startRow** | **String**| Set StartRow | [optional] 
+ **startRow** | **Number**| Set StartRow | [optional] 
  **asc** | **Boolean**| Set Asc | [optional] 
 
 ### Return type
@@ -343,7 +288,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -361,17 +306,6 @@ This API suspends vendor into system
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureVendorManagementApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -405,7 +339,7 @@ null (empty response body)
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -423,17 +357,6 @@ This API gets timeline of particular vendor
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureVendorManagementApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -467,7 +390,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 
@@ -485,17 +408,6 @@ This API unsuspends vendor into system
 
 ```javascript
 import SecureApi from 'secure_api';
-let defaultClient = SecureApi.ApiClient.instance;
-// Configure API key authorization: x-api-key
-let x-api-key = defaultClient.authentications['x-api-key'];
-x-api-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-api-key.apiKeyPrefix = 'Token';
-// Configure API key authorization: x-app-key
-let x-app-key = defaultClient.authentications['x-app-key'];
-x-app-key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//x-app-key.apiKeyPrefix = 'Token';
 
 let apiInstance = new SecureApi.SecureVendorManagementApi();
 let xApiKey = "xApiKey_example"; // String | an authorization header
@@ -529,7 +441,7 @@ null (empty response body)
 
 ### Authorization
 
-[x-api-key](../README.md#x-api-key), [x-app-key](../README.md#x-app-key)
+No authorization required
 
 ### HTTP request headers
 

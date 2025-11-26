@@ -22,10 +22,11 @@ class PaymentRequestTenderInfo {
     /**
      * Constructs a new <code>PaymentRequestTenderInfo</code>.
      * @alias module:model/PaymentRequestTenderInfo
+     * @param amount {Number} 
      */
-    constructor() { 
+    constructor(amount) { 
         
-        PaymentRequestTenderInfo.initialize(this);
+        PaymentRequestTenderInfo.initialize(this, amount);
     }
 
     /**
@@ -33,7 +34,8 @@ class PaymentRequestTenderInfo {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, amount) { 
+        obj['amount'] = amount;
     }
 
     /**
@@ -123,6 +125,12 @@ class PaymentRequestTenderInfo {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PaymentRequestTenderInfo</code>.
      */
     static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of PaymentRequestTenderInfo.RequiredProperties) {
+            if (!data.hasOwnProperty(property)) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
         // ensure the json data is a string
         if (data['bankName'] && !(typeof data['bankName'] === 'string' || data['bankName'] instanceof String)) {
             throw new Error("Expected the field `bankName` to be a primitive type in the JSON string but got " + data['bankName']);
@@ -198,7 +206,7 @@ class PaymentRequestTenderInfo {
 
 }
 
-
+PaymentRequestTenderInfo.RequiredProperties = ["amount"];
 
 /**
  * @member {String} bankName

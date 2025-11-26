@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property cardType (base name: "cardType")', function() {
+      // uncomment below and update the code to test the property cardType
+      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
+      //expect(instance).to.be();
+    });
+
     it('should have the property maskCardNumber (base name: "maskCardNumber")', function() {
       // uncomment below and update the code to test the property maskCardNumber
       //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
@@ -84,26 +90,14 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property convenienceAmount (base name: "convenienceAmount")', function() {
+      // uncomment below and update the code to test the property convenienceAmount
+      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
+      //expect(instance).to.be();
+    });
+
     it('should have the property binNumber (base name: "binNumber")', function() {
       // uncomment below and update the code to test the property binNumber
-      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property taxAmount (base name: "taxAmount")', function() {
-      // uncomment below and update the code to test the property taxAmount
-      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property taxAfterDiscount (base name: "taxAfterDiscount")', function() {
-      // uncomment below and update the code to test the property taxAfterDiscount
-      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property taxPercent (base name: "taxPercent")', function() {
-      // uncomment below and update the code to test the property taxPercent
       //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
       //expect(instance).to.be();
     });
@@ -174,30 +168,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property discountType (base name: "discountType")', function() {
-      // uncomment below and update the code to test the property discountType
-      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property discountPercent (base name: "discountPercent")', function() {
-      // uncomment below and update the code to test the property discountPercent
-      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property discountAmount (base name: "discountAmount")', function() {
-      // uncomment below and update the code to test the property discountAmount
-      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property convenienceAmount (base name: "convenienceAmount")', function() {
-      // uncomment below and update the code to test the property convenienceAmount
-      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
-      //expect(instance).to.be();
-    });
-
     it('should have the property commissionType (base name: "commissionType")', function() {
       // uncomment below and update the code to test the property commissionType
       //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
@@ -206,6 +176,12 @@
 
     it('should have the property commissionValue (base name: "commissionValue")', function() {
       // uncomment below and update the code to test the property commissionValue
+      //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property commissionFixedValue (base name: "CommissionFixedValue")', function() {
+      // uncomment below and update the code to test the property commissionFixedValue
       //var instance = new SecureApi.TransactionPaymentResponseCcTenderInfo();
       //expect(instance).to.be();
     });

@@ -54,6 +54,18 @@
       //expect(instance).to.be.a(SecureApi.SecureUpdatePaymentLinkRequestSettings);
     });
 
+    it('should have the property selectedCustomerFields (base name: "selectedCustomerFields")', function() {
+      // uncomment below and update the code to test the property selectedCustomerFields
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property additionalDetailsPreference (base name: "additionalDetailsPreference")', function() {
+      // uncomment below and update the code to test the property additionalDetailsPreference
+      //var instance = new SecureApi.SecureUpdatePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
     it('should have the property displaySummary (base name: "displaySummary")', function() {
       // uncomment below and update the code to test the property displaySummary
       //var instance = new SecureApi.SecureUpdatePaymentLinkRequestSettings();
@@ -96,8 +108,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property additionalDetailsPreference (base name: "additionalDetailsPreference")', function() {
-      // uncomment below and update the code to test the property additionalDetailsPreference
+    it('should have the property intent (base name: "intent")', function() {
+      // uncomment below and update the code to test the property intent
       //var instance = new SecureApi.SecureUpdatePaymentLinkRequestSettings();
       //expect(instance).to.be();
     });

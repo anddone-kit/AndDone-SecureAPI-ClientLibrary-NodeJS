@@ -95,7 +95,7 @@ export default class SecureVendorManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;
@@ -160,7 +160,7 @@ export default class SecureVendorManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = VendorResponseDTO;
@@ -225,7 +225,7 @@ export default class SecureVendorManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = SecureVendorResponseDTO;
@@ -290,7 +290,7 @@ export default class SecureVendorManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = SecureVendorResponseDTO;
@@ -327,7 +327,7 @@ export default class SecureVendorManagementApi {
      * @param {Number} [pageSize] Set PageSize
      * @param {String} [searchText] search Text
      * @param {String} [sortField] Set SortField
-     * @param {String} [startRow] Set StartRow
+     * @param {Number} [startRow] Set StartRow
      * @param {Boolean} [asc] Set Asc
      * @param {module:api/SecureVendorManagementApi~vendorapiSecureMerchantsVendorsSearchPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PageVendorResponseDTO}
@@ -378,7 +378,7 @@ export default class SecureVendorManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = PageVendorResponseDTO;
@@ -442,7 +442,7 @@ export default class SecureVendorManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;
@@ -507,7 +507,7 @@ export default class SecureVendorManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = [VendorTimelineResponseListInner];
@@ -571,7 +571,7 @@ export default class SecureVendorManagementApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;

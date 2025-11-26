@@ -66,6 +66,48 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property displaySummary (base name: "displaySummary")', function() {
+      // uncomment below and update the code to test the property displaySummary
+      //var instance = new SecureApi.PFLitePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property acceptCustomerInfo (base name: "acceptCustomerInfo")', function() {
+      // uncomment below and update the code to test the property acceptCustomerInfo
+      //var instance = new SecureApi.PFLitePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property removeHeader (base name: "removeHeader")', function() {
+      // uncomment below and update the code to test the property removeHeader
+      //var instance = new SecureApi.PFLitePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property acceptCard (base name: "acceptCard")', function() {
+      // uncomment below and update the code to test the property acceptCard
+      //var instance = new SecureApi.PFLitePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property acceptBankAccount (base name: "acceptBankAccount")', function() {
+      // uncomment below and update the code to test the property acceptBankAccount
+      //var instance = new SecureApi.PFLitePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property saveCustomer (base name: "saveCustomer")', function() {
+      // uncomment below and update the code to test the property saveCustomer
+      //var instance = new SecureApi.PFLitePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property saveCustomerAccount (base name: "saveCustomerAccount")', function() {
+      // uncomment below and update the code to test the property saveCustomerAccount
+      //var instance = new SecureApi.PFLitePaymentLinkRequestSettings();
+      //expect(instance).to.be();
+    });
+
     it('should have the property intent (base name: "intent")', function() {
       // uncomment below and update the code to test the property intent
       //var instance = new SecureApi.PFLitePaymentLinkRequestSettings();

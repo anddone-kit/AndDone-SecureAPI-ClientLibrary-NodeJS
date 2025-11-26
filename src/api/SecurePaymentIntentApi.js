@@ -91,7 +91,7 @@ export default class SecurePaymentIntentApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = PaymentIntentExpiresResponse;
@@ -154,7 +154,7 @@ export default class SecurePaymentIntentApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = PaymentIntentResponse;

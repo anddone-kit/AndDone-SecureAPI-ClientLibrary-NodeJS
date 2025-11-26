@@ -123,8 +123,8 @@ class TransactionPaymentResponseAchTenderInfo {
             if (data.hasOwnProperty('commissionValue')) {
                 obj['commissionValue'] = ApiClient.convertToType(data['commissionValue'], 'Number');
             }
-            if (data.hasOwnProperty('CommissionFixedValue')) {
-                obj['CommissionFixedValue'] = ApiClient.convertToType(data['CommissionFixedValue'], 'Number');
+            if (data.hasOwnProperty('commissionFixedValue')) {
+                obj['commissionFixedValue'] = ApiClient.convertToType(data['commissionFixedValue'], 'Number');
             }
         }
         return obj;
@@ -339,9 +339,9 @@ TransactionPaymentResponseAchTenderInfo.prototype['commissionType'] = undefined;
 TransactionPaymentResponseAchTenderInfo.prototype['commissionValue'] = undefined;
 
 /**
- * @member {Number} CommissionFixedValue
+ * @member {Number} commissionFixedValue
  */
-TransactionPaymentResponseAchTenderInfo.prototype['CommissionFixedValue'] = undefined;
+TransactionPaymentResponseAchTenderInfo.prototype['commissionFixedValue'] = undefined;
 
 
 

@@ -93,7 +93,7 @@ export default class SecurePaymentBatchingApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = [PaymentBatchDetailsResponse];
@@ -157,7 +157,7 @@ export default class SecurePaymentBatchingApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;
@@ -227,7 +227,7 @@ export default class SecurePaymentBatchingApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = PaymentBatchResponse;
@@ -292,7 +292,7 @@ export default class SecurePaymentBatchingApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = [PaymentBatchEventLogResponse];
@@ -356,7 +356,7 @@ export default class SecurePaymentBatchingApi {
       let formParams = {
       };
 
-      let authNames = ['x-api-key', 'x-app-key'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = [];
       let returnType = null;

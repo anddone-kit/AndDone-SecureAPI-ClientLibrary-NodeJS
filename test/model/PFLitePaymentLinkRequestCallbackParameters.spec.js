@@ -66,6 +66,42 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property accessKey (base name: "accessKey")', function() {
+      // uncomment below and update the code to test the property accessKey
+      //var instance = new SecureApi.PFLitePaymentLinkRequestCallbackParameters();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property secretKey (base name: "secretKey")', function() {
+      // uncomment below and update the code to test the property secretKey
+      //var instance = new SecureApi.PFLitePaymentLinkRequestCallbackParameters();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property referenceNo (base name: "referenceNo")', function() {
+      // uncomment below and update the code to test the property referenceNo
+      //var instance = new SecureApi.PFLitePaymentLinkRequestCallbackParameters();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property referenceType (base name: "referenceType")', function() {
+      // uncomment below and update the code to test the property referenceType
+      //var instance = new SecureApi.PFLitePaymentLinkRequestCallbackParameters();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property transactionId (base name: "transactionId")', function() {
+      // uncomment below and update the code to test the property transactionId
+      //var instance = new SecureApi.PFLitePaymentLinkRequestCallbackParameters();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property redirectionTime (base name: "redirectionTime")', function() {
+      // uncomment below and update the code to test the property redirectionTime
+      //var instance = new SecureApi.PFLitePaymentLinkRequestCallbackParameters();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

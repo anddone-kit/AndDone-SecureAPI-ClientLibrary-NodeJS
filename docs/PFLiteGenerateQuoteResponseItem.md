@@ -24,5 +24,6 @@ Name | Type | Description | Notes
 **errors** | **String** |  | [optional] 
 **pfa** | **String** |  | [optional] 
 **electronicSignatureURL** | **String** |  | [optional] 
+**offerAutoPay** | **Boolean** |  | [optional] 
 
 

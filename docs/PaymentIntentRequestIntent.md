@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**paymentTypes** | **[String]** |  | [optional] 
+**paymentTypes** | **[String]** |  | 
 
 
 

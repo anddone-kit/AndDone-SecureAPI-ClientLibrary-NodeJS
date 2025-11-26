@@ -12,11 +12,11 @@
  */
 
 import ApiClient from '../ApiClient';
-import PFEndorsementRequestQuoteAgent from './PFEndorsementRequestQuoteAgent';
 import PFEndorsementRequestQuoteCommunication from './PFEndorsementRequestQuoteCommunication';
 import PFEndorsementRequestQuoteDetails from './PFEndorsementRequestQuoteDetails';
 import PFEndorsementRequestQuoteInsured from './PFEndorsementRequestQuoteInsured';
 import PFEndorsementRequestQuotePoliciesInner from './PFEndorsementRequestQuotePoliciesInner';
+import PFLiteSecureQuoteRequestAgent from './PFLiteSecureQuoteRequestAgent';
 
 /**
  * The PFEndorsementRequestQuote model module.
@@ -27,7 +27,7 @@ class PFEndorsementRequestQuote {
     /**
      * Constructs a new <code>PFEndorsementRequestQuote</code>.
      * @alias module:model/PFEndorsementRequestQuote
-     * @param agreementId {String} This denotes the agreementId received in check endorsement API.
+     * @param agreementId {Number} This denotes the agreementId received in check endorsement API.
      * @param merchantReference {String} 
      * @param policies {Array.<module:model/PFEndorsementRequestQuotePoliciesInner>} 
      */
@@ -62,7 +62,7 @@ class PFEndorsementRequestQuote {
                 obj['accountNumber'] = ApiClient.convertToType(data['accountNumber'], 'String');
             }
             if (data.hasOwnProperty('agreementId')) {
-                obj['agreementId'] = ApiClient.convertToType(data['agreementId'], 'String');
+                obj['agreementId'] = ApiClient.convertToType(data['agreementId'], 'Number');
             }
             if (data.hasOwnProperty('merchantReference')) {
                 obj['merchantReference'] = ApiClient.convertToType(data['merchantReference'], 'String');
@@ -73,11 +73,11 @@ class PFEndorsementRequestQuote {
             if (data.hasOwnProperty('details')) {
                 obj['details'] = PFEndorsementRequestQuoteDetails.constructFromObject(data['details']);
             }
-            if (data.hasOwnProperty('Insured')) {
-                obj['Insured'] = PFEndorsementRequestQuoteInsured.constructFromObject(data['Insured']);
+            if (data.hasOwnProperty('insured')) {
+                obj['insured'] = PFEndorsementRequestQuoteInsured.constructFromObject(data['insured']);
             }
-            if (data.hasOwnProperty('Agent')) {
-                obj['Agent'] = PFEndorsementRequestQuoteAgent.constructFromObject(data['Agent']);
+            if (data.hasOwnProperty('agent')) {
+                obj['agent'] = PFLiteSecureQuoteRequestAgent.constructFromObject(data['agent']);
             }
             if (data.hasOwnProperty('communication')) {
                 obj['communication'] = PFEndorsementRequestQuoteCommunication.constructFromObject(data['communication']);
@@ -103,10 +103,6 @@ class PFEndorsementRequestQuote {
             throw new Error("Expected the field `accountNumber` to be a primitive type in the JSON string but got " + data['accountNumber']);
         }
         // ensure the json data is a string
-        if (data['agreementId'] && !(typeof data['agreementId'] === 'string' || data['agreementId'] instanceof String)) {
-            throw new Error("Expected the field `agreementId` to be a primitive type in the JSON string but got " + data['agreementId']);
-        }
-        // ensure the json data is a string
         if (data['merchantReference'] && !(typeof data['merchantReference'] === 'string' || data['merchantReference'] instanceof String)) {
             throw new Error("Expected the field `merchantReference` to be a primitive type in the JSON string but got " + data['merchantReference']);
         }
@@ -124,13 +120,13 @@ class PFEndorsementRequestQuote {
         if (data['details']) { // data not null
           PFEndorsementRequestQuoteDetails.validateJSON(data['details']);
         }
-        // validate the optional field `Insured`
-        if (data['Insured']) { // data not null
-          PFEndorsementRequestQuoteInsured.validateJSON(data['Insured']);
+        // validate the optional field `insured`
+        if (data['insured']) { // data not null
+          PFEndorsementRequestQuoteInsured.validateJSON(data['insured']);
         }
-        // validate the optional field `Agent`
-        if (data['Agent']) { // data not null
-          PFEndorsementRequestQuoteAgent.validateJSON(data['Agent']);
+        // validate the optional field `agent`
+        if (data['agent']) { // data not null
+          PFLiteSecureQuoteRequestAgent.validateJSON(data['agent']);
         }
         // validate the optional field `communication`
         if (data['communication']) { // data not null
@@ -152,7 +148,7 @@ PFEndorsementRequestQuote.prototype['accountNumber'] = undefined;
 
 /**
  * This denotes the agreementId received in check endorsement API.
- * @member {String} agreementId
+ * @member {Number} agreementId
  */
 PFEndorsementRequestQuote.prototype['agreementId'] = undefined;
 
@@ -172,14 +168,14 @@ PFEndorsementRequestQuote.prototype['policies'] = undefined;
 PFEndorsementRequestQuote.prototype['details'] = undefined;
 
 /**
- * @member {module:model/PFEndorsementRequestQuoteInsured} Insured
+ * @member {module:model/PFEndorsementRequestQuoteInsured} insured
  */
-PFEndorsementRequestQuote.prototype['Insured'] = undefined;
+PFEndorsementRequestQuote.prototype['insured'] = undefined;
 
 /**
- * @member {module:model/PFEndorsementRequestQuoteAgent} Agent
+ * @member {module:model/PFLiteSecureQuoteRequestAgent} agent
  */
-PFEndorsementRequestQuote.prototype['Agent'] = undefined;
+PFEndorsementRequestQuote.prototype['agent'] = undefined;
 
 /**
  * @member {module:model/PFEndorsementRequestQuoteCommunication} communication

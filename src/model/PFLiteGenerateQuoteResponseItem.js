@@ -108,6 +108,9 @@ class PFLiteGenerateQuoteResponseItem {
             if (data.hasOwnProperty('electronicSignatureURL')) {
                 obj['electronicSignatureURL'] = ApiClient.convertToType(data['electronicSignatureURL'], 'String');
             }
+            if (data.hasOwnProperty('offerAutoPay')) {
+                obj['offerAutoPay'] = ApiClient.convertToType(data['offerAutoPay'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -258,6 +261,11 @@ PFLiteGenerateQuoteResponseItem.prototype['pfa'] = undefined;
  * @member {String} electronicSignatureURL
  */
 PFLiteGenerateQuoteResponseItem.prototype['electronicSignatureURL'] = undefined;
+
+/**
+ * @member {Boolean} offerAutoPay
+ */
+PFLiteGenerateQuoteResponseItem.prototype['offerAutoPay'] = undefined;
 
 
 

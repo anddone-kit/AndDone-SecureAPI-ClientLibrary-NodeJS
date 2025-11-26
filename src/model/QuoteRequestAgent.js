@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import QuoteRequestAgentAddress from './QuoteRequestAgentAddress';
+import QuoteRequestInsuredAddress from './QuoteRequestInsuredAddress';
 
 /**
  * The QuoteRequestAgent model module.
@@ -55,7 +55,7 @@ class QuoteRequestAgent {
                 obj['email'] = ApiClient.convertToType(data['email'], 'String');
             }
             if (data.hasOwnProperty('address')) {
-                obj['address'] = QuoteRequestAgentAddress.constructFromObject(data['address']);
+                obj['address'] = QuoteRequestInsuredAddress.constructFromObject(data['address']);
             }
         }
         return obj;
@@ -77,7 +77,7 @@ class QuoteRequestAgent {
         }
         // validate the optional field `address`
         if (data['address']) { // data not null
-          QuoteRequestAgentAddress.validateJSON(data['address']);
+          QuoteRequestInsuredAddress.validateJSON(data['address']);
         }
 
         return true;
@@ -99,7 +99,7 @@ QuoteRequestAgent.prototype['uniqueID'] = undefined;
 QuoteRequestAgent.prototype['email'] = undefined;
 
 /**
- * @member {module:model/QuoteRequestAgentAddress} address
+ * @member {module:model/QuoteRequestInsuredAddress} address
  */
 QuoteRequestAgent.prototype['address'] = undefined;
 

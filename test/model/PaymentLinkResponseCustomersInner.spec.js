@@ -90,6 +90,24 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property createdOn (base name: "createdOn")', function() {
+      // uncomment below and update the code to test the property createdOn
+      //var instance = new SecureApi.PaymentLinkResponseCustomersInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property accounts (base name: "accounts")', function() {
+      // uncomment below and update the code to test the property accounts
+      //var instance = new SecureApi.PaymentLinkResponseCustomersInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property address (base name: "address")', function() {
+      // uncomment below and update the code to test the property address
+      //var instance = new SecureApi.PaymentLinkResponseCustomersInner();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

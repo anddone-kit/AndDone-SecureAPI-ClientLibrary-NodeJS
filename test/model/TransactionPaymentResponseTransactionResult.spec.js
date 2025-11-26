@@ -84,6 +84,54 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property additionResultData (base name: "additionResultData")', function() {
+      // uncomment below and update the code to test the property additionResultData
+      //var instance = new SecureApi.TransactionPaymentResponseTransactionResult();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property additionResultData2 (base name: "additionResultData2")', function() {
+      // uncomment below and update the code to test the property additionResultData2
+      //var instance = new SecureApi.TransactionPaymentResponseTransactionResult();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property verificationStatus (base name: "verificationStatus")', function() {
+      // uncomment below and update the code to test the property verificationStatus
+      //var instance = new SecureApi.TransactionPaymentResponseTransactionResult();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property verification1Code (base name: "verification1Code")', function() {
+      // uncomment below and update the code to test the property verification1Code
+      //var instance = new SecureApi.TransactionPaymentResponseTransactionResult();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property verification2Code (base name: "verification2Code")', function() {
+      // uncomment below and update the code to test the property verification2Code
+      //var instance = new SecureApi.TransactionPaymentResponseTransactionResult();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property errorCode (base name: "errorCode")', function() {
+      // uncomment below and update the code to test the property errorCode
+      //var instance = new SecureApi.TransactionPaymentResponseTransactionResult();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property errorMessage (base name: "errorMessage")', function() {
+      // uncomment below and update the code to test the property errorMessage
+      //var instance = new SecureApi.TransactionPaymentResponseTransactionResult();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property merchantReference (base name: "merchantReference")', function() {
+      // uncomment below and update the code to test the property merchantReference
+      //var instance = new SecureApi.TransactionPaymentResponseTransactionResult();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

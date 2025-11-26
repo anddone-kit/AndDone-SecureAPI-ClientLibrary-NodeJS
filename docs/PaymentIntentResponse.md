@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **paymentDescription** | **String** |  | [optional] 
 **invoiceNumber** | **String** |  | [optional] 
 **expiresOn** | **String** |  | [optional] 
-**intent** | [**PaymentIntentRequestIntent**](PaymentIntentRequestIntent.md) |  | [optional] 
+**intent** | [**PaymentIntentResponseIntent**](PaymentIntentResponseIntent.md) |  | [optional] 
 **saveForFuture** | **Boolean** |  | [optional] 
 **enablePremiumFinance** | **Boolean** |  | [optional] 
 **splits** | [**[PaymentIntentRequestSplitsInner]**](PaymentIntentRequestSplitsInner.md) |  | [optional] 

@@ -47,20 +47,20 @@ class PFEndorsementRequestQuoteDetailsRecurringACH {
         if (data) {
             obj = obj || new PFEndorsementRequestQuoteDetailsRecurringACH();
 
-            if (data.hasOwnProperty('EnrollRecurringAch')) {
-                obj['EnrollRecurringAch'] = ApiClient.convertToType(data['EnrollRecurringAch'], 'Boolean');
+            if (data.hasOwnProperty('enrollRecurringAch')) {
+                obj['enrollRecurringAch'] = ApiClient.convertToType(data['enrollRecurringAch'], 'Boolean');
             }
-            if (data.hasOwnProperty('BankRoutingNumber')) {
-                obj['BankRoutingNumber'] = ApiClient.convertToType(data['BankRoutingNumber'], 'String');
+            if (data.hasOwnProperty('bankRoutingNumber')) {
+                obj['bankRoutingNumber'] = ApiClient.convertToType(data['bankRoutingNumber'], 'String');
             }
-            if (data.hasOwnProperty('BankAcctNumber')) {
-                obj['BankAcctNumber'] = ApiClient.convertToType(data['BankAcctNumber'], 'String');
+            if (data.hasOwnProperty('bankAcctNumber')) {
+                obj['bankAcctNumber'] = ApiClient.convertToType(data['bankAcctNumber'], 'String');
             }
-            if (data.hasOwnProperty('IsCheckingAccount')) {
-                obj['IsCheckingAccount'] = ApiClient.convertToType(data['IsCheckingAccount'], 'Boolean');
+            if (data.hasOwnProperty('isCheckingAccount')) {
+                obj['isCheckingAccount'] = ApiClient.convertToType(data['isCheckingAccount'], 'Boolean');
             }
-            if (data.hasOwnProperty('AchDisclosure')) {
-                obj['AchDisclosure'] = ApiClient.convertToType(data['AchDisclosure'], 'String');
+            if (data.hasOwnProperty('achDisclosure')) {
+                obj['achDisclosure'] = ApiClient.convertToType(data['achDisclosure'], 'String');
             }
         }
         return obj;
@@ -73,16 +73,16 @@ class PFEndorsementRequestQuoteDetailsRecurringACH {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['BankRoutingNumber'] && !(typeof data['BankRoutingNumber'] === 'string' || data['BankRoutingNumber'] instanceof String)) {
-            throw new Error("Expected the field `BankRoutingNumber` to be a primitive type in the JSON string but got " + data['BankRoutingNumber']);
+        if (data['bankRoutingNumber'] && !(typeof data['bankRoutingNumber'] === 'string' || data['bankRoutingNumber'] instanceof String)) {
+            throw new Error("Expected the field `bankRoutingNumber` to be a primitive type in the JSON string but got " + data['bankRoutingNumber']);
         }
         // ensure the json data is a string
-        if (data['BankAcctNumber'] && !(typeof data['BankAcctNumber'] === 'string' || data['BankAcctNumber'] instanceof String)) {
-            throw new Error("Expected the field `BankAcctNumber` to be a primitive type in the JSON string but got " + data['BankAcctNumber']);
+        if (data['bankAcctNumber'] && !(typeof data['bankAcctNumber'] === 'string' || data['bankAcctNumber'] instanceof String)) {
+            throw new Error("Expected the field `bankAcctNumber` to be a primitive type in the JSON string but got " + data['bankAcctNumber']);
         }
         // ensure the json data is a string
-        if (data['AchDisclosure'] && !(typeof data['AchDisclosure'] === 'string' || data['AchDisclosure'] instanceof String)) {
-            throw new Error("Expected the field `AchDisclosure` to be a primitive type in the JSON string but got " + data['AchDisclosure']);
+        if (data['achDisclosure'] && !(typeof data['achDisclosure'] === 'string' || data['achDisclosure'] instanceof String)) {
+            throw new Error("Expected the field `achDisclosure` to be a primitive type in the JSON string but got " + data['achDisclosure']);
         }
 
         return true;
@@ -94,29 +94,29 @@ class PFEndorsementRequestQuoteDetailsRecurringACH {
 
 
 /**
- * @member {Boolean} EnrollRecurringAch
+ * @member {Boolean} enrollRecurringAch
  */
-PFEndorsementRequestQuoteDetailsRecurringACH.prototype['EnrollRecurringAch'] = undefined;
+PFEndorsementRequestQuoteDetailsRecurringACH.prototype['enrollRecurringAch'] = undefined;
 
 /**
- * @member {String} BankRoutingNumber
+ * @member {String} bankRoutingNumber
  */
-PFEndorsementRequestQuoteDetailsRecurringACH.prototype['BankRoutingNumber'] = undefined;
+PFEndorsementRequestQuoteDetailsRecurringACH.prototype['bankRoutingNumber'] = undefined;
 
 /**
- * @member {String} BankAcctNumber
+ * @member {String} bankAcctNumber
  */
-PFEndorsementRequestQuoteDetailsRecurringACH.prototype['BankAcctNumber'] = undefined;
+PFEndorsementRequestQuoteDetailsRecurringACH.prototype['bankAcctNumber'] = undefined;
 
 /**
- * @member {Boolean} IsCheckingAccount
+ * @member {Boolean} isCheckingAccount
  */
-PFEndorsementRequestQuoteDetailsRecurringACH.prototype['IsCheckingAccount'] = undefined;
+PFEndorsementRequestQuoteDetailsRecurringACH.prototype['isCheckingAccount'] = undefined;
 
 /**
- * @member {String} AchDisclosure
+ * @member {String} achDisclosure
  */
-PFEndorsementRequestQuoteDetailsRecurringACH.prototype['AchDisclosure'] = undefined;
+PFEndorsementRequestQuoteDetailsRecurringACH.prototype['achDisclosure'] = undefined;
 
 
 

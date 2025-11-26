@@ -81,6 +81,9 @@ class PFGenerateQuoteResponseItem {
             if (data.hasOwnProperty('installments')) {
                 obj['installments'] = ApiClient.convertToType(data['installments'], 'Number');
             }
+            if (data.hasOwnProperty('offerAutoPay')) {
+                obj['offerAutoPay'] = ApiClient.convertToType(data['offerAutoPay'], 'Boolean');
+            }
             if (data.hasOwnProperty('batchId')) {
                 obj['batchId'] = ApiClient.convertToType(data['batchId'], 'String');
             }
@@ -224,6 +227,12 @@ PFGenerateQuoteResponseItem.prototype['apr'] = undefined;
  * @member {Number} installments
  */
 PFGenerateQuoteResponseItem.prototype['installments'] = undefined;
+
+/**
+ * The offerAutoPay status.
+ * @member {Boolean} offerAutoPay
+ */
+PFGenerateQuoteResponseItem.prototype['offerAutoPay'] = undefined;
 
 /**
  * The batch ID.

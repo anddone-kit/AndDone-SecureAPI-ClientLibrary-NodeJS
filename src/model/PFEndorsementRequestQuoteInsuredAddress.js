@@ -48,26 +48,26 @@ class PFEndorsementRequestQuoteInsuredAddress {
         if (data) {
             obj = obj || new PFEndorsementRequestQuoteInsuredAddress();
 
-            if (data.hasOwnProperty('Name')) {
-                obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
-            if (data.hasOwnProperty('Address1')) {
-                obj['Address1'] = ApiClient.convertToType(data['Address1'], 'String');
+            if (data.hasOwnProperty('address1')) {
+                obj['address1'] = ApiClient.convertToType(data['address1'], 'String');
             }
-            if (data.hasOwnProperty('Address2')) {
-                obj['Address2'] = ApiClient.convertToType(data['Address2'], 'String');
+            if (data.hasOwnProperty('address2')) {
+                obj['address2'] = ApiClient.convertToType(data['address2'], 'String');
             }
-            if (data.hasOwnProperty('City')) {
-                obj['City'] = ApiClient.convertToType(data['City'], 'String');
+            if (data.hasOwnProperty('city')) {
+                obj['city'] = ApiClient.convertToType(data['city'], 'String');
             }
-            if (data.hasOwnProperty('State')) {
-                obj['State'] = ApiClient.convertToType(data['State'], 'String');
+            if (data.hasOwnProperty('state')) {
+                obj['state'] = ApiClient.convertToType(data['state'], 'String');
             }
-            if (data.hasOwnProperty('Zip')) {
-                obj['Zip'] = ApiClient.convertToType(data['Zip'], 'String');
+            if (data.hasOwnProperty('zip')) {
+                obj['zip'] = ApiClient.convertToType(data['zip'], 'String');
             }
-            if (data.hasOwnProperty('Phone')) {
-                obj['Phone'] = ApiClient.convertToType(data['Phone'], 'String');
+            if (data.hasOwnProperty('phone')) {
+                obj['phone'] = ApiClient.convertToType(data['phone'], 'String');
             }
         }
         return obj;
@@ -80,32 +80,32 @@ class PFEndorsementRequestQuoteInsuredAddress {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['Name'] && !(typeof data['Name'] === 'string' || data['Name'] instanceof String)) {
-            throw new Error("Expected the field `Name` to be a primitive type in the JSON string but got " + data['Name']);
+        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
+            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
         }
         // ensure the json data is a string
-        if (data['Address1'] && !(typeof data['Address1'] === 'string' || data['Address1'] instanceof String)) {
-            throw new Error("Expected the field `Address1` to be a primitive type in the JSON string but got " + data['Address1']);
+        if (data['address1'] && !(typeof data['address1'] === 'string' || data['address1'] instanceof String)) {
+            throw new Error("Expected the field `address1` to be a primitive type in the JSON string but got " + data['address1']);
         }
         // ensure the json data is a string
-        if (data['Address2'] && !(typeof data['Address2'] === 'string' || data['Address2'] instanceof String)) {
-            throw new Error("Expected the field `Address2` to be a primitive type in the JSON string but got " + data['Address2']);
+        if (data['address2'] && !(typeof data['address2'] === 'string' || data['address2'] instanceof String)) {
+            throw new Error("Expected the field `address2` to be a primitive type in the JSON string but got " + data['address2']);
         }
         // ensure the json data is a string
-        if (data['City'] && !(typeof data['City'] === 'string' || data['City'] instanceof String)) {
-            throw new Error("Expected the field `City` to be a primitive type in the JSON string but got " + data['City']);
+        if (data['city'] && !(typeof data['city'] === 'string' || data['city'] instanceof String)) {
+            throw new Error("Expected the field `city` to be a primitive type in the JSON string but got " + data['city']);
         }
         // ensure the json data is a string
-        if (data['State'] && !(typeof data['State'] === 'string' || data['State'] instanceof String)) {
-            throw new Error("Expected the field `State` to be a primitive type in the JSON string but got " + data['State']);
+        if (data['state'] && !(typeof data['state'] === 'string' || data['state'] instanceof String)) {
+            throw new Error("Expected the field `state` to be a primitive type in the JSON string but got " + data['state']);
         }
         // ensure the json data is a string
-        if (data['Zip'] && !(typeof data['Zip'] === 'string' || data['Zip'] instanceof String)) {
-            throw new Error("Expected the field `Zip` to be a primitive type in the JSON string but got " + data['Zip']);
+        if (data['zip'] && !(typeof data['zip'] === 'string' || data['zip'] instanceof String)) {
+            throw new Error("Expected the field `zip` to be a primitive type in the JSON string but got " + data['zip']);
         }
         // ensure the json data is a string
-        if (data['Phone'] && !(typeof data['Phone'] === 'string' || data['Phone'] instanceof String)) {
-            throw new Error("Expected the field `Phone` to be a primitive type in the JSON string but got " + data['Phone']);
+        if (data['phone'] && !(typeof data['phone'] === 'string' || data['phone'] instanceof String)) {
+            throw new Error("Expected the field `phone` to be a primitive type in the JSON string but got " + data['phone']);
         }
 
         return true;
@@ -117,39 +117,39 @@ class PFEndorsementRequestQuoteInsuredAddress {
 
 
 /**
- * @member {String} Name
+ * @member {String} name
  */
-PFEndorsementRequestQuoteInsuredAddress.prototype['Name'] = undefined;
+PFEndorsementRequestQuoteInsuredAddress.prototype['name'] = undefined;
 
 /**
- * @member {String} Address1
+ * @member {String} address1
  */
-PFEndorsementRequestQuoteInsuredAddress.prototype['Address1'] = undefined;
+PFEndorsementRequestQuoteInsuredAddress.prototype['address1'] = undefined;
 
 /**
- * @member {String} Address2
+ * @member {String} address2
  */
-PFEndorsementRequestQuoteInsuredAddress.prototype['Address2'] = undefined;
+PFEndorsementRequestQuoteInsuredAddress.prototype['address2'] = undefined;
 
 /**
- * @member {String} City
+ * @member {String} city
  */
-PFEndorsementRequestQuoteInsuredAddress.prototype['City'] = undefined;
+PFEndorsementRequestQuoteInsuredAddress.prototype['city'] = undefined;
 
 /**
- * @member {String} State
+ * @member {String} state
  */
-PFEndorsementRequestQuoteInsuredAddress.prototype['State'] = undefined;
+PFEndorsementRequestQuoteInsuredAddress.prototype['state'] = undefined;
 
 /**
- * @member {String} Zip
+ * @member {String} zip
  */
-PFEndorsementRequestQuoteInsuredAddress.prototype['Zip'] = undefined;
+PFEndorsementRequestQuoteInsuredAddress.prototype['zip'] = undefined;
 
 /**
- * @member {String} Phone
+ * @member {String} phone
  */
-PFEndorsementRequestQuoteInsuredAddress.prototype['Phone'] = undefined;
+PFEndorsementRequestQuoteInsuredAddress.prototype['phone'] = undefined;
 
 
 
