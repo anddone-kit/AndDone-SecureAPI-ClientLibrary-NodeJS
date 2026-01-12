@@ -56,7 +56,7 @@ var optsGenerate = {
         "Insured": {
             "UniqueId": xAppKey,
             "AgentCustomerNumber": "Suyash",
-            "Email": "dylan.smith@fmkagency.com",
+            "Email": "test@test.com",
             "CareOf": "",
             "Address": {
                 "Name": "Sam",
@@ -70,7 +70,7 @@ var optsGenerate = {
         },
         "Agent": {
             "UniqueID": xAppKey,// Merchant Id
-            "Email": "dylan.smith@fmkagency.com",
+            "Email": "test@test.com",
             "Address": {
                 "Name": "Insurance Agency",
                 "Address1": "PO Box 486",
@@ -203,7 +203,7 @@ var optsEndorsementRequest = {
             ],
             "insured": {
                 "AgentCustomerNumber": "Suyash",
-                "Email": "dylan.smith@fmkagency.com",
+                "Email": "test@test.com",
                 "CareOf": "",
                 "Address": {
                     "Name": "Sam",

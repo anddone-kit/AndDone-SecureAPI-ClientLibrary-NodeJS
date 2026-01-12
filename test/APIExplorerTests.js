@@ -15,8 +15,8 @@ import SecureTokenLinksApi from '../src/api/SecureTokenLinksApi.js';
 import SecureTokenManagementApi from '../src/api/SecureTokenManagementApi.js';
 import ApiClient from '../src/ApiClient.js';
 
-let xApiKey = 'T3Hj93GzbuhMLiNQg/yJ/yNArhFJeEHoSLyFZ9IBQkY=';
-let xAppKey = 'bdYqRMdn';
+let xApiKey = 'YOUR_API_KEY';
+let xAppKey = 'YOUR_APP_KEY';
 let xVersion = 2.3;
 let origin = '136.34.79.196/32';
 
