@@ -1,11 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [Released]
 
-## [1.0.0] - 2025-08-27
+## [1.0.0] - 2026-02-18
 ### Added
 - Initial build
+- Added initial support for all version 2.3 secure endpoints
 
 
 
